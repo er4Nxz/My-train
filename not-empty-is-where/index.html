@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* not */
+      .not {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+      }
+      .not:not(#to){
+        background-color: aqua;
+      }
+      /* empty */
+      p{
+        background-color: blueviolet;
+        margin: 10px;
+        padding: 10px;
+        width: fit-content;
+      }
+      p:empty{
+        background-color: aqua;
+      }
+      /* is where  */
+      :is(article:hover, h2 ,article span, h1:nth-last-of-type(1),h1:first-of-type) {
+        background-color: aqua;
+        color: blue;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- not -->
+    <div class="not"></div>
+    <div class="not" id="to"></div>
+    <hr>
+    <!-- empty -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, optio.</p>
+    <p></p>
+    <hr>
+    <!-- is where -->
+     <article><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rerum ab, excepturi enim reiciendis recusandae vero hic libero, aliquid sint optio quam nihil ut quod fugit vel! Laborum, quasi. Ipsam.</span></article> 
+     <h2>erfan ahmadi</h2>
+     <h1>heloo-world!</h1>
+     <h1>heloo-world!</h1>
+  </body>
+</html>

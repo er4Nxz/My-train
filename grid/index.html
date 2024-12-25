@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* grid
+            grid-template-columns / grid-template-rows
+            repeat minmax
+            auto fr 
+        */
+        .parent{
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            background-color: #3d3d3d;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(300px , 1fr));
+            grid-template-rows: repeat(4 , minmax(100px, auto));
+            gap: 10px;
+            .child{
+                background-color: lightgreen;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"><h1>1</h1></div>
+        <div class="child"><h1>2</h1></div>
+        <div class="child"><h1>3</h1></div>
+        <div class="child"><h1>4</h1></div>
+        <div class="child"><h1>5</h1></div>
+        <div class="child"><h1>6</h1></div>
+        <div class="child"><h1>7</h1></div>
+        <div class="child"><h1>8</h1></div>
+        <div class="child"><h1>9</h1></div>
+        <div class="child"><h1>10</h1></div>
+        <div class="child"><h1>11</h1></div>
+        <div class="child"><h1>12</h1></div>
+        <div class="child"><h1>13</h1></div>
+        <div class="child"><h1>14</h1></div>
+        <div class="child"><h1>15</h1></div>
+        <div class="child"><h1>16</h1></div>
+    </div>
+</body>
+</html>

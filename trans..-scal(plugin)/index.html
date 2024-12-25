@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .product {
+        width: 300px;
+        height: 500px;
+        margin: 50px auto;
+        box-shadow: 0px 0px 20px black;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 40px;
+          transition: 300ms;
+        }
+        &:hover {
+          img {
+            transform: scale(2, 2);
+            transform-origin: top 
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <img src="./pans.png" />
+    </div>
+  </body>
+</html>
