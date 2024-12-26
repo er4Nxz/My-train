@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* scroll bar */
+      html::-webkit-scrollbar {
+        width: 10px;
+      }
+      html::-webkit-scrollbar-thumb {
+        width: 5px;
+        background-color: #3b3b3b;
+        border-radius: 10px;
+      }
+      /* responsive  */
+      @media only screen and (min-width: 0px) {
+        .responsive {
+          width: 200px;
+          height: 200px;
+          background-color: antiquewhite;
+          box-shadow: 0px 0px 20px;
+          margin: 20px auto;
+        }
+      }
+      @media only screen and (min-width: 576px) {
+        .responsive {
+          width: 200px;
+          height: 200px;
+          background-color: aqua;
+          box-shadow: 0px 0px 20px;
+          margin: 20px auto;
+        }
+      }
+      @media only screen and (min-width: 1200px) {
+        .responsive {
+          width: 200px;
+          height: 200px;
+          background-color: black;
+          box-shadow: 0px 0px 20px;
+          margin: 20px auto;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- responsive -->
+    <div class="responsive"></div>
+</body>
+</html>

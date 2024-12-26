@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .box {
+        margin: 50px;
+        width: 10%;
+        height: 100px;
+        background-color: black;
+        box-shadow: 0px 0px 10px black;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        outline: 3px solid black;
+        outline-offset: 5px;
+        color: white;
+        display: inline-block;
+      }
+      .text__box__1 {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        color: whitesmoke;
+        h1 {
+          font-weight: normal;
+          text-align: center;
+        }
+        p {
+          line-height: 30px;
+          font-family: var(--font);
+          font-size: 20px;
+          text-transform: capitalize;
+          text-indent: 10px;
+          word-spacing: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        img {
+          width: 100px;
+          margin: 0 auto;
+          display: block;
+        }
+        details summary {
+          padding: 10px;
+          background-color: #eeeeee;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          color: black;
+        }
+
+        details p {
+          background-color: #eeeeee;
+          padding: 10px;
+          margin: 0;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box text__box__1">
+      <h1>prouduct-2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minima
+        architecto eveniet cum exercitationem dignissimos repellendus aliquid
+        fuga accusantium vel.
+      </p>
+      <!-- figure: for image -->
+      <figure>
+        <figcaption>vlone</figcaption>
+        <img src="../img/pans.png" />
+      </figure>
+      <!-- details -->
+      <details>
+        <summary>name</summary>
+        <p>erfan ahmadi</p>
+      </details>
+    </div>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .position {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 10px auto;
+        background-color: #3b3b3b;
+        overflow: hidden;
+        border-radius: 50%;
+        .child1 {
+          width: 100px;
+          height: 100px;
+          background-color: darkblue;
+          position: absolute;
+          top: -100px;
+          left: -100px;
+          transition: 300ms;
+          border-radius: 50%;
+        }
+        &:hover .child1 {
+          top: 0;
+          left: 0;
+        }
+        .child2 {
+          width: 100px;
+          border-radius: 50%;
+          height: 100px;
+          background-color: aqua;
+          position: absolute;
+          right: -100px;
+          top: -100px;
+          transition: 300ms;
+        }
+        &:hover .child2 {
+          top: 0;
+          right: 0;
+        }
+        .child3 {
+          width: 100px;
+          height: 100px;
+          background-color: darkorchid;
+          position: absolute;
+          transition: 300ms;
+          border-radius: 50%;
+          bottom: -100px;
+          left: -100px;
+        }
+        &:hover .child3 {
+          bottom: 0;
+          left: 0;
+        }
+        .child4 {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          position: absolute;
+          transition: 300ms;
+          background-color: darkred;
+          bottom: -100px;
+          right: -100px;
+        }
+        &:hover .child4 {
+          bottom: 0;
+          right: 0;
+        }
+      }
+      
+      .prodcust {
+        width: 300px;
+        height: 500px;
+        background-color: #3b3b3b;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 40px;
+        overflow: hidden;
+        &:hover div {
+          top: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 40px;
+        }
+        div {
+          width: inherit;
+          height: inherit;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          border-radius: 40px;
+          transition: 300ms;
+          top: 501px;
+          padding: auto;
+          box-sizing: border-box;
+          h1 {
+            text-align: center;
+            color: whitesmoke;
+          }
+          h2 {
+            text-align: center;
+            color: whitesmoke;
+            margin: 10px;
+          }
+          a {
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            color: #7e7979;
+            background-color: lightgreen;
+            text-transform: capitalize;
+            width: fit-content;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            &:hover {
+              box-shadow: 0px 0px 30px lightgreen;
+            }
+          }
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- position  -->
+    <div class="position">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+      </div>
+      <hr />
+      <div class="prodcust">
+        <img src="../img/pans.png" alt="pans" />
+        <div>
+          <h1>pans</h1>
+          <h2>100$</h2>
+          <a href="#">buy</a>
+        </div>
+      </div>
+</body>
+</html>
