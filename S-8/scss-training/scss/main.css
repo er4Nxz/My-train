@@ -4,17 +4,20 @@
   box-sizing: border-box;
 }
 
+.parent .child, .parent {
+  border-radius: 20px;
+}
+
 .parent {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+  background-color: red;
   margin: 20px auto;
   padding: 1px;
 }
 .parent .child {
   width: 50%;
   height: 50%;
-  background-color: black;
-  border-radius: 50%;
+  background-color: blue;
   margin: 20px auto;
 }/*# sourceMappingURL=main.css.map */

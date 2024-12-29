@@ -3,17 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
-.parent {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  margin: 20px auto;
-  padding: 1px;
-  .child {
-    width: 50%;
-    height: 50%;
-    background-color: black;
-    border-radius: 50%;
+// Variable
+$width: 200px;
+$height: 200px;
+$flag: 3;
+// extend -- %=hide items
+%border-radius {
+  border-radius: 20px;
+}
+// if -- else -- else if
+@if $flag == 1 {
+  .parent {
+    width: $width;
+    height: $height;
+    background-color: aquamarine;
     margin: 20px auto;
+    padding: 1px;
+    @extend %border-radius;
+    .child {
+      width: 50%;
+      height: 50%;
+      background-color: black;
+      margin: 20px auto;
+      @extend %border-radius;
+    }
+  }
+} @else if $flag == 2 {
+  .parent {
+    width: $width;
+    height: $height;
+    background-color: black;
+    margin: 20px auto;
+    padding: 1px;
+    @extend %border-radius;
+    .child {
+      width: 50%;
+      height: 50%;
+      background-color: aquamarine;
+      margin: 20px auto;
+      @extend %border-radius;
+    }
+  }
+}
+@else{
+  .parent {
+    width: $width;
+    height: $height;
+    background-color: red;
+    margin: 20px auto;
+    padding: 1px;
+    @extend %border-radius;
+    .child {
+      width: 50%;
+      height: 50%;
+      background-color: blue;
+      margin: 20px auto;
+      @extend %border-radius;
+    }
   }
 }
