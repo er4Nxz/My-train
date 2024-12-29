@@ -44,8 +44,7 @@ $flag: 3;
       @extend %border-radius;
     }
   }
-}
-@else{
+} @else {
   .parent {
     width: $width;
     height: $height;
@@ -61,4 +60,15 @@ $flag: 3;
       @extend %border-radius;
     }
   }
+}
+// Function = mixin / include
+@mixin boxShadow($x,$y,$opacity,$color){
+  box-shadow: $x $y $opacity $color;
+}
+.box{
+  width: 100px;
+  background-color: #3b3b3b;
+  height: 100px;
+  margin: 20px auto;
+  @include boxShadow(0px, 0px, 20px, deeppink);
 }

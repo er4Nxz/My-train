@@ -20,4 +20,12 @@
   height: 50%;
   background-color: blue;
   margin: 20px auto;
+}
+
+.box {
+  width: 100px;
+  background-color: #3b3b3b;
+  height: 100px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 20px deeppink;
 }/*# sourceMappingURL=main.css.map */
