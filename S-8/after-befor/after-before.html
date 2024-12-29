@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 300px;
+        background-color: lightpink;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        p {
+          background-color: lightcoral;
+          color: lightgray;
+          word-spacing: 1px;
+          text-align: justify;
+          padding: 5px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          &::before {
+            content: "hello";
+            background-color: darkorchid;
+            color: lightcyan;
+            border-radius: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+            display: block;
+            text-align: center;
+            margin: 10px;
+            font-size: 20px;
+            text-transform: capitalize;
+          }
+          &::after {
+            content: "bye";
+            background-color: lightblue;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+            display: block;
+            text-align: center;
+            margin: 10px;
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+          }
+          &::first-letter {
+            color: darkgreen;
+          }
+          &::first-line {
+            font-size: 30px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus,
+        maxime!
+      </p>
+    </div>
+    <hr>
+
+  </body>
+</html>
