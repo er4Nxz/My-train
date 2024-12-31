@@ -28,4 +28,12 @@
   height: 100px;
   margin: 20px auto;
   box-shadow: 0px 0px 20px deeppink;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  background-image: url(../pans.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }/*# sourceMappingURL=main.css.map */

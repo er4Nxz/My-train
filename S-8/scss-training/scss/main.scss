@@ -72,3 +72,14 @@ $flag: 3;
   margin: 20px auto;
   @include boxShadow(0px, 0px, 20px, deeppink);
 }
+// train mixin / include
+@mixin parallax($width,$height,$url,$repeat,$fixed){
+  width: $width;
+  height: $height;
+  background-image: $url;
+  background-repeat: $repeat;
+  background-attachment: $fixed;
+}
+.img{
+  @include parallax(300px,300px,url(../pans.png),center,no-repeat ,fixed);
+}

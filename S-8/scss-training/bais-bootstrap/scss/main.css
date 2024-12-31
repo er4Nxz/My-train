@@ -1,0 +1,1103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media only screen and (min-width: 0px) {
+  .col-xs-1 {
+    width: 10%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-1 h1 {
+    text-align: center;
+  }
+  .col-xs-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-2 {
+    width: 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-2 h1 {
+    text-align: center;
+  }
+  .col-xs-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-3 {
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-3 h1 {
+    text-align: center;
+  }
+  .col-xs-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-4 {
+    width: 40%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-4 h1 {
+    text-align: center;
+  }
+  .col-xs-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-5 {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-5 h1 {
+    text-align: center;
+  }
+  .col-xs-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-6 {
+    width: 60%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-6 h1 {
+    text-align: center;
+  }
+  .col-xs-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-7 {
+    width: 70%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-7 h1 {
+    text-align: center;
+  }
+  .col-xs-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-8 {
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-8 h1 {
+    text-align: center;
+  }
+  .col-xs-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-9 {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-9 h1 {
+    text-align: center;
+  }
+  .col-xs-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xs-10 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xs-10 h1 {
+    text-align: center;
+  }
+  .col-xs-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-xs-1 {
+    margin-left: 5%;
+  }
+  .center-xs-2 {
+    margin-left: 10%;
+  }
+  .center-xs-3 {
+    margin-left: 15%;
+  }
+  .center-xs-4 {
+    margin-left: 20%;
+  }
+  .center-xs-5 {
+    margin-left: 25%;
+  }
+  .center-xs-6 {
+    margin-left: 30%;
+  }
+  .center-xs-7 {
+    margin-left: 35%;
+  }
+  .center-xs-8 {
+    margin-left: 40%;
+  }
+  .center-xs-9 {
+    margin-left: 45%;
+  }
+  .center-xs-10 {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .col-sm-1 {
+    width: 10%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-1 h1 {
+    text-align: center;
+  }
+  .col-sm-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-2 {
+    width: 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-2 h1 {
+    text-align: center;
+  }
+  .col-sm-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-3 {
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-3 h1 {
+    text-align: center;
+  }
+  .col-sm-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-4 {
+    width: 40%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-4 h1 {
+    text-align: center;
+  }
+  .col-sm-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-5 {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-5 h1 {
+    text-align: center;
+  }
+  .col-sm-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-6 {
+    width: 60%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-6 h1 {
+    text-align: center;
+  }
+  .col-sm-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-7 {
+    width: 70%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-7 h1 {
+    text-align: center;
+  }
+  .col-sm-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-8 {
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-8 h1 {
+    text-align: center;
+  }
+  .col-sm-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-9 {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-9 h1 {
+    text-align: center;
+  }
+  .col-sm-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-sm-10 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-sm-10 h1 {
+    text-align: center;
+  }
+  .col-sm-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-sm-1 {
+    margin-left: 5%;
+  }
+  .center-sm-2 {
+    margin-left: 10%;
+  }
+  .center-sm-3 {
+    margin-left: 15%;
+  }
+  .center-sm-4 {
+    margin-left: 20%;
+  }
+  .center-sm-5 {
+    margin-left: 25%;
+  }
+  .center-sm-6 {
+    margin-left: 30%;
+  }
+  .center-sm-7 {
+    margin-left: 35%;
+  }
+  .center-sm-8 {
+    margin-left: 40%;
+  }
+  .center-sm-9 {
+    margin-left: 45%;
+  }
+  .center-sm-10 {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-md-1 {
+    width: 10%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-1 h1 {
+    text-align: center;
+  }
+  .col-md-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-2 {
+    width: 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-2 h1 {
+    text-align: center;
+  }
+  .col-md-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-3 {
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-3 h1 {
+    text-align: center;
+  }
+  .col-md-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-4 {
+    width: 40%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-4 h1 {
+    text-align: center;
+  }
+  .col-md-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-5 {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-5 h1 {
+    text-align: center;
+  }
+  .col-md-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-6 {
+    width: 60%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-6 h1 {
+    text-align: center;
+  }
+  .col-md-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-7 {
+    width: 70%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-7 h1 {
+    text-align: center;
+  }
+  .col-md-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-8 {
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-8 h1 {
+    text-align: center;
+  }
+  .col-md-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-9 {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-9 h1 {
+    text-align: center;
+  }
+  .col-md-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-md-10 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-md-10 h1 {
+    text-align: center;
+  }
+  .col-md-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-md-1 {
+    margin-left: 5%;
+  }
+  .center-md-2 {
+    margin-left: 10%;
+  }
+  .center-md-3 {
+    margin-left: 15%;
+  }
+  .center-md-4 {
+    margin-left: 20%;
+  }
+  .center-md-5 {
+    margin-left: 25%;
+  }
+  .center-md-6 {
+    margin-left: 30%;
+  }
+  .center-md-7 {
+    margin-left: 35%;
+  }
+  .center-md-8 {
+    margin-left: 40%;
+  }
+  .center-md-9 {
+    margin-left: 45%;
+  }
+  .center-md-10 {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-lg-1 {
+    width: 10%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-1 h1 {
+    text-align: center;
+  }
+  .col-lg-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-2 {
+    width: 20%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-2 h1 {
+    text-align: center;
+  }
+  .col-lg-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-3 {
+    width: 30%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-3 h1 {
+    text-align: center;
+  }
+  .col-lg-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-4 {
+    width: 40%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-4 h1 {
+    text-align: center;
+  }
+  .col-lg-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-5 {
+    width: 50%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-5 h1 {
+    text-align: center;
+  }
+  .col-lg-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-6 {
+    width: 60%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-6 h1 {
+    text-align: center;
+  }
+  .col-lg-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-7 {
+    width: 70%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-7 h1 {
+    text-align: center;
+  }
+  .col-lg-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-8 {
+    width: 80%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-8 h1 {
+    text-align: center;
+  }
+  .col-lg-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-9 {
+    width: 90%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-9 h1 {
+    text-align: center;
+  }
+  .col-lg-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-lg-10 {
+    width: 100%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-lg-10 h1 {
+    text-align: center;
+  }
+  .col-lg-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-lg-1 {
+    margin-left: 5%;
+  }
+  .center-lg-2 {
+    margin-left: 10%;
+  }
+  .center-lg-3 {
+    margin-left: 15%;
+  }
+  .center-lg-4 {
+    margin-left: 20%;
+  }
+  .center-lg-5 {
+    margin-left: 25%;
+  }
+  .center-lg-6 {
+    margin-left: 30%;
+  }
+  .center-lg-7 {
+    margin-left: 35%;
+  }
+  .center-lg-8 {
+    margin-left: 40%;
+  }
+  .center-lg-9 {
+    margin-left: 45%;
+  }
+  .center-lg-10 {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 10%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-1 h1 {
+    text-align: center;
+  }
+  .col-xl-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-2 {
+    width: 20%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-2 h1 {
+    text-align: center;
+  }
+  .col-xl-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-3 {
+    width: 30%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-3 h1 {
+    text-align: center;
+  }
+  .col-xl-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-4 {
+    width: 40%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-4 h1 {
+    text-align: center;
+  }
+  .col-xl-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-5 {
+    width: 50%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-5 h1 {
+    text-align: center;
+  }
+  .col-xl-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-6 {
+    width: 60%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-6 h1 {
+    text-align: center;
+  }
+  .col-xl-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-7 {
+    width: 70%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-7 h1 {
+    text-align: center;
+  }
+  .col-xl-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-8 {
+    width: 80%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-8 h1 {
+    text-align: center;
+  }
+  .col-xl-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-9 {
+    width: 90%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-9 h1 {
+    text-align: center;
+  }
+  .col-xl-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xl-10 {
+    width: 100%;
+    background-color: lightcoral;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .col-xl-10 h1 {
+    text-align: center;
+  }
+  .col-xl-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-xl-1 {
+    margin-left: 5%;
+  }
+  .center-xl-2 {
+    margin-left: 10%;
+  }
+  .center-xl-3 {
+    margin-left: 15%;
+  }
+  .center-xl-4 {
+    margin-left: 20%;
+  }
+  .center-xl-5 {
+    margin-left: 25%;
+  }
+  .center-xl-6 {
+    margin-left: 30%;
+  }
+  .center-xl-7 {
+    margin-left: 35%;
+  }
+  .center-xl-8 {
+    margin-left: 40%;
+  }
+  .center-xl-9 {
+    margin-left: 45%;
+  }
+  .center-xl-10 {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .col-xxl-1 {
+    width: 10%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-1 h1 {
+    text-align: center;
+  }
+  .col-xxl-1 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-2 {
+    width: 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-2 h1 {
+    text-align: center;
+  }
+  .col-xxl-2 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-3 {
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-3 h1 {
+    text-align: center;
+  }
+  .col-xxl-3 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-4 {
+    width: 40%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-4 h1 {
+    text-align: center;
+  }
+  .col-xxl-4 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-5 {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-5 h1 {
+    text-align: center;
+  }
+  .col-xxl-5 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-6 {
+    width: 60%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-6 h1 {
+    text-align: center;
+  }
+  .col-xxl-6 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-7 {
+    width: 70%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-7 h1 {
+    text-align: center;
+  }
+  .col-xxl-7 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-8 {
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-8 h1 {
+    text-align: center;
+  }
+  .col-xxl-8 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-9 {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-9 h1 {
+    text-align: center;
+  }
+  .col-xxl-9 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .col-xxl-10 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .col-xxl-10 h1 {
+    text-align: center;
+  }
+  .col-xxl-10 p {
+    text-align: justify;
+    padding: 10px;
+  }
+  .center-xxl-1 {
+    margin-left: 5%;
+  }
+  .center-xxl-2 {
+    margin-left: 10%;
+  }
+  .center-xxl-3 {
+    margin-left: 15%;
+  }
+  .center-xxl-4 {
+    margin-left: 20%;
+  }
+  .center-xxl-5 {
+    margin-left: 25%;
+  }
+  .center-xxl-6 {
+    margin-left: 30%;
+  }
+  .center-xxl-7 {
+    margin-left: 35%;
+  }
+  .center-xxl-8 {
+    margin-left: 40%;
+  }
+  .center-xxl-9 {
+    margin-left: 45%;
+  }
+  .center-xxl-10 {
+    margin-left: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

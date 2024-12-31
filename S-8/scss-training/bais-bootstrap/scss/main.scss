@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//for / bais bootstrap responsive
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media only screen and (min-width: 0px) {
+  @for $i from 1 through 10 {
+    .col-xs-#{$i} {
+      width: $i * 10%;
+      height: fit-content;
+      background-color: lightcoral;
+      border-radius: 20px;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-xs-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 576px) {
+  @for $i from 1 through 10 {
+    .col-sm-#{$i} {
+      width: $i * 10%;
+      height: fit-content;
+      background-color: lightcoral;
+      border-radius: 20px;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-sm-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 10 {
+    .col-md-#{$i} {
+      width: $i * 10%;
+      height: fit-content;
+      background-color: lightcoral;
+      border-radius: 20px;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-md-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  @for $i from 1 through 10 {
+    .col-lg-#{$i} {
+      width: $i * 10%;
+      background-color: lightcoral;
+      border-radius: 20px;
+      height: fit-content;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-lg-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @for $i from 1 through 10 {
+    .col-xl-#{$i} {
+      width: $i * 10%;
+      background-color: lightcoral;
+      border-radius: 20px;
+      height: fit-content;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-xl-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  @for $i from 1 through 10 {
+    .col-xxl-#{$i} {
+      width: $i * 10%;
+      height: fit-content;
+      background-color: lightcoral;
+      border-radius: 20px;
+      margin-top: 10px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    .center-xxl-#{$i}{
+      margin-left: 5% * $i;
+    }
+  }
+}
