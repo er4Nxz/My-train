@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
-    <!-- test -->
-    <div class="w-[30%] p-[50px] text-[white] bg-[#2b2b2b] mx-auto">
-        <h1>Hellow-world!</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore, blanditiis, sed quae praesentium beatae corporis facilis dicta iusto deserunt eius neque. Fugiat molestias nisi magnam atque, ducimus minus tempora. Quis consequuntur esse tempore eaque modi cupiditate quo ducimus natus alias est, earum voluptatum enim vitae quae quas voluptate culpa cumque? Ea, saepe magnam! Quibusdam voluptas rem, eum vitae voluptates sapiente unde nesciunt inventore sequi quas minus culpa, incidunt sit? Quia provident deleniti tempore illo perspiciatis incidunt autem numquam dignissimos quos, dolore suscipit molestiae, consequuntur praesentium culpa libero perferendis et recusandae aliquid atque hic inventore. Enim aperiam temporibus nulla. Nihil.</p>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="w-[100%] mb-[20px] h-[50px] bg-[#3b3b3b]">
+      <nav
+        class="w-[inherit] h-[inherit] flex gap-4 justify-center items-center text-[whitesmoke] capitalize tracking-[1px]"
+      >
+        <div><a href="#">home</a></div>
+        <div><a href="#">about</a></div>
+        <div><a href="#">content</a></div>
+        <div><a href="#">gallery</a></div>
+      </nav>
     </div>
-</body>
+    <!-- card -->
+    <div
+      class="w-[30%] p-[50px] text-[white] bg-[#2b2b2b] mx-auto rounded-[50px]"
+    >
+      <h1 class="text-center mb-[20px] font-sans text-[40px]">Hellow-world!</h1>
+      <p
+        class="text-rose-600 text-[14px] leading-[20px] tracking-[2px] mb-[20px]"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore,
+        blanditiis, sed quae praesentium beatae corporis facilis dicta iusto
+        deserunt eius neque. Fugiat molestias nisi magnam atque, ducimus minus
+        tempora. Quis consequuntur esse tempore eaque modi cupiditate quo
+        ducimus natus alias est, earum voluptatum enim vitae quae quas voluptate
+        culpa cumque? Ea, saepe magnam! Quibusdam voluptas rem, eum vitae
+        voluptates sapiente unde nesciunt inventore sequi quas minus culpa,
+        incidunt sit? Quia provident deleniti tempore illo perspiciatis incidunt
+        autem numquam dignissimos quos, dolore suscipit molestiae, consequuntur
+        praesentium culpa libero perferendis et recusandae aliquid atque hic
+        inventore. Enim aperiam temporibus nulla. Nihil.
+      </p>
+      <a
+        href="#"
+        class="block bg-green-500 w-fit p-[5px] text-white no-underline rounded-[10px] mx-auto box-border"
+        >read more</a
+      >
+    </div>
+    <!-- parallax -->
+     <div class="w-[50%] h-[600px] bg-black mx-auto my-[20px] rounded-[50px] bg-[url('./img-1.png')] bg-no-repeat bg-cover flex justify-center items-center">
+        <div class="w-[50%] h-[50%] backdrop-blur-[5px] bg-[#2b2b2bcc] rounded-[50px] box-border p-[20px] text-[whitesmoke]">
+            <h1 class="tracking-[2px] text-[20px] text-center capitalize mb-2 ">laptop</h1>
+            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis neque harum ut, dolor accusantium natus optio accusamus quidem eos, distinctio alias veritatis nisi facere reprehenderit commodi delectus provident ad ratione quae facilis. Eligendi quod minus nobis nisi voluptatem ipsum nemo amet, dolorum ullam hic, suscipit sit nihil. Aliquam, eius inventore.</p>
+        </div>
+     </div>
+  </body>
 </html>
