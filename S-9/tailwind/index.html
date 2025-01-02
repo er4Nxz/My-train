@@ -20,7 +20,7 @@
     </div>
     <!-- card -->
     <div
-      class="w-[30%] p-[50px] text-[white] bg-[#2b2b2b] mx-auto rounded-[50px]"
+      class="w-[30%] p-[50px] text-[white] bg-[#2b2b2b] mx-auto rounded-[50px] group"
     >
       <h1 class="text-center mb-[20px] font-sans text-[40px]">Hellow-world!</h1>
       <p
@@ -40,16 +40,31 @@
       </p>
       <a
         href="#"
-        class="block bg-green-500 w-fit p-[5px] text-white no-underline rounded-[10px] mx-auto box-border"
+        class="block bg-green-500 w-fit p-[5px] text-white no-underline rounded-[10px] mx-auto box-border hover:bg-rose-500 transition-all duration-300 ease-in-out"
         >read more</a
       >
     </div>
-    <!-- parallax -->
-     <div class="w-[50%] h-[600px] bg-black mx-auto my-[20px] rounded-[50px] bg-[url('./img-1.png')] bg-no-repeat bg-cover flex justify-center items-center">
-        <div class="w-[50%] h-[50%] backdrop-blur-[5px] bg-[#2b2b2bcc] rounded-[50px] box-border p-[20px] text-[whitesmoke]">
-            <h1 class="tracking-[2px] text-[20px] text-center capitalize mb-2 ">laptop</h1>
-            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis neque harum ut, dolor accusantium natus optio accusamus quidem eos, distinctio alias veritatis nisi facere reprehenderit commodi delectus provident ad ratione quae facilis. Eligendi quod minus nobis nisi voluptatem ipsum nemo amet, dolorum ullam hic, suscipit sit nihil. Aliquam, eius inventore.</p>
-        </div>
-     </div>
+    <!-- parallax / hover -->
+    <div
+      class="w-[50%] h-[600px] bg-black mx-auto my-[20px] rounded-[50px] bg-[url('./img-1.png')] bg-no-repeat bg-cover flex justify-center items-center"
+    >
+      <div
+        class="w-[50%] h-[50%] backdrop-blur-[5px] bg-[#2b2b2bcc] rounded-[50px] box-border p-[20px] text-[whitesmoke] group"
+      >
+        <h1
+          class="tracking-[2px] text-[20px] capitalize mb-2 text-center group-hover:text-[40px] group-hover:text-[lime] transition-all duration-300"
+        >
+          laptop
+        </h1>
+        <p class="text-white hover:text-[20px] group-hover:text-[crimson] transition-all duration-300 ">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+          neque harum ut, dolor accusantium natus optio accusamus quidem eos,
+          distinctio alias veritatis nisi facere reprehenderit commodi delectus
+          provident ad ratione quae facilis. Eligendi quod minus nobis nisi
+          voluptatem ipsum nemo amet, dolorum ullam hic, suscipit sit nihil.
+          Aliquam, eius inventore.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

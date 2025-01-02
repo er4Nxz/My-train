@@ -754,3 +754,40 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:bg-rose-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-\[20px\]:hover {
+  font-size: 20px;
+}
+
+.group:hover .group-hover\:text-\[40px\] {
+  font-size: 40px;
+}
+
+.group:hover .group-hover\:text-\[crimson\] {
+  --tw-text-opacity: 1;
+  color: rgb(220 20 60 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:text-\[lime\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 0 / var(--tw-text-opacity, 1));
+}
