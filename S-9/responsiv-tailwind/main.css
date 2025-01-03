@@ -715,6 +715,11 @@ a {
     --tw-text-opacity: 1;
     color: rgb(173 170 170 / var(--tw-text-opacity, 1));
   }
+
+  .readmore:active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(139 0 139 / var(--tw-bg-opacity, 1));
+  }
 }
 
 .transition-all {
