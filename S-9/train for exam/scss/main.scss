@@ -1,0 +1,33 @@
+$width: 200px;
+$hieght: 200px;
+$flag:1;
+.main {
+  width: $width;
+  height: $hieght;
+  background-color: aqua;
+  @include border-radius(10px, 10px, 10px, 10px);
+  @extend .box-shadow;
+}
+.box-shadow {
+  box-shadow: 0px 0px 20px #2b2b2b;
+}
+%salam {
+  width: 100px;
+}
+@if $flag == 1 {
+  .main {
+    background-color: brown;
+  }
+}
+@mixin border-radius($tr, $br, $bl, $tl) {
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $br;
+  border-bottom-left-radius: $bl;
+  border-top-left-radius: $tl;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2b2b2b;
+  margin: 10px;
+}
