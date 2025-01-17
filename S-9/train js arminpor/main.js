@@ -1,11 +1,11 @@
 //train of arminpor
 {
-  let fullName = prompt("ENTER YOUR FULLNAME");
-  let AGE = prompt("ENTER YOUR AGE");
-  let ADDRESS = prompt("ENTER YOUR ADDRESS");
-  let DEGREE = prompt("ENTER YOUR DEGREE");
-  let FATHER_NAME = prompt("ENTER YOUR FATHER NAME");
-  let BIRTH_DAY = prompt("ENTER YOUR BIRTH DAY");
+  let fullName = prompt("ENTER YOUR FULLNAME","MR");
+  let AGE = prompt("ENTER YOUR AGE",18);
+  let ADDRESS = prompt("ENTER YOUR ADDRESS","tehran");  
+  let DEGREE = prompt("ENTER YOUR DEGREE","male"); 
+  let FATHER_NAME = prompt("ENTER YOUR FATHER NAME","MR");
+  let BIRTH_DAY = prompt("ENTER YOUR BIRTH DAY","00/00/2000");
   document.getElementById("fullName").innerHTML = `${fullName}`;
   document.getElementById("age").innerHTML = `${AGE}`;
   document.getElementById("address").innerHTML = `${ADDRESS}`;
