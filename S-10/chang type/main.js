@@ -49,18 +49,51 @@ console.log(pow);
 // -- ++
 let v = 20;
 let inc = ++v;
-console.log(inc , x);
+console.log(inc, x);
 let m = 20;
-let dash = --v
+let dash = --v;
 console.log(v);
 // asignment
-v+=m
+v += m;
 console.log(v);
-v-=m
-console.log(v,typeof v);
-String(v*=m)
+v -= m;
+console.log(v, typeof v);
+v *= m;
 console.log(typeof v);
-
-
-
-
+//compare
+{
+  let x = 21;
+  let y = 20;
+  let result = x < y;
+  console.log(result);
+}
+{
+  let x = 20;
+  let y = 20;
+  let result = x <= y;
+  console.log(result);
+}
+{
+  let x = 21;
+  let y = 20;
+  let result = x == y;
+  console.log(result);
+}
+{
+  let x = 22;
+  let y = 20;
+  let result = x != y;
+  console.log(result);
+}
+{
+  let x = "20";
+  let y = 20;
+  let result = x === y;
+  console.log(result);
+}
+{
+  let x = "20";
+  let y = 20;
+  let result = x !== y;
+  console.log(result);
+}
