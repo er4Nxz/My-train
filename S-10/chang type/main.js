@@ -96,4 +96,32 @@ console.log(typeof v);
   let y = 20;
   let result = x !== y;
   console.log(result);
+  console.log(typeof result);
+}
+
+//Polynomial
+{
+  let x = 20;
+  let y = 20;
+  //and
+  {
+    let result = x !== 10 && y == 20 && x == y;
+    //           true *     true    *  true 
+    //           1     *    1     *    1 = 1 =>true
+    console.log(result);
+  }
+  //or
+  {
+    let result = x === 10 || y !== 20 || x !== y;
+    //            false +    false +    false 
+    //            0       +     0     +   0 = 0 => false
+    console.log(result);
+  }
+  // not
+  {
+    let result = !(x === 10 || y !== 20 || x !== y);
+    //            (false +    false +    false) 
+    //            (0       +     0     +   0) = !(0) => true
+    console.log(result);
+  }
 }
