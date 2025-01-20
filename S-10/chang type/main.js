@@ -106,22 +106,53 @@ console.log(typeof v);
   //and
   {
     let result = x !== 10 && y == 20 && x == y;
-    //           true *     true    *  true 
+    //           true *     true    *  true
     //           1     *    1     *    1 = 1 =>true
     console.log(result);
   }
   //or
   {
     let result = x === 10 || y !== 20 || x !== y;
-    //            false +    false +    false 
+    //            false +    false +    false
     //            0       +     0     +   0 = 0 => false
     console.log(result);
   }
   // not
   {
     let result = !(x === 10 || y !== 20 || x !== y);
-    //            (false +    false +    false) 
+    //            (false +    false +    false)
     //            (0       +     0     +   0) = !(0) => true
     console.log(result);
+  }
+}
+// & | ^ bit
+{
+  x = 10;
+  y = 15;
+  {
+    // ^ xor
+    result = x ^ y;
+    console.log(result);
+  }
+  {
+    // add &
+    result = x & y;
+    console.log(result);
+  }
+  {
+    // or |
+    result = x | y;
+    console.log(result);
+  }
+  {
+    // >> left shift
+    result = x >> 1
+    console.log(result); 
+  }
+  {
+    // << right shift
+    result = x<<1
+    console.log(result);
+    
   }
 }
