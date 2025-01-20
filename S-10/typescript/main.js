@@ -9,3 +9,24 @@
 //   let test_2 = Number(y);
 //   console.log(test_2);
 // }
+debugger;
+var username = prompt("username");
+var password = Number(prompt("pass"));
+if ((username === "erfan")) {
+    console.log("this username ".concat(username, " its all right"));
+    if ((password === 12345)) {
+        console.log("WELCOM!");
+    }
+    else {
+        console.log("pass is incorect");
+    }
+}
+else {
+    console.log("username is incorect");
+    if (password === 12345) {
+        console.log("pass is correct");
+    }
+    else {
+        console.log("get out of my web site");
+    }
+}
