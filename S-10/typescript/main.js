@@ -1,3 +1,4 @@
+// debugger;
 // {
 // //casting in ts
 //   let x: number = Number(prompt("enter your age"));
@@ -9,7 +10,6 @@
 //   let test_2 = Number(y);
 //   console.log(test_2);
 // }
-debugger;
 // let username: string | null = prompt("username");
 // let password: number = Number(prompt("pass"));
 // if ((username === "erfan")) {
@@ -34,22 +34,50 @@ debugger;
 //   console.log("get out of my web site");
 // }
 //  CALCULATOR
-var num1 = Number(prompt("enter first number"));
-var operator = prompt("enter operator", "+ - * /");
-var num2 = Number(prompt("enter second number"));
-console.log(num1, operator, num2);
-if (operator === "+") {
-  var sum = num1 + num2;
-  console.log(sum);
-} else if (operator === "-") {
-  var sub = num1 - num2;
-  console.log(sub);
-} else if (operator === "*") {
-  var mul = num1 * num2;
-  console.log(mul);
-} else if (operator === "/") {
-  var div = num1 / num2;
-  console.log(div);
-} else {
-  console.log("WTF???");
+// let num1: number = Number(prompt("enter first number"));
+// let operator: string | null = prompt("enter operator", "+ - * /");
+// let num2: number = Number(prompt("enter second number"));
+// console.log(num1, operator, num2);
+// if (operator === "+") {
+//   let sum = num1 + num2;
+//   console.log(sum);
+// } else if (operator === "-") {
+//   let sub = num1 - num2;
+//   console.log(sub);
+// } else if (operator === "*") {
+//   let mul = num1 * num2;
+//   console.log(mul);
+// } else if (operator === "/") {
+//   let div = num1 / num2;
+//   console.log(div);
+// } else {
+//   console.log("WTF???");
+// }
+// Salary
+var fullName = prompt("enter your name?");
+var clock = Number(prompt("clock?"));
+var degree = prompt("degree?");
+if (degree === "phd") {
+    var salaryPure = clock * 300;
+    var tax = salaryPure * 0.1; //مالیات
+    var insurance = salaryPure * 0.05; //بیمه
+    var salary = salaryPure - tax - insurance;
+    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
+}
+else if (degree === "master") {
+    var salaryPure = clock * 200;
+    var tax = salaryPure * 0.1; //مالیات
+    var insurance = salaryPure * 0.05; //بیمه
+    var salary = salaryPure - tax - insurance;
+    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
+}
+else if (degree === "diploma") {
+    var salaryPure = clock * 100;
+    var tax = salaryPure * 0.1; //مالیات
+    var insurance = salaryPure * 0.05; //بیمه
+    var salary = salaryPure - tax - insurance;
+    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
+}
+else {
+    console.log("check your degree");
 }
