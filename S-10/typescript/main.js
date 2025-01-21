@@ -1,4 +1,4 @@
-// debugger;
+debugger;
 // {
 // //casting in ts
 //   let x: number = Number(prompt("enter your age"));
@@ -54,30 +54,64 @@
 //   console.log("WTF???");
 // }
 // Salary
-var fullName = prompt("enter your name?");
-var clock = Number(prompt("clock?"));
-var degree = prompt("degree?");
-if (degree === "phd") {
-    var salaryPure = clock * 300;
-    var tax = salaryPure * 0.1; //مالیات
-    var insurance = salaryPure * 0.05; //بیمه
-    var salary = salaryPure - tax - insurance;
-    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
-}
-else if (degree === "master") {
-    var salaryPure = clock * 200;
-    var tax = salaryPure * 0.1; //مالیات
-    var insurance = salaryPure * 0.05; //بیمه
-    var salary = salaryPure - tax - insurance;
-    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
-}
-else if (degree === "diploma") {
-    var salaryPure = clock * 100;
-    var tax = salaryPure * 0.1; //مالیات
-    var insurance = salaryPure * 0.05; //بیمه
-    var salary = salaryPure - tax - insurance;
-    console.log("your salary is ".concat(salary, " and your name is ").concat(fullName));
-}
-else {
-    console.log("check your degree");
-}
+// let fullName: string | null = prompt("enter your name?");
+// let clock: number = Number(prompt("clock?"));
+// let degree: string | null = prompt("degree?");
+// if (degree === "phd") {
+//   let salaryPure = clock * 300;
+//   let tax = salaryPure * 0.1; //مالیات
+//   let insurance = salaryPure * 0.05; //بیمه
+//   let salary = salaryPure - tax - insurance;
+//   console.log(`your salary is ${salary} and your name is ${fullName}`);
+// } else if (degree === "master") {
+//   let salaryPure = clock * 200;
+//   let tax = salaryPure * 0.1; //مالیات
+//   let insurance = salaryPure * 0.05; //بیمه
+//   let salary = salaryPure - tax - insurance;
+//   console.log(`your salary is ${salary} and your name is ${fullName}`);
+// } else if (degree === "diploma") {
+//   let salaryPure = clock * 100;
+//   let tax = salaryPure * 0.1; //مالیات
+//   let insurance = salaryPure * 0.05; //بیمه
+//   let salary = salaryPure - tax - insurance;
+//   console.log(`your salary is ${salary} and your name is ${fullName}`);
+// } else {
+//   console.log("check your degree");
+// }
+// switch
+// let day: number = Number(prompt("enter day?"));
+// {
+//   switch (day) {
+//     case 1: {
+//       console.log("shanbe");
+//       break;
+//     }
+//     case 2: {
+//       console.log("1-shhanbe");
+//       break;
+//     }
+//     case 3: {
+//       console.log("2-shhanbe");
+//       break;
+//     }
+//     case 4: {
+//       console.log("3-shhanbe");
+//       break;
+//     }
+//     case 5: {
+//       console.log("4-shhanbe");
+//       break;
+//     }
+//     case 6: {
+//       console.log("5-shhanbe");
+//       break;
+//     }
+//     default: {
+//       console.log("jome");
+//       break;      
+//     }
+//     console.log("chetori");
+//   }
+//   console.log("khodafez");
+// }
+// console.log("salam");
