@@ -1,4 +1,4 @@
-debugger;
+// debugger;
 // {
 // //casting in ts
 //   let x: number = Number(prompt("enter your age"));
@@ -153,5 +153,19 @@ debugger;
 // let age: number = Number(prompt("enter your age"));
 // let result =
 //   age >= 18 ? `your age is ok ..${age}` : `your age is not ok ${age}`;
-// console.log(result); 
-//
+// console.log(result);
+// FOR
+// for (let i: number = 1; i <= 10; ++i) document.write(`<h1>${i}</h1>`);
+// if in for
+// let x: number = Number(prompt("ENTER NUMBER"));
+// for (let i: number = 1; i <= x; ++i)
+//   if (i % 2 === 0) document.write(`<div class='even'>${i}</div>`);
+//   else document.write(`<div class='odd'>${i}</div>`);
+// جمع اعداد قبل از عدد ورودی
+var x = Number(prompt("ENTER NUMBER"));
+var sum = 0;
+for (var i = 1; i <= x; ++i) {
+    console.log(i);
+    sum += i;
+}
+console.log(sum);
