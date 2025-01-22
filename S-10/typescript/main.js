@@ -106,12 +106,52 @@ debugger;
 //       console.log("5-shhanbe");
 //       break;
 //     }
-//     default: {
-//       console.log("jome");
-//       break;      
-//     }
-//     console.log("chetori");
+//     default:
+//       {
+//         console.log("jome");
+//         break;
+//       }
+//       console.log("chetori");
 //   }
 //   console.log("khodafez");
 // }
 // console.log("salam");
+// salary with switch
+// let fullName: String | null = String(prompt("Enter your full name"));
+// let clock: number = Number(prompt("clock?"));
+// let degree: string | null = prompt("degree?");
+// switch (degree) {
+//   case "phd": {
+//     let salaryPure = clock * 300;
+//     let tax = salaryPure * 0.1; //مالیات
+//     let insurance = salaryPure * 0.05; //بیمه
+//     let salary = salaryPure - tax - insurance;
+//     console.log(`your salary is ${salary} and your name is ${fullName}`);
+//     break
+//   }
+//   case "master": {
+//     let salaryPure = clock * 200;
+//     let tax = salaryPure * 0.1; //مالیات
+//     let insurance = salaryPure * 0.05; //بیمه
+//     let salary = salaryPure - tax - insurance;
+//     console.log(`your salary is ${salary} and your name is ${fullName} and your degree is ${degree} and your clock is ${clock} and your tax is ${tax} and your insurance is ${insurance}`);
+//     break
+//   }
+//   case "diploma": {
+//     let salaryPure = clock * 150;
+//     let tax = salaryPure * 0.1; //مالیات
+//     let insurance = salaryPure * 0.05; //بیمه
+//     let salary = salaryPure - tax - insurance;
+//     console.log(`your salary is ${salary} and your name is ${fullName}`);
+//     break
+//   }
+//   default: {
+//     console.log("check your degree");
+//   }
+// }
+// ternery operator
+// let age: number = Number(prompt("enter your age"));
+// let result =
+//   age >= 18 ? `your age is ok ..${age}` : `your age is not ok ${age}`;
+// console.log(result); 
+//
