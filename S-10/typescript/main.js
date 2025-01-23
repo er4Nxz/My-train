@@ -156,16 +156,23 @@
 // console.log(result);
 // FOR
 // for (let i: number = 1; i <= 10; ++i) document.write(`<h1>${i}</h1>`);
-// if in for
+// if in for and add css
 // let x: number = Number(prompt("ENTER NUMBER"));
 // for (let i: number = 1; i <= x; ++i)
 //   if (i % 2 === 0) document.write(`<div class='even'>${i}</div>`);
 //   else document.write(`<div class='odd'>${i}</div>`);
 // جمع اعداد قبل از عدد ورودی
-var x = Number(prompt("ENTER NUMBER"));
-var sum = 0;
-for (var i = 1; i <= x; ++i) {
-    console.log(i);
-    sum += i;
-}
-console.log(sum);
+// let x: number = Number(prompt("ENTER NUMBER"));
+// let sum: number = 0;
+// for (let i: number = 1; i <= x; ++i) {
+//   console.log(i);
+//   sum += i;
+// }
+// console.log(sum);
+//  ضرب اعداد قبل از عدد ورودی
+// let x: number = Number(prompt("ENTER NUMBER"));
+// let mul: number = 1;
+// for (let i: number = 1; i <= x; ++i) {
+//   mul *= i;
+// }
+// console.log(mul);
