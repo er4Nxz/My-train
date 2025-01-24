@@ -18,3 +18,14 @@
     margin: 2px;
     display: inline-block;
 }
+.text{
+    display: inline-block;
+    color: lightcoral;
+
+    margin: 20px;
+}
+.bold{
+    display: inline-block;
+    color: lightgreen;
+    margin: 20px;
+}

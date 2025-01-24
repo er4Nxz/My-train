@@ -161,7 +161,14 @@
 // for (let i: number = 1; i <= x; ++i)
 //   if (i % 2 === 0) document.write(`<div class='even'>${i}</div>`);
 //   else document.write(`<div class='odd'>${i}</div>`);
-// جمع اعداد قبل از عدد ورودی
+// while
+// let x: number = Number(prompt("ENTER NUMBER"));
+// let i: number = 1;
+// while (i <= x) {
+//   document.write(`<h1>${i}</h1>`);
+//   i++;
+// }
+// sumtion
 // let x: number = Number(prompt("ENTER NUMBER"));
 // let sum: number = 0;
 // for (let i: number = 1; i <= x; ++i) {
@@ -169,10 +176,41 @@
 //   sum += i;
 // }
 // console.log(sum);
-//  ضرب اعداد قبل از عدد ورودی
+//  factorial
 // let x: number = Number(prompt("ENTER NUMBER"));
 // let mul: number = 1;
 // for (let i: number = 1; i <= x; ++i) {
 //   mul *= i;
 // }
 // console.log(mul);
+//fibonachi
+// 1 1 2 3 5 8 13 21 34 55 89 144
+// let x: number = Number(prompt("ENTER NUMBER"));
+// let a: number = 1;
+// document.write(`<h1 class='text'>${a}</h1>`);
+// let b: number = 1;
+// document.write(`<h1 class='text'>${b}</h1>`);
+// for (let i: number = 1; i <= x; ++i) {
+//   let c: number = a + b;
+//   document.write(`<h1 class='bold'>${c}</h1>`);
+//   a=b
+//   b=c
+//   console.log(c);
+// }
+// Infinite
+// for (;;) {
+//   let x: number = 1;
+//   if (x === 5) {
+//     break;
+//   }
+//   x++;
+//   console.log(x);
+// }
+//continue
+// debugger
+// for (let i: number = 1; i <= 100; ++i) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
