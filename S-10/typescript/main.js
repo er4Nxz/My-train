@@ -215,10 +215,26 @@
 //   console.log(i);
 // }
 //for for
+// let x: number = Number(prompt("enter some number"));
+// for (let i: number = 1; i <= x; ++i) {
+//   for (let r: number = 1; r <= x; ++r) {
+//     document.write(`<h1 class='b'>${i}</h1>`);
+//   }
+//   document.write("<br/>")
+// }
+// ghotr right to left
 var x = Number(prompt("enter some number"));
 for (var i = 1; i <= x; ++i) {
     for (var r = 1; r <= x; ++r) {
-        document.write("<h1 class='b'>".concat(i, "</h1>"));
+        if (i === r) {
+            document.write("<h1 class='text'>1</h1>");
+        }
+        else if (i + r - 1 === x) {
+            document.write("<h1 class='lama'>1</h1>");
+        }
+        else {
+            document.write("<h1 class='bold'>0</h1>");
+        }
     }
     document.write("<br/>");
 }
