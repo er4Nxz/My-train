@@ -206,7 +206,7 @@
 //   x++;
 //   console.log(x);
 // }
-//continue
+// continue
 // debugger
 // for (let i: number = 1; i <= 100; ++i) {
 //   if (i % 2 === 0) {
@@ -214,3 +214,11 @@
 //   }
 //   console.log(i);
 // }
+//for for
+var x = Number(prompt("enter some number"));
+for (var i = 1; i <= x; ++i) {
+    for (var r = 1; r <= x; ++r) {
+        document.write("<h1 class='b'>".concat(i, "</h1>"));
+    }
+    document.write("<br/>");
+}
