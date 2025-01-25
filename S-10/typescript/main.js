@@ -223,18 +223,30 @@
 //   document.write("<br/>")
 // }
 // ghotr right to left
-var x = Number(prompt("enter some number"));
-for (var i = 1; i <= x; ++i) {
-    for (var r = 1; r <= x; ++r) {
-        if (i === r) {
-            document.write("<h1 class='text'>1</h1>");
-        }
-        else if (i + r - 1 === x) {
-            document.write("<h1 class='lama'>1</h1>");
-        }
-        else {
-            document.write("<h1 class='bold'>0</h1>");
-        }
-    }
-    document.write("<br/>");
-}
+// let x: number = Number(prompt("enter some number"));
+// for (let i: number = 1; i <= x; ++i) {
+//   for (let r: number = 1; r <= x; ++r) {
+//     if (i === r) {
+//       document.write(`<h1 class='text'>1</h1>`);
+//     } else if (i + r - 1=== x) {
+//       document.write(`<h1 class='lama'>1</h1>`);
+//     } else {
+//       document.write(`<h1 class='bold'>0</h1>`);
+//     }
+//   }
+//   document.write("<br/>");
+// }
+// جدول ضرب
+// let x:number=10
+// for (let i: number = 1; i <= x; ++i) {
+//     for (let r: number = 1; r <= x; ++r) {
+//         document.write(`<h1 class='bold'>${i}*${r}=${i*r}</h1>`)
+//     }
+//     document.write("<br/>")
+// }
+//do while
+// let x: number = 1;
+// do {
+//   console.log(x);
+//   ++x; 
+// } while (x <= 10);
