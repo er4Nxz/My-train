@@ -1,13 +1,15 @@
-// functional
-// prinData();
-// function prinData() {
-//   for (let t = 1; t <= 10; t++) {
-//     for (let i = 1; i <= 10; i++) {
-//       document.write(`<h1>${i}-hello-world!</h1>`);
-//     }
-//     document.write("<hr/>");
-//   }
-// }
+// functional matris
+prinData();
+function prinData() {
+  let x = prompt("enter number")
+  for (let t = 1; t <= x; t++) {
+    document.write(`<h1 class='t'>${t}-</h1>`)
+    for (let i = 1; i <= x; i++) {
+      document.write(`<h2 class='b'>${i}</h2>`);
+    }
+    document.write("<hr/>");
+  }
+}
 
 //hoisting
 // console.log(x);
@@ -21,24 +23,27 @@
 // allData()
 
 //function calculator
-function calculator(x, y, operator) {
-  switch (operator) {
-    case "+": {
-      console.log(`${x}+${y}=${x + y}`);
-      break;
-    }
-    case "-": {
-      console.log(`${x}-${y}=${x - y}`);
-      break;
-    }
-    case "*": {
-      console.log(`${x}*${y}=${x * y}`);
-      break;
-    }
-    case "/": {
-      console.log(`${x}/${y}=${x / y}`);
-      break;
-    }
-  }
-}
-calculator(10, 10, "*");
+// function calculator(x, y, operator) {
+//   switch (operator) {
+//     case "+": {
+//       console.log(`${x}+${y}=${x + y}`);
+//       break;
+//     }
+//     case "-": {
+//       console.log(`${x}-${y}=${x - y}`);
+//       break;
+//     }
+//     case "*": {
+//       console.log(`${x}*${y}=${x * y}`);
+//       break;
+//     }
+//     case "/": {
+//       console.log(`${x}/${y}=${x / y}`);
+//       break;
+//     }
+//   }
+// }
+// calculator(10, 10, "*");
+
+
+
