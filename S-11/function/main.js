@@ -73,7 +73,7 @@
 // console.log(milady(age))
 
 
-// function no name 
+// function no name (ecma) (impilicit)
 // let fullName = prompt("name?")
 // let age = +prompt("age?")
 // let degree = prompt("degree?")
@@ -81,3 +81,31 @@
 //     console.log(`${fullName} and ${age} and ${degree}`);
 // }
 // data(fullName,age,degree)
+
+
+// arrow function (ecma) (impilicit)
+// let fullName = prompt("name?")
+// let age = +prompt("age?")
+// let degree = prompt("degree?")
+// let data = (fullName,age,degree)=>{
+//     console.log(`${fullName} and ${age} and ${degree}`);
+// }
+// data(fullName,age,degree)
+
+
+// function (ecma) (explicit)
+// let data = x => console.log(x);
+// data("hello world")
+
+// function (ecma) (explicit) (return)
+// let data  = x=> /*return*/ x+" and im erfan ahmadi"
+// console.log(data("hello world"))
+
+
+// bigint type
+
+// let x = 100n
+
+// let x = BigInt(prompt("enter a number"))
+
+// console.log(x , typeof x);
