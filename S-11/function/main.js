@@ -1,15 +1,14 @@
 // functional matris
-prinData();
-function prinData() {
-  let x = prompt("enter number")
-  for (let t = 1; t <= x; t++) {
-    document.write(`<h1 class='t'>${t}-</h1>`)
-    for (let i = 1; i <= x; i++) {
-      document.write(`<h2 class='b'>${i}</h2>`);
-    }
-    document.write("<hr/>");
-  }
-}
+// function prinData(x = prompt("enter number")) {
+//   for (let t = 1; t <= x; t++) {
+//     document.write(`<h1 class='t'>${t}-</h1>`);
+//     for (let i = 1; i <= x; i++) {
+//       document.write(`<h2 class='b'>${i}</h2>`);
+//     }
+//     document.write("<hr/>");
+//   }
+// }
+// prinData();
 
 //hoisting
 // console.log(x);
@@ -22,7 +21,10 @@ function prinData() {
 // allData("siddharth","sharma",20,"siddharth@gmail.com");
 // allData()
 
-//function calculator
+// function calculator
+// let x = +prompt("x...?")
+// let operator = prompt("operator....?")
+// let y = +prompt("y...?")
 // function calculator(x, y, operator) {
 //   switch (operator) {
 //     case "+": {
@@ -41,9 +43,41 @@ function prinData() {
 //       console.log(`${x}/${y}=${x / y}`);
 //       break;
 //     }
+//     default:{
+//         console.log("invalid operator");
+//     }
 //   }
 // }
-// calculator(10, 10, "*");
+// console.log(calculator(x,y,operator));
+
+// return / if boolean
+// let x = prompt("fullName");
+// let y = Number(prompt("age"));
+// function allData(x,y){
+//   return `my full name is ${x} and my age is ${y}`
+// }
+// // let result = allData(x,y)
+// // console.log(result)
+// if(allData(x,y)){
+//   console.log("confirm");
+// }else{
+//   console.log("deny");
+// }
 
 
+// function age
+// let age = +prompt("enter your age")
+// function milady(age){
+//   return 1403-age+621
+// }
+// console.log(milady(age))
 
+
+// function no name 
+// let fullName = prompt("name?")
+// let age = +prompt("age?")
+// let degree = prompt("degree?")
+// let data = function(fullName,age,degree){
+//     console.log(`${fullName} and ${age} and ${degree}`);
+// }
+// data(fullName,age,degree)
