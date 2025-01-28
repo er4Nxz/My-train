@@ -95,7 +95,7 @@
 
 // function (ecma) (explicit)
 // let data = x => console.log(x);
-// data("hello world")
+// data(prompt("fullName?"))
 
 // function (ecma) (explicit) (return)
 // let data  = x=> /*return*/ x+" and im erfan ahmadi"
