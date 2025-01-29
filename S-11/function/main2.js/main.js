@@ -39,3 +39,23 @@
 // type EA = number;
 // let data = (x:EA): EA => x;
 // console.log(data(100));
+// summery function=>(Recursive)
+// let x: number = Number(prompt("enter number"));
+// let adder = (x: number): number => {
+//   if (x === 1) {
+//     return 1;
+//   } else {
+//     return x + adder(x - 1);
+//   }
+// };
+// console.log(adder(x));
+// factorial function=>(Recursive)
+// let x: number = Number(prompt("enter number"));
+// let adder = (x: number): number => {
+//   if (x === 1) {
+//     return 1;
+//   } else {
+//     return x * adder(x - 1);
+//   }
+// };
+// console.log(adder(x));
