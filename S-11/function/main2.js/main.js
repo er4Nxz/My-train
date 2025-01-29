@@ -59,3 +59,13 @@
 //   }
 // };
 // console.log(adder(x));
+// fibonaci function=>(Recursive)
+// let n: number = Number(prompt("enter number"));
+// let fibonacci = (n: number): number => {
+//   if (n <= 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// };
+// console.log(fibonacci(n));
