@@ -69,3 +69,29 @@
 //   }
 // };
 // console.log(fibonacci(n));
+// function in function / ارایه
+// let app = ():any=>{
+//     let x=()=>{
+//         return " erfan ahmadi "
+//     }
+//     let y=()=>{
+//         return " sadaf ahmadi "
+//     }
+//     let z=()=>{
+//         return " my childe "
+//     }
+//     return [x(),y(),z()]
+// }
+// console.log(app()[0]);
+// console.log(app()[1]);
+// console.log(app()[2]);
+// function in function example
+// let app = (): any => {
+//   let x = ():string => {
+//     return "erfan ahmadi";
+//   };
+//   return x()
+// };
+// let x:any = app()
+// console.log(x);
+// function in function example
