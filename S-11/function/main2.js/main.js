@@ -94,4 +94,19 @@
 // };
 // let x:any = app()
 // console.log(x);
-// function in function example
+// function in function / call back
+// let booking = (): any => {
+//   let counter: number = 0;
+//   return (): any => {
+//     counter++;
+//     return counter;
+//   };
+// };
+// let counter:any =booking() 
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// توابعی ک بخوایم در جا صداش بزنیم و جای دیگری ازش استفاده نکنیم /iife
+// (()=>{
+//     console.log("hello-world");
+// })()
