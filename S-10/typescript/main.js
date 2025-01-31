@@ -1,5 +1,5 @@
 // debugger;
-// {
+//
 // //casting in ts
 //   let x: number = Number(prompt("enter your age"));
 //   console.log(typeof x, x);
@@ -9,24 +9,27 @@
 //   console.log(typeof test, test);
 //   let test_2 = Number(y);
 //   console.log(test_2);
-// }
+// if nested
 // let username: string | null = prompt("username");
-// let password: number = Number(prompt("pass"));
-// if ((username === "erfan")) {
+// let password: number | null = Number(prompt("password"));
+// if (username === "erfan") {
 //   console.log(`this username ${username} its all right`);
-//   if ((password === 12345)) {
+//   if (password == 12345) {
 //     console.log("WELCOM!");
 //   } else {
 //     console.log("pass is incorect");
 //   }
 // } else {
-//     console.log("username is incorect");
-//     if(password === 12345){
-//         console.log("pass is correct");
-//     }else{
-//         console.log("get out of my web site");
-//     }
+//   console.log("username is incorect");
+//   if (password == 12345) {
+//     console.log("pass is correct");
+//   } else {
+//     console.log("get out of my web site");
+//   }
 // }
+// if Two-conditional
+// let username: string | null = prompt("username");
+// let password: number | null = Number(prompt("password"));
 // if (username === "erfan" && password === 12345) {
 //   console.log("WELCOM...!");
 //   console.log(`your username is ${username} and your pass is ${password}`);
@@ -172,7 +175,6 @@
 // let x: number = Number(prompt("ENTER NUMBER"));
 // let sum: number = 0;
 // for (let i: number = 1; i <= x; ++i) {
-//   console.log(i);
 //   sum += i;
 // }
 // console.log(sum);
@@ -195,12 +197,11 @@
 //   document.write(`<h1 class='bold'>${c}</h1>`);
 //   a=b
 //   b=c
-//   console.log(c);
 // }
 // Infinite
 // for (;;) {
 //   let x: number = 1;
-//   if (x === 5) {
+//   if (x === 0) {
 //     break;
 //   }
 //   x++;
@@ -226,7 +227,7 @@
 // let x: number = Number(prompt("enter some number"));
 // for (let i: number = 1; i <= x; ++i) {
 //   for (let r: number = 1; r <= x; ++r) {
-//     if (i === r) {
+//     if (i === r){
 //       document.write(`<h1 class='text'>1</h1>`);
 //     } else if (i + r - 1=== x) {
 //       document.write(`<h1 class='lama'>1</h1>`);
@@ -248,5 +249,5 @@
 // let x: number = 1;
 // do {
 //   console.log(x);
-//   ++x; 
+//   ++x;
 // } while (x <= 10);

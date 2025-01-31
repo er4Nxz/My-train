@@ -56,14 +56,12 @@
 // function allData(x,y){
 //   return `my full name is ${x} and my age is ${y}`
 // }
-// // let result = allData(x,y)
-// // console.log(result)
-// if(allData(x,y)){
+// console.log(allData(x,y))
+// if(allData()){
 //   console.log("confirm");
 // }else{
 //   console.log("deny");
 // }
-
 
 // function age
 // let age = +prompt("enter your age")
@@ -71,7 +69,6 @@
 //   return 1403-age+621
 // }
 // console.log(milady(age))
-
 
 // function no name (ecma) (impilicit)
 // let fullName = prompt("name?")
@@ -82,7 +79,6 @@
 // }
 // data(fullName,age,degree)
 
-
 // arrow function (ecma) (impilicit)
 // let fullName = prompt("name?")
 // let age = +prompt("age?")
@@ -92,7 +88,6 @@
 // }
 // data(fullName,age,degree)
 
-
 // function (ecma) (explicit)
 // let data = x => console.log(x);
 // data(prompt("fullName?"))
@@ -101,11 +96,9 @@
 // let data  = x=> /*return*/ x+" and im erfan ahmadi"
 // console.log(data("hello world"))
 
-
 // bigint type
-
 // let x = 100n
 
 // let x = BigInt(prompt("enter a number"))
-
 // console.log(x , typeof x);
+

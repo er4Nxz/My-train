@@ -1,4 +1,4 @@
-// alert("salam khosh omadi be web erfan");
+alert("salam khosh omadi be web erfan");
 console.log(typeof "erfan-ahmadi");
 console.log("erfan-ahmadi");
 document.write("<h1>sadaf ahmadi</h1>");

@@ -49,10 +49,10 @@ console.log(pow);
 // -- ++
 let v = 20;
 let inc = ++v;
-console.log(inc, x);
+console.log(inc, v);
 let m = 20;
 let dash = --v;
-console.log(v);
+console.log(dash);
 // asignment
 v += m;
 console.log(v);
@@ -156,3 +156,4 @@ console.log(typeof v);
     
   }
 }
+
