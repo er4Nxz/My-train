@@ -151,3 +151,43 @@
 //     console.log(item2);
 //   }
 // }
+// push pop shift unshift reverse => methods
+// let data:(number|string|boolean)[]=[
+//     "erfan",
+//     "ahmadi",
+//     18,
+//     true,
+// ]
+// console.log(data);
+// data.push("sadaf")
+// data.push("17")
+// console.log(data);
+// data.pop()
+// console.log(data);
+// data.unshift("shiraz")
+// console.log(data);
+// data.shift()
+// console.log(data);
+//foreach
+// let data: (number | string | boolean)[] = ["erfan", "ahmadi", 18, true];
+// data.forEach((item,index) => {
+// //   console.log(item,index);
+// if(item===18){
+//     console.log("sen shoma mojaz ast",index);
+// }else{
+//     console.log(item,index);
+// }
+// });
+//map
+// let data: (number | string | boolean)[] = ["erfan", "ahmadi", 18, true];
+// let data2: (number | string | boolean)[] = data.map((item, index)=>{
+//     return item+"EA"&&index
+// })
+// console.log(data2);
+// console.log(data);
+//filter
+// let data:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let data2=data.filter((item)=>{
+//     return item<=9 && item%2===0
+// })
+// console.log(data2);
