@@ -260,4 +260,37 @@
 // })
 // console.log(result);
 //object
-var person = { firstName: "erfan", lastName: "ahamdi", };
+// type Person = {
+//   firstName: string;
+//   lastName: string;
+//   age: number;
+//   fatherName: string;
+// };
+// let person = {
+//   firstName: "erfan",
+//   lastName: "ahamdi",
+//   fatherName: "hassan",
+//   age: 18,
+// };
+// console.log(person.fatherName);
+// console.log(person["firstName"]);
+// array in object
+// type Person = {
+//   firstName: string;
+//   lastName: string;
+//   age: number;
+//   fatherName: string;
+//   avarage: number;
+// };
+// let person = {
+//   firstName: "erfan",
+//   lastName: "ahamdi",
+//   fatherName: "hassan",
+//   age: 18,
+//   avarage: [18, 14, 16, 20],
+// };
+// console.log(person.avarage[0]);
+// person.avarage.forEach((item)=>{
+//     console.log(item);
+// })
+//object in object
