@@ -191,3 +191,73 @@
 //     return item<=9 && item%2===0
 // })
 // console.log(data2);
+// find
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf"];
+// let result:string | undefined=data.find((item)=>{
+//     return item==="erfan "
+// })
+// console.log(result);
+//findindex
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf"];
+// let result:number | undefined=data.findIndex((item)=>{
+//     return item==="erfan"
+// })
+// console.log(result);
+//index of / last index of
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf","erfan"];
+// let result:number | undefined=data.indexOf("erfan",1)
+// // let result:number | undefined=data.lastIndexOf("erfan",1)
+// console.log(result);
+//include => search
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf","erfan"];
+// let result:boolean | undefined=data.includes("erfan",1)
+// console.log(result);
+//slice
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf","erfan"];
+// let result:(string | undefined)[]=data.slice(3,5)
+// console.log(result);
+//splice
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf"]
+// let result :string[]=data.splice(1,1)
+// console.log(data);
+// console.log(result);
+//at
+// let data: string[] = ["erfan", "ahmadi","zrynab","sadaf"]
+// console.log(data.at(3));
+//flat
+// let data: string[] = ["erfan", "ahmadi", "zrynab", "sadaf", ["hassan","rostam","mansore"]];
+// console.log(data);
+// console.log(data.flat());
+//flatmap
+// let data: string[] = [
+//   "erfan",
+//   "ahmadi",
+//   "zrynab",
+//   "sadaf",
+//   ["hassan", "rostam", "mansore"],
+// ];
+// let result: string[] = data.flatMap((item) => {
+//   return item;
+// });
+// console.log(data);
+// console.log(result);
+//reduce
+// let data: number[] = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// let sumPrice:number=data.reduce((prev,current):number=>{
+//     return prev+current
+// })
+// console.log(sumPrice);
+//some
+// let data: number[] = [11, 21, 30];
+// let result:boolean=data.some((item)=>{
+//     return item%2===0
+// })
+// console.log(result);
+//every
+// let data: number[] = [11, 20, 30];
+// let result:boolean=data.every((item)=>{
+//     return item%2===0
+// })
+// console.log(result);
+//object
+var person = { firstName: "erfan", lastName: "ahamdi", };
