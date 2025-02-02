@@ -294,3 +294,20 @@
 //     console.log(item);
 // })
 //object in object
+// type Person = {
+//   degree: {
+//     bachelor: string;
+//     phd: string;
+//     master: string;
+//   };
+// };
+// let person = {
+//   degree: {
+//     bachelor: "developer",
+//     phd: "ai",
+//     master: "it",
+//   },
+// };
+// console.log(person.degree.bachelor);
+// console.log(person.degree.master);
+// console.log(person.degree.phd);
