@@ -311,3 +311,29 @@
 // console.log(person.degree.bachelor);
 // console.log(person.degree.master);
 // console.log(person.degree.phd);
+//shalo copy
+// let data:(string|number)[]=["erfan","sadaf",18,17]
+// let result = data
+// console.log(result)
+// result.push("ahmadi")
+// console.log(result);
+// console.log(data);
+//deepcopy (ecma) (spread)
+// let data:(string|number)[]=["erfan","sadaf",18,17]
+// let result = [...data]
+// result.push("ahamdi")
+// console.log(data);
+// console.log(result);
+//deepcopy (array)
+// let data:(string|number)[]=["erfan","sadaf",18,17]
+// let result = Array.from(data)
+// result.push("ahamdi")
+// console.log(data);
+// console.log(result);
+//deepcopy (.map)
+// let data:(string|number)[]=["erfan","sadaf",18,17]
+// // let result = data.map((item)=>{return item})
+// let result = data.map(item=>item)
+// result.push("ahamdi")
+// console.log(data);
+// console.log(result);
