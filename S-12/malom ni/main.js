@@ -22,20 +22,21 @@
 // let result:any=person.filter((item)=> item.age>=30 && item.isMarrid===true)
 // console.log(result);
 // function in object/this (example)
-var laptop = {
-    name: "lenovo",
-    price: 5000,
-    color: "black",
-    isAvailable: true,
-    Available: function () {
-        if (this.isAvailable === true) {
-            return "".concat(this.name, "-").concat(this.price, "-").concat(this.color, " is available");
-        }
-        else {
-            return "".concat(this.name, "-").concat(this.price, "-").concat(this.color, " is not available");
-        }
-    },
-    discount: function (discount) {
-        return this.price - (discount / 100) * this.price;
-    }
-};
+// let laptop = {
+//   name: "lenovo",
+//   price: 5000,
+//   color: "black",
+//   isAvailable: true,
+//   Available() {
+//     if (this.isAvailable === true) {
+//       return `${this.name}-${this.price}-${this.color} is available`;
+//     } else {
+//       return `${this.name}-${this.price}-${this.color} is not available`;
+//     }
+//   },
+//   discount(discount: number) {
+//     return this.price - (discount / 100) * this.price;
+//   },
+// };
+// console.log(laptop.discount(10));
+// console.log(laptop.Available());
