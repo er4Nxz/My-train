@@ -1,4 +1,4 @@
-// select html tag
+// select html tag (tagname)
 // let div = document.getElementsByTagName("div")
 // console.log(document.getElementsByTagName("div"));
 
@@ -40,3 +40,16 @@
 //   item.style.boxSizing = "borderbox";
 //   item.style.color = "whitesmoke";
 // });
+
+// select html tag (queryselectorAll)
+let div = document.querySelectorAll("div#d")
+console.log(div);
+div.forEach((item)=>{
+    item.style.backgroundColor="#2b2b2b"
+    item.style.width = "30%";
+  item.style.height = "auto";
+  item.style.margin = "50px auto";
+  item.style.padding = "30px";
+  item.style.boxSizing = "borderbox";
+  item.style.color = "whitesmoke";
+})
