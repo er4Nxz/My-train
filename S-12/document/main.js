@@ -2,7 +2,6 @@
 // let div = document.getElementsByTagName("div")
 // console.log(document.getElementsByTagName("div"));
 
-
 // css with js
 // let div = document.getElementsByTagName("div")
 // console.log(div);
@@ -29,4 +28,15 @@
 //     div[i].style.color="whitesmoke"
 // }
 
-
+// html tag cast to array
+// let div = Array.from(document.getElementsByTagName("div"));
+// console.log(div);
+// div.forEach((item) => {
+//   item.style.backgroundColor = "#7f7f7f";
+//   item.style.width = "30%";
+//   item.style.height = "auto";
+//   item.style.margin = "50px auto";
+//   item.style.padding = "30px";
+//   item.style.boxSizing = "borderbox";
+//   item.style.color = "whitesmoke";
+// });
