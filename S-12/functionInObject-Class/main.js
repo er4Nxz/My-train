@@ -19,7 +19,9 @@
 //     isMarrid: true,
 //   },
 // ];
-// let result:any=person.filter((item)=> item.age>=30 && item.isMarrid===true)
+// let result: any = person.filter(
+//   (item) => item.age >= 30 && item.isMarrid === true
+// );
 // console.log(result);
 // function in object/this (example)
 // let laptop = {
@@ -40,12 +42,13 @@
 // };
 // console.log(laptop.discount(10));
 // console.log(laptop.Available());
+// console.log(laptop);
 // class (ecma)
 // class Person {
-//     fullName;
-//     age;
-//     email;
-//     isMarrid;
+//     fullName="unknow";
+//     age:any="unknow";
+//     email="unknow";
+//     isMarrid:any="unknow";
 //     printData() {
 //       return `${this.fullName} - ${this.age} - ${this.email} - ${this.isMarrid}`;
 //     }
@@ -64,28 +67,35 @@
 //   document.write(`<h1>${newAcount2.printData()}</h1>`);
 // class (counstructor) (ecma)
 // class Person {
-//     fullName;
-//     age;
-//     email;
-//     isMarrid;
-//     constructor() {
-//       this.fullName = String(prompt("name"));
-//       this.age = Number(prompt("age"));
-//       this.email = String(prompt("email"));
-//       this.isMarrid = Boolean(prompt("is marrid"));
-//     }
-//     printData() {
-//       return `${this.fullName} - ${this.age} - ${this.email} - ${this.isMarrid}`;
+//   fullName;
+//   age;
+//   email;
+//   isMarrid;
+//   constructor() {
+//     this.fullName = String(prompt("name"));
+//     this.age = Number(prompt("age"));
+//     this.email = String(prompt("email"));
+//     this.isMarrid = Boolean(prompt("is marrid"));
+//   }
+//   Marrid() {
+//     if (this.isMarrid == true) {
+//       return "is marrid";
+//     } else {
+//       return "is not marrid";
 //     }
 //   }
-//   let newAcount = new Person();
-//   document.write(`<h1>${newAcount.printData()}</h1>`);
-//class (example)=>calculator (ecma)
+//   printData() {
+//     return `${this.fullName} - ${this.age} - ${this.email} - ${this.Marrid()}`;
+//   }
+// }
+// let newAcount = new Person();
+// document.write(`<h1>${newAcount.printData()}</h1>`);
+// class (example)=>calculator (ecma)
 // class Calculator {
 //   x;
 //   y;
 //   operand;
-//   constructor(x, y, operand) {
+//   constructor(x?, y?, operand?) {
 //     this.x = prompt("number 1...?");
 //     this.y = prompt("number 2...?");
 //     this.operand = prompt("operand...?");

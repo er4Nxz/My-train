@@ -95,10 +95,13 @@
 //   let x = (): string => {
 //     return "erfan ahmadi";
 //   };
-//   return x();
+//   let y = (): string => {
+//     return "sadaf ahmadi";
+//   };
+//   return [x(),y()]
 // };
-// // let x: any = app();
-// console.log(app());
+// let x: any = app();
+// console.log(x[1]);
 // function in function / call back
 // let booking = (): any => {
 //   let counter: number = 0;
@@ -141,7 +144,7 @@
 //     console.log(item2);
 //   }
 // }
-//array (ts)
+//array (ts)=>(nested)
 // let data: (string | null | number)[][] = [
 //   ["erfan", "ahmadi", 18, null],
 //   ["erfan", "ahmadi", 18, null],
@@ -175,16 +178,15 @@
 // if(item===18){
 //     console.log("sen shoma mojaz ast",index);
 // }else{
-//     console.log(item,index);
+//     console.log(item);
 // }
 // });
 //map
 // let data: (number | string | boolean)[] = ["erfan", "ahmadi", 18, true];
 // let data2: (number | string | boolean)[] = data.map((item, index)=>{
-//     return item+"EA"&&index
+//     return item+"EA"
 // })
 // console.log(data2);
-// console.log(data);
 //filter
 // let data:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let data2=data.filter((item)=>{
@@ -205,8 +207,8 @@
 // console.log(result);
 //index of / last index of
 // let data: string[] = ["erfan", "ahmadi","zrynab","sadaf","erfan"];
-// let result:number | undefined=data.indexOf("erfan",1)
-// // let result:number | undefined=data.lastIndexOf("erfan",1)
+// // let result:number | undefined=data.indexOf("erfan",1)
+// let result:number | undefined=data.lastIndexOf("erfan",1)
 // console.log(result);
 //include => search
 // let data: string[] = ["erfan", "ahmadi","zrynab","sadaf","erfan"];
@@ -291,7 +293,7 @@
 // };
 // console.log(person.avarage[0]);
 // person.avarage.forEach((item)=>{
-//     console.log(item);
+//      console.log(item);
 // })
 //object in object
 // type Person = {
