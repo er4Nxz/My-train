@@ -17,7 +17,7 @@
 // })
 
 
-// add class by click / class name / mouseenter / mouseleve
+// add class by click / class name / mouseenter / mouseleve /mouse down
 let btn = document.querySelector(".btn");
 let f = document.querySelector(".f")
 f.classList.remove("f")
@@ -26,7 +26,13 @@ btn.addEventListener("click",function(){
 }) 
 f.addEventListener("mouseenter",function(){
     f.classList.add("e")
+    f.classList.remove("w")
 })
 f.addEventListener("mouseleave",function(){
     f.classList.add("w")
+})
+f.addEventListener("mousedown",function(){
+    f.classList.remove("f")
+    f.classList.remove("w")
+    f.classList.remove("e")
 })
