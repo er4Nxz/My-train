@@ -1,31 +1,67 @@
-.btn{
-    width: 100px;
-    background-color: red;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    color: white;
-    display: block;
-    border: none;
-    cursor: pointer;
-    transition: 300ms;
-    &:active{
-        transform: scale(0.8);
+.btn {
+  width: 100px;
+  background-color: red;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+  &:active {
+    transform: scale(0.8);
+  }
+}
+.f {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: aqua;
+  box-shadow: 0px 0px 20px;
+  transition: 300ms;
+}
+.e {
+  border-radius: 20px 20px 0px 0px;
+  background-color: lightblue;
+}
+.w {
+  border-radius: 0px 0px 20px 20px;
+  background-color: lightpink;
+}
+/* menu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu {
+  width: 100%;
+  padding: 10px;
+  background-color: lightgreen;
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .parentSubMenu {
+      position: relative;
+      height: 100%;
+      width: fit-content;
+      .subMenu {
+        position: absolute;
+        width: 30vw;
+        height: 50vh;
+        background-color: black;
+        transition: 300ms;
+        left: 0;
+        top: 30px;
+      }
     }
+  }
 }
-.f{
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-    background-color: aqua;
-    box-shadow: 0px 0px 20px;
-    transition: 300ms;
-}
-.e{
-    border-radius: 20px 20px 0px 0px;
-    background-color: lightblue;
-}
-.w{
-    border-radius:0px 0px 20px 20px ;
-    background-color: lightpink;
+.title {
+  font-size: 20px;
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: bold;
 }

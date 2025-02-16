@@ -18,21 +18,43 @@
 
 
 // add class by click / class name / mouseenter / mouseleve /mouse down
-let btn = document.querySelector(".btn");
-let f = document.querySelector(".f")
-f.classList.remove("f")
-btn.addEventListener("click",function(){
-    f.className="f"
-}) 
-f.addEventListener("mouseenter",function(){
-    f.classList.add("e")
-    f.classList.remove("w")
-})
-f.addEventListener("mouseleave",function(){
-    f.classList.add("w")
-})
-f.addEventListener("mousedown",function(){
-    f.classList.remove("f")
-    f.classList.remove("w")
-    f.classList.remove("e")
-})
+// let btn = document.querySelector(".btn");
+// let f = document.querySelector(".f")
+// f.classList.remove("f")
+// btn.addEventListener("click",function(){
+//     f.className="f"
+// }) 
+// f.addEventListener("mouseenter",function(){
+//     f.classList.add("e")
+//     f.classList.remove("w")
+// })
+// f.addEventListener("mouseleave",function(){
+//     f.classList.add("w")
+// })
+// f.addEventListener("mousedown",function(){
+//     this.classList.remove("f")
+//     this.classList.remove("w")
+//     this.classList.remove("e")
+// })
+
+
+//menu
+// let parentSubMenu = document.querySelector(".parentSubMenu")
+// let subMenu = document.querySelector("#subMenu")
+// /* مدل خودم 
+// parentSubMenu.addEventListener("mouseenter",function(){
+//     subMenu.classList.add("subMenu")
+// })
+// parentSubMenu.addEventListener("mouseleave",function(){
+//     subMenu.classList.remove("subMenu")
+// })
+// */
+// /* مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده 
+// parentSubMenu.addEventListener("mouseenter",function(e){
+//     [...e.target.children].forEach((elem)=>{
+//         if(elem.nodeName.toLowerCase()==="div"){
+//             elem.classList.add("subMenu")
+//         }
+//     })  
+// })*/
+

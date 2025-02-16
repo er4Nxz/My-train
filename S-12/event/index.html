@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./main,.css">
-</head>
-<body>
-    <button class="btn" onclick="callData()">Click me!</button>
-    <div class="f"></div>
+    <link rel="stylesheet" href="./main,.css" />
+  </head>
+  <body>
+    <!-- add class by click / class name / mouseenter / mouseleve /mouse down -->
+    <!-- <button class="btn" onclick="callData()">Click me!</button>
+    <div class="f"></div> -->
+
+    <!-- menu  -->
+    <div class="menu">
+      <nav class="nav">
+        <div><a href="#" class="title">Home</a></div>
+        <div class="parentSubMenu">
+          <a href="#" class="title">About</a>
+          <div id="subMenu"></div>
+        </div>
+        <div><a href="#" class="title">Gallery</a></div>
+        <div><a href="#" class="title">Contact</a></div>
+      </nav>
+    </div>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
