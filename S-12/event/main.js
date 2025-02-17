@@ -72,19 +72,28 @@
 // });
 
 // menu slider / Multifunctional
-let click = document.querySelector("#click");
-let modal = document.querySelector("#modal");
-let flag = true;
-click.addEventListener("click", function () {
-  if (flag) {
-    modal.classList.remove("modal2");
-    modal.classList.add("modal3");
-    click.children[0].innerHTML = "&#10060"
-    flag = false;
-  } else {
-    modal.classList.remove("modal3");
-    modal.classList.add("modal2");
-    click.children[0].innerHTML = "&#9776;"
-    flag = true;
-  }
-});
+// let click = document.querySelector("#click");
+// let modal = document.querySelector("#modal");
+// let flag = true;
+// click.addEventListener("click", function () {
+//   if (flag) {
+//     modal.classList.remove("modal2");
+//     modal.classList.add("modal3");
+//     click.children[0].innerHTML = "&#10060"
+//     flag = false;
+//   } else {
+//     modal.classList.remove("modal3");
+//     modal.classList.add("modal2");
+//     click.children[0].innerHTML = "&#9776;"
+//     flag = true;
+//   }
+// });
+
+
+//restprom
+// function data(...rest){
+//   rest.forEach(item=>{
+//     console.log(item)
+//   })
+// }
+// data("erfan"," ahmadi"," 18")
