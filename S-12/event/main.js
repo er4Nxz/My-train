@@ -15,9 +15,9 @@
 //     alert("Hello, World!");
 // })
 
-// add class by click / class name / mouseenter / mouseleve /mouse down
-// let btn = document.querySelector(".btn");
-// let f = document.querySelector(".f")
+// add class by click / class name / mouseenter / mouseleve /mouse down / mouseup
+let btn = document.querySelector(".btn");
+let f = document.querySelector(".f")
 // f.classList.remove("f")
 // btn.addEventListener("click",function(){
 //     f.className="f"
@@ -34,6 +34,13 @@
 //     this.classList.remove("w")
 //     this.classList.remove("e")
 // })
+// f.addEventListener("mousedown",function(){
+//     f.classList.add("t")
+// })
+// f.addEventListener("mouseup",function(){
+//     f.classList.remove("t")
+// })
+
 
 //menu
 // let parentSubMenu = document.querySelector(".parentSubMenu")

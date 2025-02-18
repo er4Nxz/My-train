@@ -13,6 +13,7 @@
     transform: scale(0.8);
   }
 }
+
 .f {
   width: 100px;
   height: 100px;
@@ -20,6 +21,9 @@
   background-color: aqua;
   box-shadow: 0px 0px 20px;
   transition: 300ms;
+}
+.t {
+  background-color: black;
 }
 .e {
   border-radius: 20px 20px 0px 0px;
@@ -97,7 +101,7 @@
   transform: scale(1,1);
 } */
 /* function Multifunctional */
-.click{
+.click {
   border: none;
   background-color: lightcoral;
   color: lightgrey;
@@ -108,11 +112,11 @@
   transition: 300ms;
   z-index: 50;
   position: absolute;
-  &:active{
-    transform: scale(0.8,0.8);
+  &:active {
+    transform: scale(0.8, 0.8);
   }
 }
-.modal{
+.modal {
   width: 20vw;
   height: 100vh;
   background-color: lightslategray;
@@ -123,13 +127,13 @@
   flex-flow: column wrap;
   row-gap: 20px;
 }
-.modal2{
+.modal2 {
   left: -20vw;
 }
-.modal3{
+.modal3 {
   left: 0;
 }
-.title{
+.title {
   font-size: 24px;
   color: lightsalmon;
 }
