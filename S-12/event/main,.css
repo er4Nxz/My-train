@@ -28,6 +28,8 @@
 .e {
   border-radius: 20px 20px 0px 0px;
   background-color: lightblue;
+  transition: 300ms;
+  transform: translateX(60px);
 }
 .w {
   border-radius: 0px 0px 20px 20px;
@@ -136,4 +138,22 @@
 .title {
   font-size: 24px;
   color: lightsalmon;
+}
+
+/* mouse move  */
+#c{
+  height: 600px;
+  width: 800px;
+  background-color: black;
+  position: relative;
+  margin: 10px auto;
+  transition: 300ms;
+  img{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    object-fit: cover;
+    object-position: left;
+    transition: 300ms;
+  }
 }

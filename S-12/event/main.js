@@ -16,8 +16,8 @@
 // })
 
 // add class by click / class name / mouseenter / mouseleve /mouse down / mouseup
-let btn = document.querySelector(".btn");
-let f = document.querySelector(".f")
+// let btn = document.querySelector(".btn");
+// let f = document.querySelector(".f")
 // f.classList.remove("f")
 // btn.addEventListener("click",function(){
 //     f.className="f"
@@ -34,13 +34,12 @@ let f = document.querySelector(".f")
 //     this.classList.remove("w")
 //     this.classList.remove("e")
 // })
-// f.addEventListener("mousedown",function(){
+// // f.addEventListener("mousedown",function(){
 //     f.classList.add("t")
 // })
 // f.addEventListener("mouseup",function(){
 //     f.classList.remove("t")
 // })
-
 
 //menu
 // let parentSubMenu = document.querySelector(".parentSubMenu")
@@ -96,7 +95,6 @@ let f = document.querySelector(".f")
 //   }
 // });
 
-
 //restprom
 // function data(...rest){
 //   rest.forEach(item=>{
@@ -104,3 +102,13 @@ let f = document.querySelector(".f")
 //   })
 // }
 // data("erfan"," ahmadi"," 18")
+
+//mouse move
+// let move = document.querySelector("#c");
+// move.addEventListener("mousemove", function (e) {
+//     //حرکت کردن عنصر
+// //   e.target.parentElement.style.left = `${e.offsetX}px`;
+// //   e.target.parentElement.style.top = `${e.offsetY}px`;
+// //   عوض شدن رنگ صفحه
+//     e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
+// });
