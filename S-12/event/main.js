@@ -129,3 +129,24 @@
 //         text.style.color = "blue"
 //     }
 // })
+
+
+
+// createlement /
+// let mainDiv = document.querySelector("#mainDiv")
+// let creatH1 = document.createElement("h1")
+// creatH1.innerText = "Hello World"
+// creatH1.className = "titr"
+// // prepend 
+// mainDiv.prepend(creatH1)
+// // append
+// let buy = document.createElement("a")
+// buy.href = "#"
+// buy.id = "buy"
+// buy.textContent = "Buy"
+// mainDiv.append(buy)
+// // insert element
+// let prog = document.createElement("p")
+// prog.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, non!"
+// prog.className = "prog"
+// mainDiv.insertAdjacentElement("beforeend",prog)

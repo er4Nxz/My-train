@@ -180,3 +180,31 @@
   padding: 20px;
   transition: 300ms;
 }
+/* createlement  */
+.titr{
+  color: lightsalmon;
+  text-align: center; 
+}
+#mainDiv{
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  width: fit-content;
+  height: fit-content;
+  text-align: justify;
+}
+#buy{
+  padding: 2px 5px;
+  text-decoration: none;
+  color: darkgreen;
+  background-color: lightgreen;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.prog{
+  padding: 20px;
+  width: 200px;
+}
