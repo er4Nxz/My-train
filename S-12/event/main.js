@@ -113,8 +113,6 @@
 //     e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
 // });
 
-
-
 // keyup / keydown / keypress
 // let key = document.querySelector("#key");
 // let text = document.querySelector("#text");
@@ -130,14 +128,12 @@
 //     }
 // })
 
-
-
 // createlement /
 // let mainDiv = document.querySelector("#mainDiv")
 // let creatH1 = document.createElement("h1")
 // creatH1.innerText = "Hello World"
 // creatH1.className = "titr"
-// // prepend 
+// // prepend
 // mainDiv.prepend(creatH1)
 // // append
 // let buy = document.createElement("a")
@@ -150,3 +146,18 @@
 // prog.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, non!"
 // prog.className = "prog"
 // mainDiv.insertAdjacentElement("beforeend",prog)
+
+
+
+
+
+
+// close element
+let ppp = document.querySelector("#ppp")
+let span = document.createElement("span")
+span.className = "close"
+span.innerHTML = "&#10060"
+ppp.insertAdjacentElement("afterbegin",span)
+span.addEventListener("click",function(e){
+    e.target.parentElement.remove()
+})
