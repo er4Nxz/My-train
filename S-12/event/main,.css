@@ -157,3 +157,26 @@
     transition: 300ms;
   }
 }
+
+/* keys  */
+#key{
+  border:none;
+  width: 400px;
+  height: 50px;
+  background-color: lightcoral;
+  border-radius: 30px;
+  margin: 10px auto;
+  display: block;
+  padding: 20px;
+  transition: 300ms;
+  &::placeholder{
+    color: white;
+    font-size: 20px;
+  }
+}
+.h1{
+  color: lightslategray;
+  text-align: center;
+  padding: 20px;
+  transition: 300ms;
+}

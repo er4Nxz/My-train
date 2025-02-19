@@ -112,3 +112,20 @@
 // //   عوض شدن رنگ صفحه
 //     e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
 // });
+
+
+
+// keyup / keydown / keypress
+// let key = document.querySelector("#key");
+// let text = document.querySelector("#text");
+// // key.addEventListener("keydown", function (e) {
+// //     console.log(e.target.value);
+// // })
+// key.addEventListener("keyup",function(e){
+//     text.innerText = e.target.value
+//     if(e.key === "t"){
+//         text.style.color = "red"
+//     }else if(e.key === "T"){
+//         text.style.color = "blue"
+//     }
+// })
