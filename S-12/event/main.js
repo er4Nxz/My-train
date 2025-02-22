@@ -44,38 +44,21 @@
 //menu
 // let parentSubMenu = document.querySelector(".parentSubMenu")
 // let subMenu = document.querySelector("#subMenu")
-// /* مدل خودم
+// مدلم خودم
 // parentSubMenu.addEventListener("mouseenter",function(){
 //     subMenu.classList.add("subMenu")
 // })
 // parentSubMenu.addEventListener("mouseleave",function(){
 //     subMenu.classList.remove("subMenu")
 // })
-// */
-// /* مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
+// مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
 // parentSubMenu.addEventListener("mouseenter",function(e){
 //     [...e.target.children].forEach((elem)=>{
 //         if(elem.nodeName.toLowerCase()==="div"){
 //             elem.classList.add("subMenu")
 //         }
 //     })
-// })*/
-
-//رفتو برگشت یک کلیک
-// let click = document.querySelector("#click");
-// let modal = document.querySelector("#modal");
-// let flag = true;
-// click.addEventListener("click", function () {
-//   if (flag) {
-//     modal.classList.remove("modal2");
-//     modal.classList.add("modal3");
-//     flag = false;
-//   } else {
-//     modal.classList.remove("modal3");
-//     modal.classList.add("modal2");
-//     flag = true;
-//   }
-// });
+// })
 
 // menu slider / Multifunctional
 // let click = document.querySelector("#click");
@@ -106,11 +89,11 @@
 //mouse move
 // let move = document.querySelector("#c");
 // move.addEventListener("mousemove", function (e) {
-//     //حرکت کردن عنصر
-// //   e.target.parentElement.style.left = `${e.offsetX}px`;
-// //   e.target.parentElement.style.top = `${e.offsetY}px`;
-// //   عوض شدن رنگ صفحه
-//     e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
+//حرکت کردن عنصر
+//   e.target.parentElement.style.left = `${e.offsetX}px`;
+//   e.target.parentElement.style.top = `${e.offsetY}px`;
+//   عوض شدن رنگ صفحه
+// e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
 // });
 
 // keyup / keydown / keypress
@@ -147,17 +130,50 @@
 // prog.className = "prog"
 // mainDiv.insertAdjacentElement("beforeend",prog)
 
-
-
-
-
-
 // close element
-let ppp = document.querySelector("#ppp")
-let span = document.createElement("span")
-span.className = "close"
-span.innerHTML = "&#10060"
-ppp.insertAdjacentElement("afterbegin",span)
-span.addEventListener("click",function(e){
-    e.target.parentElement.remove()
-})
+// let ppp = document.querySelector("#ppp")
+// let span = document.createElement("span")
+// span.className = "close"
+// span.innerHTML = "&#10060"
+// ppp.insertAdjacentElement("afterbegin",span)
+// span.addEventListener("click",function(e){
+//     e.target.parentElement.remove()
+// })
+
+// settimeout / setinterval
+// setTimeout(()=>{
+//     document.body.insertAdjacentHTML("beforeend","<h1>erfan is the best</h1>")
+// },2000)
+// setInterval(()=>{
+//     document.body.insertAdjacentHTML("beforeend","<h1>erfan is the best</h1>")
+// },2000)
+
+// clearInterval
+// let start = document.querySelector("#start");
+// let stop = document.querySelector("#stop");
+// let mainDiv = document.querySelector("#mainDiv");
+// start.addEventListener("click", function () {
+//   timer = setInterval(() => {
+//     mainDiv.insertAdjacentHTML("beforeend", "<h1>erfan is the best</h1>");
+//   }, 1000);
+// });
+// stop.addEventListener("click", function () {
+//   clearInterval(timer);
+// });
+
+// show elem
+// let show = document.querySelector("#show");
+// let parent = document.querySelector(".parent");
+// let closeParent = document.querySelector(".closeParent")
+// show.addEventListener("click", function () {
+//   {
+//     parent.classList.add("block");
+//     parent.classList.remove("none");
+//   }
+//   {
+//     closeParent.addEventListener("click",function(){
+//         this.parentElement.classList.add("none")
+//         this.parentElement.classList.remove("block")
+//     })
+//   }
+// });

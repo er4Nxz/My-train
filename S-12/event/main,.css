@@ -141,14 +141,14 @@
 }
 
 /* mouse move  */
-#c{
+#c {
   height: 600px;
   width: 800px;
   background-color: black;
   position: relative;
   margin: 10px auto;
   transition: 300ms;
-  img{
+  img {
     width: inherit;
     height: inherit;
     position: absolute;
@@ -159,8 +159,8 @@
 }
 
 /* keys  */
-#key{
-  border:none;
+#key {
+  border: none;
   width: 400px;
   height: 50px;
   background-color: lightcoral;
@@ -169,23 +169,23 @@
   display: block;
   padding: 20px;
   transition: 300ms;
-  &::placeholder{
+  &::placeholder {
     color: white;
     font-size: 20px;
   }
 }
-.h1{
+.h1 {
   color: lightslategray;
   text-align: center;
   padding: 20px;
   transition: 300ms;
 }
 /* createlement  */
-.titr{
+.titr {
   color: lightsalmon;
-  text-align: center; 
+  text-align: center;
 }
-#mainDiv{
+#mainDiv {
   margin: 20px auto;
   padding: 20px;
   border-radius: 20px;
@@ -195,7 +195,7 @@
   text-align: justify;
   position: relative;
 }
-#buy{
+#buy {
   padding: 2px 5px;
   text-decoration: none;
   color: darkgreen;
@@ -205,41 +205,41 @@
   margin: 0 auto;
   width: fit-content;
 }
-.prog{
+.prog {
   padding: 20px;
   width: 200px;
 }
 /* close element  */
-.ppp{
-    padding: 20px;
-    background-color: darkcyan;
-    border-radius: 20px;
-    margin: 20px auto;
+.ppp {
+  padding: 20px;
+  background-color: darkcyan;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  h1 {
+    color: lightsalmon;
+    text-align: center;
+  }
+  p {
+    color: white;
+    width: 200px;
+    font-size: 16px;
+  }
+  a {
+    display: block;
     width: fit-content;
     height: fit-content;
-    position: relative;
-    h1{
-      color: lightsalmon;
-      text-align: center;
-    }
-    p{
-      color: white;
-      width: 200px;
-      font-size: 16px;
-    }
-    a{
-      display: block;
-      width: fit-content;
-      height: fit-content;
-      padding: 5px;
-      background-color: lightgreen;
-      color: darkgreen;
-      text-decoration: none;
-      border-radius: 20px;
-      margin: 10px auto 0px;
-    }
+    padding: 5px;
+    background-color: lightgreen;
+    color: darkgreen;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px auto 0px;
+  }
 }
-.close{
+.close {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -251,7 +251,45 @@
   font-size: 10px;
   cursor: pointer;
   transition: 300ms;
-  &:active{
-    transform: scale(0.9,0.9);
+  &:active {
+    transform: scale(0.9, 0.9);
   }
+}
+/* clearTimeOut/clearInterval */
+.buu {
+  padding: 5px 20px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+  &:active {
+    transform: scale(0.9, 0.9);
+  }
+}
+/* show elem */
+.parent {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+.closeParent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.child2 {
+  background-color: aqua;
+  width: 300px;
+  height: 300px;
+  margin: 300px auto;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
 }
