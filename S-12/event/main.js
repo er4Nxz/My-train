@@ -169,6 +169,7 @@
 //   {
 //     parent.classList.add("block");
 //     parent.classList.remove("none");
+//     parent.classList.add("fadeIn")
 //   }
 //   {
 //     closeParent.addEventListener("click",function(){
@@ -177,3 +178,6 @@
 //     })
 //   }
 // });
+
+
+// 
