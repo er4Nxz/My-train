@@ -179,5 +179,51 @@
 //   }
 // });
 
+// call back asyncronize
+// let laptop = [
+//   { brand: "msi", price: 3000 },
+//   { brand: "dell", price: 3500 },
+//   { brand: "mac", price: 4000 },
+// ];
+// function create(CB) {
+//   setTimeout(() => {
+//     laptop.push({
+//       brand: "lenovo",
+//       price: 2500,
+//     });
+//     CB();
+//   }, 1000);
+// }
+// function show() {
+//   console.log(laptop);
+// }
+// create(show);
 
-// 
+// promise (ecma)
+let laptop = [
+  { brand: "msi", price: 3000 },
+  { brand: "dell", price: 3500 },
+  { brand: "mac", price: 4000 },
+];
+function create(callback) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      laptop.push({
+        brand: "lenovo",
+        price: 2500,
+      });
+      let flag = false;
+      if (flag) {
+        resolve(callback());
+      } else {
+        reject("من نمیتونم مشخصات شمارو اضافه کنم");
+      }
+    }, 1000);
+  });
+}
+function show() {
+  console.log(laptop);
+}
+create(show)
+  .then((resolve) => console.log(resolve))
+  .catch((reject) => console.log(reject));
