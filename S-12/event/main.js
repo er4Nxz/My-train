@@ -200,30 +200,110 @@
 // create(show);
 
 // promise (ecma)
-let laptop = [
-  { brand: "msi", price: 3000 },
-  { brand: "dell", price: 3500 },
-  { brand: "mac", price: 4000 },
-];
-function create(callback) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      laptop.push({
-        brand: "lenovo",
-        price: 2500,
-      });
-      let flag = false;
-      if (flag) {
-        resolve(callback());
-      } else {
-        reject("من نمیتونم مشخصات شمارو اضافه کنم");
-      }
-    }, 1000);
-  });
-}
-function show() {
-  console.log(laptop);
-}
-create(show)
-  .then((resolve) => console.log(resolve))
-  .catch((reject) => console.log(reject));
+// let laptop = [
+//   { brand: "msi", price: 3000 },
+//   { brand: "dell", price: 3500 },
+//   { brand: "mac", price: 4000 },
+// ];
+// function create(callback) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       laptop.push({
+//         brand: "lenovo",
+//         price: 2500,
+//       });
+//       let flag = true;
+//       if (flag) {
+//         resolve(callback());
+//       } else {
+//         reject("من نمیتونم مشخصات شمارو اضافه کنم");
+//       }
+//     }, 1000);
+//   });
+// }
+// function show() {
+//   return laptop
+// }
+// create(show)
+//   .then((resolve) => {
+//     let x = resolve.filter((item)=> item.price >= 3500)
+//     console.log(x);
+//   })
+// .catch((reject) => console.log(reject));
+
+
+
+// async awit
+// let laptop = [
+//   { brand: "msi", price: 3000 },
+//   { brand: "dell", price: 3500 },
+//   { brand: "mac", price: 4000 },
+// ];
+// function create(callback) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       laptop.push({
+//         brand: "lenovo",
+//         price: 2500,
+//       });
+//       let flag = false;
+//       if (flag) {
+//         resolve(callback());
+//       } else {
+//         reject("من نمیتونم مشخصات شمارو اضافه کنم");
+//       }
+//     }, 2000);
+//   });
+// }
+// function show() {
+//   console.log(laptop);
+// }
+// function deleteLapatop(callback) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       laptop.pop();
+//       let flag = true;
+//       if (flag) {
+//         resolve(callback());
+//       } else {
+//         reject("من نمیتونم مشخصات شمارو حذف کنم");
+//       }
+//     }, 1000);
+//   });
+// }
+// async function result() {
+//   await create(show).catch((reject) => console.log(reject));
+//   await deleteLapatop(show);
+// }
+// result();
+
+
+
+//example promise
+// function fetchData() {
+//   return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//           const success = true; // فرض کنیم عملیات همیشه موفق است
+//           if (success) {
+//               resolve(["داده ۱", "داده ۲", "داده ۳"]); // داده‌های شبیه‌سازی شده
+//           } else {
+//               reject("خطا در بارگذاری داده‌ها.");
+//           }
+//       }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
+//   });
+// }
+
+// // اضافه کردن رویداد کلیک به دکمه
+// document.getElementById("loadDataBtn").addEventListener("click", () => {
+//   const resultDiv = document.getElementById("result");
+//   resultDiv.innerHTML = "در حال بارگذاری..."; // نمایش پیام بارگذاری
+//   fetchData()
+//       .then((data) => {
+//           resultDiv.innerHTML = data; // نمایش داده‌ها
+//       })
+//       .catch((error) => {
+//           resultDiv.innerHTML = error; // نمایش خطا
+//       });
+// });
+
+
