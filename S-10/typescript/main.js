@@ -1,6 +1,6 @@
 // debugger;
 //
-// //casting in ts
+//casting in ts
 //   let x: number = Number(prompt("enter your age"));
 //   console.log(typeof x, x);
 //   let y: string | null = prompt("fullName");
@@ -227,9 +227,9 @@
 // let x: number = Number(prompt("enter some number"));
 // for (let i: number = 1; i <= x; ++i) {
 //   for (let r: number = 1; r <= x; ++r) {
-//     if (i === r){
+//     if (i === r) {
 //       document.write(`<h1 class='text'>1</h1>`);
-//     } else if (i + r - 1=== x) {
+//     } else if (i + r - 1 === x) {
 //       document.write(`<h1 class='lama'>1</h1>`);
 //     } else {
 //       document.write(`<h1 class='bold'>0</h1>`);
