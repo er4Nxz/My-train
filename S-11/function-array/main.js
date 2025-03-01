@@ -57,7 +57,7 @@
 //   return `my full name is ${x} and my age is ${y}`
 // }
 // console.log(allData(x,y))
-// if(allData()){
+// if(allData()===null){
 //   console.log("confirm");
 // }else{
 //   console.log("deny");
@@ -93,7 +93,7 @@
 // data(prompt("fullName?"))
 
 // function (ecma) (explicit) (return)
-// let data  = x=> /*return*/ x+" and im erfan ahmadi"
+// let data  = x=> /*return*/ x+" im erfan ahmadi"
 // console.log(data("hello world"))
 
 // bigint type
@@ -101,4 +101,3 @@
 
 // let x = BigInt(prompt("enter a number"))
 // console.log(x , typeof x);
-

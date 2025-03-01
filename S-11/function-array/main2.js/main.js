@@ -1,5 +1,5 @@
 // function in ts / ?
-// function data(fullName?: string, age?: number, email?: string):void {
+// function data(fullName?: string, age?: number, email?: string):vod {
 //   console.log(
 //     `my name is ${fullName} and my age is ${age} and my email is ${email}`
 //   );
@@ -100,8 +100,7 @@
 //   };
 //   return [x(),y()]
 // };
-// let x: any = app();
-// console.log(x[1]);
+// console.log(app());
 // function in function / call back
 // let booking = (): any => {
 //   let counter: number = 0;

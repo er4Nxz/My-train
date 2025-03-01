@@ -101,5 +101,3 @@
 //     calc = price - (price * discount / 100);
 //     product.children[1].textContent = calc + "%"
 // }
-
-

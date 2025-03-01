@@ -95,9 +95,9 @@
 //   x;
 //   y;
 //   operand;
-//   constructor(x?, y?, operand?) {
-//     this.x = prompt("number 1...?");
-//     this.y = prompt("number 2...?");
+//   constructor(x:number, y:number, operand:string) {
+//     this.x = Number(prompt("number 1...?"));
+//     this.y = Number(prompt("number 2...?"));
 //     this.operand = prompt("operand...?");
 //   }
 //   add() {
@@ -123,24 +123,22 @@
 // let a1 = new Calculator();
 // document.write(`<h1>${a1.add()}</h1>`)
 //class (example)=>calculator (ts)
-// class Calculator {
-//   private x:number;
-//   private y:number;
-//   private operand:string;
-//   constructor() {
-//     this.x = Number(prompt("number 1...?"));
-//     this.y = Number(prompt("number 2...?"));
-//     this.operand = String(prompt("operand...?"));
-//   }
-//   public add():any {
-//     switch (this.operand) {
-//       case "+":return `${this.x}+${this.y}=${this.x + this.y}`;
-//       case "-":return `${this.x}-${this.y}=${this.x - this.y}`;
-//       case "*":return `${this.x}*${this.y}=${this.x * this.y}`;
-//       case "/":return `${this.x}/${this.y}=${this.x / this.y}`;
-//       default:return `fuild`;
-//     }
-//   }
-// }
-// let a1 = new Calculator();
-// document.write(`<h1>${a1.add()}</h1>`)
+var Calculator = /** @class */ (function () {
+    function Calculator() {
+        this.x = Number(prompt("number 1...?"));
+        this.y = Number(prompt("number 2...?"));
+        this.operand = String(prompt("operand...?"));
+    }
+    Calculator.prototype.add = function () {
+        switch (this.operand) {
+            case "+": return "".concat(this.x, "+").concat(this.y, "=").concat(this.x + this.y);
+            case "-": return "".concat(this.x, "-").concat(this.y, "=").concat(this.x - this.y);
+            case "*": return "".concat(this.x, "*").concat(this.y, "=").concat(this.x * this.y);
+            case "/": return "".concat(this.x, "/").concat(this.y, "=").concat(this.x / this.y);
+            default: return "fuild";
+        }
+    };
+    return Calculator;
+}());
+var a1 = new Calculator();
+document.write("<h1>".concat(a1.add(), "</h1>"));
