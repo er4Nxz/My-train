@@ -244,11 +244,10 @@
   top: -10px;
   right: -10px;
   padding: 10px;
-  border-radius: 50%;
-  background-color: black;
+  background-color: transparent;
   width: fit-content;
   height: fit-content;
-  font-size: 10px;
+  font-size: 19px;
   cursor: pointer;
   transition: 300ms;
   &:active {
@@ -303,23 +302,13 @@
     opacity: 1;
   }
 }
-@keyframes fadeOut {
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
 .fadeIn{
   animation-name: fadeIn;
   animation-duration: 300ms;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
-.fadeOut{
-  animation-name: fadeOut;
-  animation-duration: 300ms;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
+.back{
+  background-color: rgba(0, 0, 0, 0.226);
+  transition: 300ms;
 }

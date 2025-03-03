@@ -17,41 +17,43 @@
 
 // add class by click / class name / mouseenter / mouseleve /mouse down / mouseup
 // let btn = document.querySelector(".btn");
-// let f = document.querySelector(".f")
-// f.classList.remove("f")
-// btn.addEventListener("click",function(){
-//     f.className="f"
-// })
-// f.addEventListener("mouseenter",function(){
-//     f.classList.add("e")
-//     f.classList.remove("w")
-// })
-// f.addEventListener("mouseleave",function(){
-//     f.classList.add("w")
-// })
-// f.addEventListener("mousedown",function(){
-//     this.classList.remove("f")
-//     this.classList.remove("w")
-//     this.classList.remove("e")
-// })
+// let f = document.querySelector(".f");
+// f.classList.remove("f");
+// btn.addEventListener("click", function () {
+//   f.className = "f";
+// });
+// f.addEventListener("mouseenter", function () {
+//   f.classList.add("e");
+//   f.classList.remove("w");
+// });
+// f.addEventListener("mouseleave", function () {
+//   f.classList.add("w");
+// });
 // // f.addEventListener("mousedown",function(){
-//     f.classList.add("t")
-// })
-// f.addEventListener("mouseup",function(){
-//     f.classList.remove("t")
-// })
+// //     this.classList.remove("f")
+// //     this.classList.remove("w")
+// //     this.classList.remove("e")
+// // })
+// f.addEventListener("mousedown", function () {
+//   f.classList.add("t");
+// });
+// f.addEventListener("mouseup", function () {
+//   f.classList.remove("t");
+// });
 
 //menu
 // let parentSubMenu = document.querySelector(".parentSubMenu")
 // let subMenu = document.querySelector("#subMenu")
-// مدلم خودم
+// // مدلم خودم
 // parentSubMenu.addEventListener("mouseenter",function(){
 //     subMenu.classList.add("subMenu")
+//     subMenu.parentElement.parentElement.parentElement.parentElement.classList.add("back")
 // })
 // parentSubMenu.addEventListener("mouseleave",function(){
 //     subMenu.classList.remove("subMenu")
+//     subMenu.parentElement.parentElement.parentElement.parentElement.classList.remove("back")
 // })
-// مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
+// // مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
 // parentSubMenu.addEventListener("mouseenter",function(e){
 //     [...e.target.children].forEach((elem)=>{
 //         if(elem.nodeName.toLowerCase()==="div"){
@@ -89,19 +91,19 @@
 //mouse move
 // let move = document.querySelector("#c");
 // move.addEventListener("mousemove", function (e) {
-//حرکت کردن عنصر
+// // حرکت کردن عنصر
 //   e.target.parentElement.style.left = `${e.offsetX}px`;
 //   e.target.parentElement.style.top = `${e.offsetY}px`;
-//   عوض شدن رنگ صفحه
+// //   عوض شدن رنگ صفحه
 // e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
 // });
 
 // keyup / keydown / keypress
 // let key = document.querySelector("#key");
 // let text = document.querySelector("#text");
-// // key.addEventListener("keydown", function (e) {
-// //     console.log(e.target.value);
-// // })
+//// key.addEventListener("keydown", function (e) {
+////     console.log(e.target.value);
+//// })
 // key.addEventListener("keyup",function(e){
 //     text.innerText = e.target.value
 //     if(e.key === "t"){
@@ -116,7 +118,7 @@
 // let creatH1 = document.createElement("h1")
 // creatH1.innerText = "Hello World"
 // creatH1.className = "titr"
-// // prepend
+// prepend
 // mainDiv.prepend(creatH1)
 // // append
 // let buy = document.createElement("a")
@@ -124,7 +126,7 @@
 // buy.id = "buy"
 // buy.textContent = "Buy"
 // mainDiv.append(buy)
-// // insert element
+// insert element
 // let prog = document.createElement("p")
 // prog.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, non!"
 // prog.className = "prog"
@@ -185,19 +187,19 @@
 //   { brand: "dell", price: 3500 },
 //   { brand: "mac", price: 4000 },
 // ];
-// function create(CB) {
-//   setTimeout(() => {
+// function create() {
+//   setTimeout((callback) => {
 //     laptop.push({
 //       brand: "lenovo",
 //       price: 2500,
 //     });
-//     CB();
+//     callback()
 //   }, 1000);
 // }
 // function show() {
 //   console.log(laptop);
 // }
-// create(show);
+// create(show)
 
 // promise (ecma)
 // let laptop = [
@@ -231,8 +233,6 @@
 //   })
 // .catch((reject) => console.log(reject));
 
-
-
 // async awit
 // let laptop = [
 //   { brand: "msi", price: 3000 },
@@ -246,7 +246,7 @@
 //         brand: "lenovo",
 //         price: 2500,
 //       });
-//       let flag = false;
+//       let flag = true;
 //       if (flag) {
 //         resolve(callback());
 //       } else {
@@ -272,12 +272,10 @@
 //   });
 // }
 // async function result() {
-//   await create(show).catch((reject) => console.log(reject));
-//   await deleteLapatop(show);
+//   await create(show).then((res) => console.log(res));
+//   await deleteLapatop(show).then((res) => console.log(res));
 // }
 // result();
-
-
 
 //example promise
 // function fetchData() {
@@ -292,7 +290,6 @@
 //       }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
 //   });
 // }
-
 // // اضافه کردن رویداد کلیک به دکمه
 // document.getElementById("loadDataBtn").addEventListener("click", () => {
 //   const resultDiv = document.getElementById("result");
@@ -305,5 +302,3 @@
 //           resultDiv.innerHTML = error; // نمایش خطا
 //       });
 // });
-
-
