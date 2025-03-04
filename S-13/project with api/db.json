@@ -1,0 +1,8 @@
+{
+  "menu": [
+    { "id": 0, "name": "home", "link": "https://www.google.com" },
+    { "id": 1, "name": "about", "link": "https://www.google.com" },
+    { "id": 2, "name": "gallery", "link": "https://www.google.com" },
+    { "id": 3, "name": "contact", "link": "https://www.google.com" }
+  ]
+}
