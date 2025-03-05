@@ -1,5 +1,8 @@
 {
     "scripts": {
-        "json":"npx json-server db.json --watch"
+        "json": "npx json-server db.json --watch"
+    },
+    "dependencies": {
+        "swiper": "^11.2.5"
     }
 }
