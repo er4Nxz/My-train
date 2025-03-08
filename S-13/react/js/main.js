@@ -1,5 +1,5 @@
-import fetchMenu from "./Component/menu/menu";
-import fetchSlider from "./Component/slider/slider";
+import fetchMenu from "./Component/menu/menu.js";
+import fetchSlider from "./Component/slider/slider.js"
 //جاوا اسکریپت خوده اسلایدر
 let jsSlider = () => {
   var swiper = new Swiper(".mySwiper", {
