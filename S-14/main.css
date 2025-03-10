@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn {
+  margin: 20px auto;
+  border: 0;
+  display: block;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 300ms;
+  cursor: pointer;
+  font-weight: bold;
+  &:active {
+    transform: scale(0.95, 0.95);
+  }
+}
+.nor {
+  background-color: lightblue;
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px lightblue;
+}
+.h1Nor {
+  font-size: 40px;
+  color: goldenrod;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pNor {
+  text-align: justify;
+  font-size: 16px;
+  word-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0px;
+}
+.aNor {
+  text-decoration: none;
+  margin: 20px auto;
+  display: block;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 20px;
+  width: fit-content;
+  color: darkgreen;
+  box-shadow: 0px 0px 20px darkgreen;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 300ms;
+  &:active{
+    transform: scale(0.95, 0.95);
+  }
+}
+.btnLight{
+    background-color: whitesmoke;
+    color: #1b1b1b;
+}
+.bodyDark{
+    background-color: #1b1b1b;
+}
+.divDark{
+    background-color: #2b2b2b;
+    box-shadow: 0px 0px 20px;
+}
+.pDark{
+    color: whitesmoke;
+}
+.aDark{
+    background-color: #3b3b3b;
+    box-shadow: 0px 0px 20px black;
+    color: goldenrod;
+}
