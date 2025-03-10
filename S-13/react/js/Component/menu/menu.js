@@ -9,6 +9,6 @@ let fetchMenu = async () => {
   });
   document
     .querySelector(".menuNav")
-    .insertAdjacentHTML("afterbegin", menu.join());
+    .insertAdjacentHTML("afterbegin", menu.join(""));
 };
 export default fetchMenu;
