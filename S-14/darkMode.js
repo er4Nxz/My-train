@@ -1,6 +1,5 @@
 let mainDiv = document.querySelectorAll(".nor");
 let btn = document.querySelector(".btn");
-
 let flag = true;
 function darkmode() {
   if (flag) {

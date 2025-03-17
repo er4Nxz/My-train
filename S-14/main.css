@@ -16,6 +16,7 @@
   transition: 300ms;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 0px 0px 20px black;
   &:active {
     transform: scale(0.95, 0.95);
   }
@@ -64,6 +65,7 @@
 .btnLight{
     background-color: whitesmoke;
     color: #1b1b1b;
+    box-shadow: 0px 0px 20px whitesmoke;
 }
 .bodyDark{
     background-color: #1b1b1b;
@@ -79,4 +81,11 @@
     background-color: #3b3b3b;
     box-shadow: 0px 0px 20px black;
     color: goldenrod;
+}
+#aval:active{
+  border: none;
+  transform: scale(1.1,1.1);
+}
+#aval{
+  transition: 300ms;
 }
