@@ -2,7 +2,7 @@ alert("salam khosh omadi be web erfan");
 console.log(typeof "erfan-ahmadi");
 console.log("erfan-ahmadi");
 document.write("<h1>sadaf ahmadi</h1>");
-document.getElementById("root").innerHTML = "<h1>erfan ahmdi (2)</h1>";
+document.getElementById("root").innerHTML = "<h1>erfan ahmdi </h1>";
 //variable
 var lastName = "ahmadi";
 var firstName = "erfan";
