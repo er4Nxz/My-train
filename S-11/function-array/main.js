@@ -11,8 +11,11 @@
 // prinData();
 
 //hoisting
-// console.log(x);
-// var x = 10;
+// function hoisting() {
+//   console.log(x);
+//   var x = 10;
+// }
+// hoisting();
 
 // function input
 // function allData(firstName="Not filled",lastName="Not filled",age=0,email="Not filled") {
@@ -22,33 +25,29 @@
 // allData()
 
 // function calculator
-// let x = +prompt("x...?")
-// let operator = prompt("operator....?")
-// let y = +prompt("y...?")
+// let x = +prompt("x...?");
+// let operator = prompt("operator....?");
+// let y = +prompt("y...?");
 // function calculator(x, y, operator) {
 //   switch (operator) {
 //     case "+": {
-//       console.log(`${x}+${y}=${x + y}`);
-//       break;
+//       return `${x}+${y}=${x + y}`;
 //     }
 //     case "-": {
-//       console.log(`${x}-${y}=${x - y}`);
-//       break;
+//       return `${x}-${y}=${x - y}`;
 //     }
 //     case "*": {
-//       console.log(`${x}*${y}=${x * y}`);
-//       break;
+//       `${x}*${y}=${x * y}`;
 //     }
 //     case "/": {
-//       console.log(`${x}/${y}=${x / y}`);
-//       break;
+//       `${x}/${y}=${x / y}`;
 //     }
-//     default:{
-//         console.log("invalid operator");
+//     default: {
+//       return "invalid operator"
 //     }
 //   }
 // }
-// console.log(calculator(x,y,operator));
+// console.log(calculator(x, y, operator));
 
 // return / if boolean
 // let x = prompt("fullName");
@@ -70,7 +69,7 @@
 // }
 // console.log(milady(age))
 
-// function no name (ecma) (impilicit)
+// function (ecma) (impilicit)
 // let fullName = prompt("name?")
 // let age = +prompt("age?")
 // let degree = prompt("degree?")

@@ -162,7 +162,7 @@
 // if in for and add css
 // let x: number = Number(prompt("ENTER NUMBER"));
 // for (let i: number = 1; i <= x; ++i)
-//   if (i % 2 === 0) document.write(`<div class='even'>${i}</div>`);
+//   if (i % 3 === 0) document.write(`<div class='even'>${i}</div>`);
 //   else document.write(`<div class='odd'>${i}</div>`);
 // while
 // let x: number = Number(prompt("ENTER NUMBER"));
@@ -200,12 +200,12 @@
 // }
 // Infinite
 // for (;;) {
-//   let x: number = 1;
-//   if (x === 0) {
+//   let i: number = 1;
+//   if (i === 0) {
 //     break;
 //   }
-//   x++;
-//   console.log(x);
+//   i++;
+//   console.log(i);
 // }
 // continue
 // debugger
@@ -219,7 +219,7 @@
 // let x: number = Number(prompt("enter some number"));
 // for (let i: number = 1; i <= x; ++i) {
 //   for (let r: number = 1; r <= x; ++r) {
-//     document.write(`<h1 class='b'>${i}</h1>`);
+//     document.write(`<h1 class='b'>${r}</h1>`);
 //   }
 //   document.write("<br/>")
 // }

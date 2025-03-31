@@ -1,8 +1,6 @@
 // function in ts / ?
-// function data(fullName?: string, age?: number, email?: string):vod {
-//   console.log(
-//     `my name is ${fullName} and my age is ${age} and my email is ${email}`
-//   );
+// function data(fullName?: string, age?: number, email?: string):string {
+//   return `my name is ${fullName} and my age is ${age} and my email is ${email}`
 // }
 // console.log(data("hassan",45,"test@yahoo.com"));
 //  function procces sallary
@@ -83,7 +81,7 @@
 //         return " sadaf ahmadi "
 //     }
 //     let z=()=>{
-//         return " my childe "
+//         return " our childe "
 //     }
 //     return [x(),y(),z()]
 // }
@@ -98,7 +96,7 @@
 //   let y = (): string => {
 //     return "sadaf ahmadi";
 //   };
-//   return [x(),y()]
+//   return [x(), y()];
 // };
 // console.log(app());
 // function in function / call back
@@ -129,20 +127,26 @@
 //   [18, null, false],
 //   ["dada", true],
 // ];
-// // صدا زدن معمولی
-// // console.log(data[0][0]);
-// // with for
-// // for (let i = 0; i < data.length; i++) {
-// //   for (let j = 0; j < data[i].length; j++) {
-// //     console.log(data[i][j]);
-// //   }
-// // }
-// //for of
+// صدا زدن معمولی
+// console.log(data[0][0]);
+// with for
+// for (let i = 0; i < data.length; i++) {
+//   for (let j = 0; j < data[i].length; j++) {
+//     console.log(data[i][j]);
+//   }
+// }
+//for of
 // for (const item of data) {
 //   for (const item2 of item) {
 //     console.log(item2);
 //   }
 // }
+// for each
+// data.forEach((item)=>{
+//     item.forEach((item2)=>{
+//         console.log(item2);
+//     })
+// })
 //array (ts)=>(nested)
 // let data: (string | null | number)[][] = [
 //   ["erfan", "ahmadi", 18, null],
@@ -174,11 +178,11 @@
 // let data: (number | string | boolean)[] = ["erfan", "ahmadi", 18, true];
 // data.forEach((item,index) => {
 // //   console.log(item,index);
-// if(item===18){
-//     console.log("sen shoma mojaz ast",index);
-// }else{
-//     console.log(item);
-// }
+// // if(item===18){
+// //     console.log("sen shoma mojaz ast",index);
+// // }else{
+// //     console.log(item);
+// // }
 // });
 //map
 // let data: (number | string | boolean)[] = ["erfan", "ahmadi", 18, true];
@@ -333,7 +337,6 @@
 // console.log(result);
 //deepcopy (.map)
 // let data:(string|number)[]=["erfan","sadaf",18,17]
-// // let result = data.map((item)=>{return item})
 // let result = data.map(item=>item)
 // result.push("ahamdi")
 // console.log(data);
