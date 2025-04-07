@@ -18,6 +18,7 @@
 // add class by click / class name / mouseenter / mouseleve /mouse down / mouseup
 // let btn = document.querySelector(".btn");
 // let f = document.querySelector(".f");
+// flag = true;
 // f.classList.remove("f");
 // btn.addEventListener("click", function () {
 //   f.className = "f";
@@ -28,23 +29,21 @@
 // });
 // f.addEventListener("mouseleave", function () {
 //   f.classList.add("w");
+//   f.classList.remove("e")
 // });
-// // f.addEventListener("mousedown",function(){
-// //     this.classList.remove("f")
-// //     this.classList.remove("w")
-// //     this.classList.remove("e")
-// // })
-// f.addEventListener("mousedown", function () {
-//   f.classList.add("t");
-// });
+// f.addEventListener("mousedown",function(){
+//     this.classList.remove("f")
+//     this.classList.remove("w")
+//     this.classList.remove("e")
+// })
 // f.addEventListener("mouseup", function () {
 //   f.classList.remove("t");
 // });
 
 //menu
-// let parentSubMenu = document.querySelector(".parentSubMenu")
-// let subMenu = document.querySelector("#subMenu")
-// // مدلم خودم
+// let parentSubMenu = document.querySelector(".parentSubMenu");
+// let subMenu = document.querySelector("#subMenu");
+// مدلم خودم
 // parentSubMenu.addEventListener("mouseenter",function(){
 //     subMenu.classList.add("subMenu")
 //     subMenu.parentElement.parentElement.parentElement.parentElement.classList.add("back")
@@ -53,14 +52,14 @@
 //     subMenu.classList.remove("subMenu")
 //     subMenu.parentElement.parentElement.parentElement.parentElement.classList.remove("back")
 // })
-// // مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
-// parentSubMenu.addEventListener("mouseenter",function(e){
-//     [...e.target.children].forEach((elem)=>{
-//         if(elem.nodeName.toLowerCase()==="div"){
-//             elem.classList.add("subMenu")
-//         }
-//     })
-// })
+// مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
+// parentSubMenu.addEventListener("mouseenter", function (e) {
+//   [...e.target.children].forEach((elem) => {
+//     if (elem.nodeName.toLowerCase() === "div") {
+//       elem.classList.add("subMenu");
+//     }
+//   });
+// });
 
 // menu slider / Multifunctional / replace
 // let click = document.querySelector("#click");
@@ -89,19 +88,21 @@
 //mouse move
 // let move = document.querySelector("#c");
 // move.addEventListener("mousemove", function (e) {
-// // حرکت کردن عنصر
+//   // حرکت کردن عنصر
 //   e.target.parentElement.style.left = `${e.offsetX}px`;
 //   e.target.parentElement.style.top = `${e.offsetY}px`;
-// //   عوض شدن رنگ صفحه
-// e.target.parentElement.parentElement.style.background = `rgb(${e.offsetX/2+50},${e.offsetY/2+50},${e.offsetX/2+e.offsetY})`
+//   //   عوض شدن رنگ صفحه
+//   e.target.parentElement.parentElement.style.background = `rgb(${
+//     e.offsetX / 2 + 50
+//   },${e.offsetY / 2 + 50},${e.offsetX / 5 + e.offsetX})`;
 // });
 
 // keyup / keydown / keypress
 // let key = document.querySelector("#key");
 // let text = document.querySelector("#text");
-//// key.addEventListener("keydown", function (e) {
-////     console.log(e.target.value);
-//// })
+// key.addEventListener("keydown", function (e) {
+//     console.log(e.target.value);
+// })
 // key.addEventListener("keyup",function(e){
 //     text.innerText = e.target.value
 //     if(e.key === "t"){
@@ -116,7 +117,7 @@
 // let creatH1 = document.createElement("h1")
 // creatH1.innerText = "Hello World"
 // creatH1.className = "titr"
-// prepend
+// // prepend
 // mainDiv.prepend(creatH1)
 // // append
 // let buy = document.createElement("a")

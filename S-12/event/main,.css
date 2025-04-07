@@ -30,9 +30,11 @@
   background-color: lightblue;
   transition: 300ms;
   transform: translateX(60px);
+  transition-delay: 100ms;
 }
 .w {
   border-radius: 0px 0px 20px 20px;
+  transition-delay: 100ms;
   background-color: lightpink;
 }
 /* menu */
@@ -60,10 +62,14 @@
         background-color: black;
         transition: 300ms;
         left: 0;
-        top: 30px;
+        top: 28px;
       }
     }
   }
+}
+.back {
+  background-color: rgba(0, 0, 0, 0.226);
+  transition: 300ms;
 }
 .title {
   font-size: 20px;
@@ -71,7 +77,7 @@
   color: darkcyan;
   font-weight: bold;
 }
-/* رفتو برگشت یک کلیک */
+/* رفتو برگشت یک کلیک از کوچیک به بزرگ*/
 /* .click{
   border: none;
   background-color: lightcoral;
@@ -179,6 +185,7 @@
   text-align: center;
   padding: 20px;
   transition: 300ms;
+  direction: rtl;
 }
 /* createlement  */
 .titr {
@@ -302,13 +309,9 @@
     opacity: 1;
   }
 }
-.fadeIn{
+.fadeIn {
   animation-name: fadeIn;
   animation-duration: 300ms;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-}
-.back{
-  background-color: rgba(0, 0, 0, 0.226);
-  transition: 300ms;
 }

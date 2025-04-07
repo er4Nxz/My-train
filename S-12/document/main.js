@@ -36,7 +36,7 @@
 // }
 
 // html tag cast to array
-// let div = Array.from(document.getElementsByTagName("div"));
+// let div = [...document.getElementsByTagName("div")];
 // console.log(div);
 // div.forEach((item) => {
 //   item.style.backgroundColor = "#7f7f7f";
@@ -67,7 +67,7 @@
 // divParent.forEach((item) => {
 //     item.style.backgroundColor = "#7b7b7b",
 //     //Tag information using node list
-//     console.log(item.attributes, item.childElementCount, item.children);
+//     console.log(item.attributes, item.childElementCount, item.childNodes,item.children);
 //     // (children=>array)
 //   Array.from(item.children).forEach((childOfItem) => {
 //     childOfItem.style.padding = "20px";
@@ -75,7 +75,7 @@
 //     childOfItem.style.textAlign = "center";
 //     childOfItem.style.display = "block";
 //   });
-//   // (childenode)
+//   // (childrenode)
 //   item.childNodes.forEach((childNodes) => {
 //     childNodes.style.fontSize = "30px ";
 //   });
@@ -84,20 +84,24 @@
 //   item.childNodes[1].style.fontSize = "14px";
 //   item.children[2].style.fontSize = "20px";
 //   //classlist
-//   item.children[item.children.length-1].classList.add("btn");
+// //   item.children[item.children.length-1].classList.add("btn");
+//   // اینجوریم میشه خودم کشفش کردم
+//   item.lastChild.classList.add("btn")
 // });
 
-
 // dataset api
-// let product = document.querySelector(".product")
-// // صدا زدن dataset و محتوای داخل تگ
-// // console.log(product.dataset.discount,typeof product.dataset.discount);
-// // console.log(product.textContent);
-// if (product.children[0].nodeName="H1"){
-//     price = +product.children[0].textContent;
-// }
-// if (product.children[1].classList.contains("discount")){
-//     discount = parseInt(product.dataset.discount)
-//     calc = price - (price * discount / 100);
-//     product.children[1].textContent = calc + "%"
-// }
+let product = document.querySelector(".product");
+// صدا زدن dataset و محتوای داخل تگ
+console.log(
+  product.dataset.discount,
+  typeof product.dataset.discount,
+  product.textContent
+);
+if ((product.children[0].nodeName = "H1")) {
+  price = +product.children[0].textContent;
+}
+if (product.children[1].classList.contains("discount")) {
+  discount = parseInt(product.dataset.discount);
+  calc = price - (price * discount) / 100;
+  product.children[1].textContent = calc + " %";
+}
