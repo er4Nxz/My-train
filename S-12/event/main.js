@@ -137,8 +137,8 @@
 // span.className = "close"
 // span.innerHTML = "&#10060"
 // ppp.insertAdjacentElement("afterbegin",span)
-// span.addEventListener("click",function(e){
-//     e.target.parentElement.remove()
+// span.addEventListener("click",function(){
+//     ppp.remove()
 // })
 
 // settimeout / setinterval
@@ -165,38 +165,38 @@
 // show elem
 // let show = document.querySelector("#show");
 // let parent = document.querySelector(".parent");
-// let closeParent = document.querySelector(".closeParent")
+// let closeParent = document.querySelector(".closeParent");
 // show.addEventListener("click", function () {
 //   {
 //     parent.classList.add("block");
 //     parent.classList.remove("none");
-//     parent.classList.add("fadeIn")
 //   }
 //   {
-//     closeParent.addEventListener("click",function(){
-//         this.parentElement.classList.add("none")
-//         this.parentElement.classList.remove("block")
-//     })
+//     closeParent.addEventListener("click", function () {
+//       this.parentElement.classList.add("none");
+//       this.parentElement.classList.remove("block");
+//     });
 //   }
 // });
 
-// call back asyncronize
+// call back syncronize
 // let laptop = [
 //   { brand: "msi", price: 3000 },
 //   { brand: "dell", price: 3500 },
 //   { brand: "mac", price: 4000 },
 // ];
 // function create() {
-//   setTimeout((callback) => {
+//   setTimeout((CB) => {
 //     laptop.push({
 //       brand: "lenovo",
 //       price: 2500,
 //     });
-//     callback()
+//     // یعنی اینکه میاد اون ورودی رو که ما داخل فانکشن گزاشتیم بصورت یک فانکشن میاد داخل فانکشن اصلی اجرا میکنه
+//     CB()
 //   }, 1000);
 // }
 // function show() {
-//   console.log(laptop);
+//   console.log(laptop[0]);
 // }
 // create(show)
 
@@ -271,33 +271,33 @@
 //   });
 // }
 // async function result() {
-//   await create(show).then((res) => console.log(res));
-//   await deleteLapatop(show).then((res) => console.log(res));
+//   await create(show)
+//   await deleteLapatop(show)
 // }
 // result();
 
 //example promise
-// function fetchData() {
-//   return new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//           const success = true; // فرض کنیم عملیات همیشه موفق است
-//           if (success) {
-//               resolve(["داده ۱", "داده ۲", "داده ۳"]); // داده‌های شبیه‌سازی شده
-//           } else {
-//               reject("خطا در بارگذاری داده‌ها.");
-//           }
-//       }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
-//   });
-// }
-// // اضافه کردن رویداد کلیک به دکمه
-// document.getElementById("loadDataBtn").addEventListener("click", () => {
-//   const resultDiv = document.getElementById("result");
-//   resultDiv.innerHTML = "در حال بارگذاری..."; // نمایش پیام بارگذاری
-//   fetchData()
-//       .then((data) => {
-//           resultDiv.innerHTML = data; // نمایش داده‌ها
-//       })
-//       .catch((error) => {
-//           resultDiv.innerHTML = error; // نمایش خطا
-//       });
-// });
+function fetchData() {
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          const success = true; // فرض کنیم عملیات همیشه موفق است
+          if (success) {
+              resolve(["داده ۱", "داده ۲", "داده ۳"]); // داده‌های شبیه‌سازی شده
+          } else {
+              reject("خطا در بارگذاری داده‌ها.");
+          }
+      }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
+  });
+}
+// اضافه کردن رویداد کلیک به دکمه
+document.getElementById("loadDataBtn").addEventListener("click", () => {
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "در حال بارگذاری..."; // نمایش پیام بارگذاری
+  fetchData()
+      .then((data) => {
+          resultDiv.innerHTML = data; // نمایش داده‌ها
+      })
+      .catch((error) => {
+          resultDiv.innerHTML = error; // نمایش خطا
+      });
+});
