@@ -13,13 +13,13 @@ btn.addEventListener("click", darkmode);
 // let data = ["erfan", "ahmadi", "hassan", 18, "e@e.com"];
 // let [firstName, lastName, ...res] = data;
 // console.log(firstName,lastName,res);
-// res.forEach((lala)=>{
-//     console.log(lala);
+// res.forEach((item)=>{
+//     console.log(item);
 // })
 
 // ...rest in function
-// function rest(...args){
-//     console.log(args);
+// function rest(...number){
+//     console.log(number);
 // }
 // rest(1,2,3,4,5,6,7,8,9,10)
 
@@ -47,28 +47,31 @@ btn.addEventListener("click", darkmode);
 //     age: 18,
 //     lastName: "ahmadi"
 // }
-// console.log(Object.entries(obj));
+// let en = Object.entries(obj)
+// console.log(en);
+// en.forEach((item)=>item.forEach((item2)=>console.log(item2)))
 
-// let div = document.querySelector("#aval");
-// div.addEventListener("click", () => {
-//   // content editable
-//   div.contentEditable = true;
-//   //getComputStyle
-//   console.log(getComputedStyle(div).color);
-//   console.log(getComputedStyle(div).backgroundColor);
-//   // setComputStyle
-//   div.style.backgroundColor = "red";
-//   // setAttribute
-//   div.setAttribute("data-id", "salma");
-//   console.log(div.dataset.id);
-//   // isConnected / append
-//   let text = "salam"
-//   let h1 = document.createElement("h1")
-//   h1.insertAdjacentText("beforeend", text);
-//   div.append(h1)
-//   if (h1.isConnected === true) {
-//     console.log("ok");
-//   } else {
-//     console.log("not ok");
-//   }
-// });
+
+let div = document.querySelector("#aval");
+div.addEventListener("click", () => {
+  // //content editable
+  // div.contentEditable = true;
+  // //getComputStyle
+  // console.log(getComputedStyle(div).color);
+  // console.log(getComputedStyle(div).backgroundColor);
+  // //setComputStyle
+  // div.style.backgroundColor = "red"
+  // //setAttribute
+  // div.setAttribute("data-id", "salma");
+  // console.log(div.dataset);
+  // //isConnected / append
+  let text = "salam"
+  let h1 = document.createElement("h1")
+  h1.insertAdjacentText("beforeend", text);
+  div.append(h1)
+  if (h1.isConnected === true) {
+    console.log("ok");
+  } else {
+    console.log("not ok");
+  }
+});

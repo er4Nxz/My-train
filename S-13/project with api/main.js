@@ -9,7 +9,7 @@ let fetchMenu = async () => {
   });
   document
     .querySelector(".menuNav")
-    .insertAdjacentHTML("afterbegin", menu.join());
+    .insertAdjacentHTML("afterbegin", menu.join(""));
 };
 //ساخت اسلایدر
 let fetchSlider = async () => {
@@ -20,7 +20,7 @@ let fetchSlider = async () => {
   });
   document
     .querySelector(".swiper-wrapper")
-    .insertAdjacentHTML("beforeend", slider.join());
+    .insertAdjacentHTML("beforeend", slider.join(""));
 };
 //جاوا اسکریپت خوده اسلایدر
 let jsSlider = () => {

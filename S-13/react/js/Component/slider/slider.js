@@ -7,7 +7,7 @@ let fetchSlider = async () => {
   });
   document
     .querySelector(".swiper-wrapper")
-    .insertAdjacentHTML("beforeend", slider.join());
+    .insertAdjacentHTML("beforeend", slider.join(""));
 };
 
 export default fetchSlider;
