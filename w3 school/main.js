@@ -54,3 +54,28 @@ console.log(infoCar[l]);
 
 delete infoCar.color;
 console.log(infoCar);
+
+
+let person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+let texT = ""
+for (let key in person) {
+  texT += person[key] + " ";
+}
+console.log(texT);
+
+
+
+let ppp = {
+  name: "John",
+  age: 30,
+  city: "New York"
+}
+let uuuu = {
+  name: "John",
+  age: 30,
+  city: "New York"
+}
