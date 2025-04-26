@@ -75,7 +75,7 @@
 // let text = "I love cats. Cats are very easy to love. Cats are very popular."
 // let result = text.matchAll(/cats/gi)
 // let jamal = Array.from(result)
-// console.log(jamal);
+// console.log(result);
 
 
 ////جستجوی استرینگ توسط includes()
@@ -88,8 +88,30 @@
 // const x = []
 // x[2] = "hello"
 // console.log(x);
-const person = [];
-person["firstName"] = "John";
-person["lastName"] = "Doe";
-person["age"] = 46;
-console.log(person);
+// const person = [];
+// person["firstName"] = "John";
+// person["lastName"] = "Doe";
+// person["age"] = 46;
+// console.log(person);
+
+
+
+//// متود concat برای اضافه کردن ارایه به یک ارایه دیگر
+// let a = ["erfan"]
+// let b = ["sadaf"]
+// let c = a.concat(b)
+// console.log(c);
+
+
+
+//// امتحان کردن متود find
+/// اینجوری فقد یه ایتم بهت برمیگردونه و خب چون همچین متودی هست ولی تو فیلتر هرچی ایتم قبل هجده باشه بر میگردونه
+// let numbers = [4, 9, 16, 25, 29]
+// let a = numbers.find((item)=> item<18)
+// console.log(a);
+
+
+
+//// تاریخ 
+let date = new Date()
+console.log(date);
