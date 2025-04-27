@@ -113,5 +113,68 @@
 
 
 //// تاریخ 
-let date = new Date()
-console.log(date);
+// let date = new Date()
+// console.log(date);
+// console.log(date.getDay());
+// let time = new Date
+// time.setMonth(0)
+// time.setHours(23)
+// time.setSeconds(2)
+// console.log(time);
+
+
+
+//// متود های ریاضی(گرد کردن)
+// let adad = Math.round(4.9)
+// console.log(adad);
+// let dovom = Math.floor(4.9)
+// console.log(dovom);
+// let sevom = Math.trunc(4)
+// console.log(sevom);
+// console.log(Math.pow(4,8));//توان
+// console.log(Math.sqrt(4));// جزر
+// console.log(Math.random());//این بین اعداد 0 و 1 هست
+//// رندوم بین اعداد بزرگتر و صحیح
+// console.log(Math.floor(Math.random() * 100));
+
+
+
+//// بولین
+// let j = NaN
+// console.log(Boolean(j));
+
+
+////مقایسه
+// x = 5
+// d = x=="5"
+// console.log(d);
+// let x = "20" < "2"
+// console.log(Boolean(x));
+
+
+
+//// حلفه ها (for)
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// for(i = 0;i<cars.length;i++){
+//     console.log(cars[i]);
+//     console.log(i);
+// }
+
+
+//// حلقه ها (for in) (object)
+const person = {fname:"John", lname:"Doe", age:25}
+// for(key in person){
+//     console.log(`${key}=${person[key]}`);
+// }
+//// حلقه ها (for in )(array)
+const numbers = [45, 4, 9, 16, 25]
+// for(val in numbers){
+//     console.log(numbers[val]);
+// }
+
+for(x of numbers){
+    console.log(x);
+}
+for(y of person){
+    console.log(person[y]);
+}
