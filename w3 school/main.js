@@ -162,19 +162,19 @@
 
 
 //// حلقه ها (for in) (object)
-const person = {fname:"John", lname:"Doe", age:25}
+// const person = {fname:"John", lname:"Doe", age:25}
 // for(key in person){
 //     console.log(`${key}=${person[key]}`);
 // }
 //// حلقه ها (for in )(array)
-const numbers = [45, 4, 9, 16, 25]
+// const numbers = [45, 4, 9, 16, 25]
 // for(val in numbers){
 //     console.log(numbers[val]);
 // }
 
-for(x of numbers){
-    console.log(x);
-}
-for(y of person){
-    console.log(person[y]);
-}
+// for(x of numbers){
+//     console.log(x);
+// }
+// for(y of person){
+//     console.log(person[y]);
+// }
