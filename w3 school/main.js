@@ -51,8 +51,6 @@
 // delete infoCar.color;
 // console.log(infoCar);
 
-
-
 ////چاپ اطلاعات یک ابجکت توسط یک حلقه با متنی جدید
 // let person = {
 //   name: "John",
@@ -70,19 +68,16 @@
 // let result = jamal.match(/in/gi)
 // console.log(result);
 
-
 ////جستجوی استرینگ توسط matchAll()
 // let text = "I love cats. Cats are very easy to love. Cats are very popular."
 // let result = text.matchAll(/cats/gi)
 // let jamal = Array.from(result)
 // console.log(result);
 
-
 ////جستجوی استرینگ توسط includes()
 // let text = "Hello world, welcome to the universe."
 // let result = text.includes(/ld/)
 // console.log(result);
-
 
 ////اضافه کردن دیتا به یک ارایه
 // const x = []
@@ -94,15 +89,11 @@
 // person["age"] = 46;
 // console.log(person);
 
-
-
 //// متود concat برای اضافه کردن ارایه به یک ارایه دیگر
 // let a = ["erfan"]
 // let b = ["sadaf"]
 // let c = a.concat(b)
 // console.log(c);
-
-
 
 //// امتحان کردن متود find
 /// اینجوری فقد یه ایتم بهت برمیگردونه و خب چون همچین متودی هست ولی تو فیلتر هرچی ایتم قبل هجده باشه بر میگردونه
@@ -110,9 +101,7 @@
 // let a = numbers.find((item)=> item<18)
 // console.log(a);
 
-
-
-//// تاریخ 
+//// تاریخ
 // let date = new Date()
 // console.log(date);
 // console.log(date.getDay());
@@ -121,8 +110,6 @@
 // time.setHours(23)
 // time.setSeconds(2)
 // console.log(time);
-
-
 
 //// متود های ریاضی(گرد کردن)
 // let adad = Math.round(4.9)
@@ -137,12 +124,9 @@
 //// رندوم بین اعداد بزرگتر و صحیح
 // console.log(Math.floor(Math.random() * 100));
 
-
-
 //// بولین
 // let j = NaN
 // console.log(Boolean(j));
-
 
 ////مقایسه
 // x = 5
@@ -151,15 +135,12 @@
 // let x = "20" < "2"
 // console.log(Boolean(x));
 
-
-
 //// حلفه ها (for)
 // const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 // for(i = 0;i<cars.length;i++){
 //     console.log(cars[i]);
 //     console.log(i);
 // }
-
 
 //// حلقه ها (for in) (object)
 // const person = {fname:"John", lname:"Doe", age:25}
@@ -171,10 +152,38 @@
 // for(val in numbers){
 //     console.log(numbers[val]);
 // }
-
+//// حلقه ها (for of) (array)
 // for(x of numbers){
 //     console.log(x);
 // }
+//// حلقه ها (for of) (object)
 // for(y of person){
 //     console.log(person[y]);
 // }
+
+////break (مثلا اگه کانتینیو بزاری دیگه= فقد 3 رو چاپ نمیکنه بقیشو ادامه میده ولی اینجوری از حلقه میپره بیرون )
+// for (i = 0; i <= 10; i++) {
+//   if (i == 3) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+//// class set
+// const letters = new Set(["a", "b", "c"]);
+// console.log(letters.keys());
+
+//// class map
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200],
+// ]);
+// console.log(fruits);
+//// methods
+// fruits.forEach((item)=>console.log(item))
+// console.log(fruits.keys());
+// console.log(fruits.get("apples"));
+
+
+
