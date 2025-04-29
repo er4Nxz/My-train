@@ -185,5 +185,27 @@
 // console.log(fruits.keys());
 // console.log(fruits.get("apples"));
 
-
-
+////destructuring (array)
+// let x = ["erfan","ahmadi",18]
+// let [fName,lName] = x
+// console.log(fName,lName);
+////skip 
+// let [k,,d] = x
+// console.log(k,d);
+//// index
+// let {[0]:fName,[1]:lName} = x
+// console.log(fName,lName);
+////destructuring (object)
+// let x = { firstName: "erfan", lastName: "ahmadi", age: 18 };
+////add
+// let { firstName, lastName, country = "iran"} = x;
+// console.log(firstName,lastName,country,x)
+////destructuring (string)
+// let firstName = "erfan"
+// let [a1,a2,a3,a4,a5] = firstName
+// console.log(a1,a2,a3,a4,a5);
+//// swiping
+// let fName = "erfan"
+// let lName = "ahmadi"
+// let [$1,$2] = [lName,fName]
+// console.log($1,$2);
