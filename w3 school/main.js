@@ -189,7 +189,7 @@
 // let x = ["erfan","ahmadi",18]
 // let [fName,lName] = x
 // console.log(fName,lName);
-////skip 
+////skip
 // let [k,,d] = x
 // console.log(k,d);
 //// index
@@ -209,3 +209,57 @@
 // let lName = "ahmadi"
 // let [$1,$2] = [lName,fName]
 // console.log($1,$2);
+
+//// search method in string
+// let x = "erfan ahmadi is the best"
+// let k = x.search("best")
+// console.log(k);
+//// search method in regular expression (عبارت منظم)
+// let x = "erfan ahmadi is the best"
+// let n = x.search(/best/i)
+// console.log(n);
+
+//// replace method
+// let x = "erfan ahmadi is the best"
+// let n = x.replace(/erfan/m,"sadaf")
+// console.log(n);
+
+//// test method
+// let s = /e/g
+// console.log(s.test("erfan is the best"))
+
+//// hoisting
+// x = "erfam"
+// console.log(x);
+// var x
+
+//// strict mode
+// function x(){
+//     "use strict";
+//     y = 203.2
+//     console.log(y);
+// }
+// x()
+// "use strict"
+// o = 2321.2
+// console.log(o);
+
+//// class
+// class car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   chop() {
+//     console.log(`${this.name} va ${this.year}`);
+//   }
+// }
+// let car1 = new car(206,2025)
+// car1.chop()
+
+
+
+////module
+// import u from "./hassan.js"
+// console.log(u);
+
