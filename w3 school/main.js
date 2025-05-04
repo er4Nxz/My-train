@@ -257,9 +257,40 @@
 // let car1 = new car(206,2025)
 // car1.chop()
 
-
-
 ////module
 // import u from "./hassan.js"
 // console.log(u);
 
+
+
+//// object 
+// function person(fName,lName,age){
+//     this.fisrtName = fName
+//     this.lastName = lName
+//     this.Age = age
+// }
+// let newPerson = new person("erfan","ahmadi",18)
+// console.log(newPerson)
+
+
+////object method
+// assign
+// let e = {
+//     fName:"erfan",
+//     lName:"ahmadi",
+//     age:18
+// }
+// let y = {}
+// Object.assign(y,e)
+// console.log(y);
+//entries
+// let e = {
+//     fName:"erfan",
+//     lName:"ahmadi",
+//     age:18
+// }
+// console.log(Object.entries(e));
+//keys
+// console.log(Object.keys(e));
+//value
+// console.log(Object.values(e));
