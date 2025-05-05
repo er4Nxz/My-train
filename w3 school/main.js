@@ -261,9 +261,7 @@
 // import u from "./hassan.js"
 // console.log(u);
 
-
-
-//// object 
+//// object
 // function person(fName,lName,age){
 //     this.fisrtName = fName
 //     this.lastName = lName
@@ -271,7 +269,6 @@
 // }
 // let newPerson = new person("erfan","ahmadi",18)
 // console.log(newPerson)
-
 
 ////object method
 // assign
@@ -294,3 +291,41 @@
 // console.log(Object.keys(e));
 //value
 // console.log(Object.values(e));
+
+////function
+// (function () {
+//   console.log("salam");
+// })();
+// function x (a){
+//     console.log(arguments.length);
+// }x()
+
+//// function rest
+// function x (...numbers){
+//     for (let numb of numbers){
+//         console.log(numb);
+//     }
+// }
+// x(1,4,23,4,35,35,6754,76,9)
+
+////function sumAll
+// function sumAll(){
+//     let sum = 0
+//     for(let i = 0; i < arguments.length;i++){
+//         sum += arguments[i]
+//     }
+//     return sum
+// }
+// console.log(sumAll(1,2,3,4,5,6,7,))
+
+////class static method
+// class Car {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   static hello(x) {
+//     return "Hello " + x.name;
+//   }
+// }
+// const myCar = new Car("Ford");
+// console.log(Car.hello(myCar));
