@@ -329,3 +329,55 @@
 // }
 // const myCar = new Car("Ford");
 // console.log(Car.hello(myCar));
+
+////callback
+// function sum(num1,num2){
+//     let sum = num1 + num2;
+//     return sum
+// }
+// function display(callback){
+//     console.log(callback);
+// }
+// display(sum(5,6))
+// function x(callback){
+//     let num1 = 5;
+//     let num2 = 6;
+//     num1 = num1 + num2
+//     callback(num1);
+// }
+// function callback(item){
+//     console.log(item);
+// }
+// x(callback)
+
+//// time clock with setinteravel method
+// let clock = document.querySelector(".time")
+// let time = ()=>{
+//     setInterval(()=>{
+//     let d = new Date
+//     let h = d.getHours()
+//     let m = d.getMinutes()
+//     let s = d.getSeconds()
+//     clock.innerHTML = `${h}:${m}:${s}`
+//     },1000)
+// }
+// time()
+
+//// promise
+// let promise = new Promise((resolve, reject) => {
+//   let flag = true;
+//   if (flag) {
+//     resolve("that's ok");
+//   } else {
+//     reject("that's not ok");
+//   }
+// });
+// promise
+//   .then((resolve) => console.log(resolve))
+//   .catch((reject) => console.log(reject));
+
+
+
+//// dom
+console.log(document.body.innerHTML);
+
