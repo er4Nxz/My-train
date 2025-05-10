@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "json": "npx json-server --watch db.json"
+    }
+}
