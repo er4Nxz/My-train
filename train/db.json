@@ -1,3 +1,79 @@
 {
-  "slider": [{ "id": 1, "link": "https//:www.google.com" }]
+  "story": [
+    {
+      "id": 0,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/5e7e5b2338115bcc6f249550fbd2af9a1bcce8f2_1745052908.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+    },
+    {
+      "id": 1,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 2,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 3,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 4,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 5,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 6,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 7,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 8,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 9,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 10,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 11,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 12,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 13,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    },
+    {
+      "id": 14,
+      "text": "مشاوره خرید بردگیم و بازی",
+      "imag": "https://images.interactify.live/b999e4b7b4d84393993b5873f0acb056.jpeg?width=115"
+    }
+  ]
 }
