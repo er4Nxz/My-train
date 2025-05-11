@@ -381,3 +381,16 @@
 //// dom
 // console.log(document.body.innerHTML);
 
+///window
+// console.log(window.innerHeight);
+// console.log(window.innerHeight);
+// document.querySelector(".btn").addEventListener("click",()=>{
+    // window.close()
+    // window.open("https://www.w3schools.com/js/js_window.asp","_blank")
+    // window.print()
+    // console.log(window.screen);
+    // console.log(window.location);
+// })
+
+
+
