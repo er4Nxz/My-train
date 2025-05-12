@@ -391,6 +391,3 @@
     // console.log(window.screen);
     // console.log(window.location);
 // })
-
-
-
