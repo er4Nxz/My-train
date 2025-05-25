@@ -1,3 +1,4 @@
+import CardE from "../CardE/CardE";
 import MyAccordion from "../myAccordion/myAccordion";
 
 {
@@ -10,7 +11,10 @@ import MyAccordion from "../myAccordion/myAccordion";
 }
 const App = () => {
   return (
-    <MyAccordion/>
+    <>
+      <MyAccordion />
+      <CardE />
+    </>
   );
 };
 
