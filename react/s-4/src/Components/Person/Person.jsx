@@ -1,5 +1,5 @@
 const Person = ({ firstName="lala",print,children, person }) => {
-  const { fullName, age } = person;
+  // const { fullName, age } = person;
   return (
     <div className="w-1/5 p-4 bg-amber-500 mx-auto mt-10 rounded-2xl">
       {/* <h4>firstName = {firstName}</h4>
@@ -10,9 +10,9 @@ const Person = ({ firstName="lala",print,children, person }) => {
       >
         click me
       </button>
-      <div>{children}</div> */}
+      <div>{children}</div> 
       <h4>full name : {fullName}</h4>
-      <h4>age : {age}</h4>
+      <h4>age : {age}</h4> */}
     </div>
   );
 };
