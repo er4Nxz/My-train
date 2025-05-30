@@ -9,7 +9,7 @@ const App = () => {
         components pair
         props(object)
         props(object in array)
-        form (attr = multipate)
+        form  (select attr = multipate) (checkbox => array filter send to backend)
     */
   }
   // const firstName = "didi";
@@ -20,7 +20,12 @@ const App = () => {
   // ];
 
   const printValue = (e) => {
-    let multi = [...e.target.selectedOptions].map((item)=>item.value).toString()
+    console.log(e.target.value);
+  };
+  const printValueSelect = (e) => {
+    let multi = [...e.target.selectedOptions]
+      .map((item) => item.value)
+      .toString();
     console.log(multi);
   };
   return (
@@ -36,7 +41,7 @@ const App = () => {
       })}
         */}
       {/* form 👇👇 */}
-      <Form printValue={printValue} />
+      <Form printValueSelect={printValueSelect} printValue={printValue} />
     </>
   );
 };
