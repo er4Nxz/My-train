@@ -15,6 +15,8 @@ const App = () => {
         attr disabled for input
         css condtional
         call back function
+        for loop 
+        object in useState
     */
   }
   // const firstName = "didi";
@@ -34,6 +36,11 @@ const App = () => {
   //   console.log(multi);
   // };
   const [counter, setCounter] = useState(0);
+  const inc5 = () => {
+    for (let i = 1; i <= 5; i++) {
+      setCounter(counter => counter + 1);
+    }
+  };
   return (
     <>
       {/* <Person firstName={firstName} print={print} />
@@ -51,7 +58,7 @@ const App = () => {
       <div className="w-1/4 mx-auto">
         <h1 className="text-center my-[20px] text-4xl">counter:{counter}</h1>
         <button
-          className="bg-amber-400 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer"
+          className="bg-green-600 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer text-white"
           onClick={() => setCounter(counter + 1)}
         >
           +
@@ -59,8 +66,8 @@ const App = () => {
         <button
           className={
             counter <= 0
-              ? "bg-red-500 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer opacity-[0.5]"
-              : "bg-amber-400 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer"
+              ? "bg-red-500 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer opacity-[0.5] text-white"
+              : "bg-green-600 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer text-white"
           }
           onClick={() => setCounter(counter - 1)}
           disabled={counter <= 0 ? "disabled" : null}
@@ -68,10 +75,16 @@ const App = () => {
           -
         </button>
         <button
-          className="bg-amber-400 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer"
+          className="bg-green-600 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer text-white"
           onClick={() => setCounter(0)}
         >
           Reset
+        </button>
+        <button
+          className="bg-green-600 p-[5px] px-3 rounded-2xl mx-[2px] cursor-pointer text-white"
+          onClick={inc5}
+        >
+          5
         </button>
       </div>
     </>
