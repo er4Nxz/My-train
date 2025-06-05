@@ -86,16 +86,16 @@
 // data("erfan"," ahmadi"," 18")
 
 //mouse move
-// let move = document.querySelector("#c");
-// move.addEventListener("mousemove", function (e) {
-//   // حرکت کردن عنصر
-//   e.target.parentElement.style.left = `${e.offsetX}px`;
-//   e.target.parentElement.style.top = `${e.offsetY}px`;
-//   //   عوض شدن رنگ صفحه
-//   e.target.parentElement.parentElement.style.background = `rgb(${
-//     e.offsetX / 2 + 50
-//   },${e.offsetY / 2 + 50},${e.offsetX / 5 + e.offsetX})`;
-// });
+let move = document.querySelector("#c");
+move.addEventListener("mousemove", function (e) {
+  // حرکت کردن عنصر
+  e.target.parentElement.style.left = `${e.offsetX}px`;
+  e.target.parentElement.style.top = `${e.offsetY}px`;
+  //   عوض شدن رنگ صفحه
+  e.target.parentElement.parentElement.style.background = `rgb(${
+    e.offsetX / 2 + 50
+  },${e.offsetY / 2 + 50},${e.offsetX / 5 + e.offsetX})`;
+});
 
 // keyup / keydown / keypress
 // let key = document.querySelector("#key");
