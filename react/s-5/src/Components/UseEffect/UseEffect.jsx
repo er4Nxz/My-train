@@ -14,18 +14,16 @@ const UseEffect = () => {
     setBg(`rgb(${random(100, 250)},${random(100, 250)},${random(100, 250)})`);
   }, [counter]);
 
-  const [size,setSize] = useState(window.innerWidth)
-  const changSize = ()=>{
-    setSize(window.innerWidth)
-  }
-  useEffect(()=>{
-    console.log(window.innerWidth);
-    window.addEventListener("resize",changSize)
-    return()=>{
-      console.log("clean up");
-      window.removeEventListener("resize",changSize)
-    }
-  })
+  const [size, setSize] = useState(window.innerWidth);
+  const changSize = () => {
+    setSize(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", changSize);
+    return () => {
+      window.removeEventListener("resize", changSize);
+    };
+  });
   return (
     <div
       className="w-1/4 rounded-2xl mx-auto p-2 mt-2"
