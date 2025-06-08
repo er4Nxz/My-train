@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import Posts from "./Posts/Posts";
+import axios from "axios";
 
 const Api = () => {
   const [data, setData] = useState(null);
   const fetchApi = async () => {
     try {
-      const url = await fetch("https://jsonplaceholder.typicode.com/posts");
-      const res = await url.json();
-      setData(res);
+      const url = await axios("https://jsonplaceholder.typicode.com/posts");
+      setData(url.data);
     } catch (error) {
       console.log(error);
     }
