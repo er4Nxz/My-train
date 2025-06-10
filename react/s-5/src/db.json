@@ -1,0 +1,33 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "home",
+      "link": "https//www.google.com",
+      "dropdown": []
+    },
+    {
+      "id": 2,
+      "title": "contact",
+      "link": "https//www.google.com",
+      "dropdown": []
+    },
+    {
+      "id": 3,
+      "title": "about",
+      "link": "https//www.google.com",
+      "dropdown": []
+    },
+    {
+      "id": 4,
+      "title": "gallery",
+      "link": "https//www.google.com",
+      "dropdown": [
+        { "id": 1, "title": "gallery-1", "link": "https://www.youtube.com" },
+        { "id": 2, "title": "gallery-2", "link": "https://www.youtube.com" },
+        { "id": 3, "title": "gallery-3", "link": "https://www.youtube.com" },
+        { "id": 4, "title": "gallery-4", "link": "https://www.youtube.com" }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@ const Api = () => {
       {data?.map((item) => {
         return <Posts title={item.title} body={item.body} key={item.id} />;
       })}
+      
     </div>
   );
 };
