@@ -28,8 +28,8 @@ const S_3 = () => {
   const age = 18;
   return (
     <>
-      {/* <Acc />
-      <CardE /> */}
+      <Acc />
+      <CardE />
       <Item />
       <Item2 />
       <button

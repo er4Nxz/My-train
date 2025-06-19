@@ -1,5 +1,5 @@
-// import Button from "react-bootstrap/Button";
-// import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 const CardE = () => {
     let data = [
@@ -19,7 +19,7 @@ const CardE = () => {
     },
     {
       Id: "3",
-      Img: "../img/im3.jpg",
+      Img: "../img/img3.jpg",
       Title: "Title 3",
       Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur!",
       BTN: "Read More",
