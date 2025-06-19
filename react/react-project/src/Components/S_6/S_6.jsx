@@ -1,13 +1,14 @@
 import React from "react";
 import ComA from "./ComA/ComA";
+import ApiContext from "./ApiContext/ApiContext";
 
 export const MyContext = React.createContext();
 
 const S_6 = () => {
   {
     /* 
-    context api / useContext
-    api with context
+    context api / useContext =>defult
+    Context => Api
     */
   }
   {
@@ -22,7 +23,7 @@ const S_6 = () => {
         <ComA />
       </MyContext.Provider> */}
       {/* ************************************ */}
-        
+      <ApiContext />
     </>
   );
 };

@@ -3,7 +3,7 @@ import { MyContext } from "../../S_6";
 
 
 const ComB = () => {
-    const {email,partner} = useContext(MyContext)
+    // const {email,partner} = useContext(MyContext)
     return ( 
         <>
         <h1>ComB-{email}</h1>
