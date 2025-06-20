@@ -1,6 +1,7 @@
 import React from "react";
 import ComA from "./ComA/ComA";
 import ApiContext from "./ApiContext/ApiContext";
+import MyReducer from "./MyReducer/MyReducer";
 
 export const MyContext = React.createContext();
 
@@ -9,6 +10,7 @@ const S_6 = () => {
     /* 
     context api / useContext =>defult
     Context => Api
+    Reducer / useReducer
     */
   }
   {
@@ -23,7 +25,9 @@ const S_6 = () => {
         <ComA />
       </MyContext.Provider> */}
       {/* ************************************ */}
-      <ApiContext />
+      {/* <ApiContext /> */}
+      {/* ************************************ */}
+      <MyReducer/>
     </>
   );
 };
