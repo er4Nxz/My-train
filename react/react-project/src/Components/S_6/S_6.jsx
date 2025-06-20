@@ -2,6 +2,7 @@ import React from "react";
 import ComA from "./ComA/ComA";
 import ApiContext from "./ApiContext/ApiContext";
 import MyReducer from "./MyReducer/MyReducer";
+import ReducerContext from "./ReducerContext/ReducerContext";
 
 export const MyContext = React.createContext();
 
@@ -11,6 +12,8 @@ const S_6 = () => {
     context api / useContext =>defult
     Context => Api
     Reducer / useReducer
+    reducer with object / reducer + context
+    Skeleton
     */
   }
   {
@@ -27,7 +30,10 @@ const S_6 = () => {
       {/* ************************************ */}
       {/* <ApiContext /> */}
       {/* ************************************ */}
-      <MyReducer/>
+      {/* <MyReducer/> */}
+      {/* ************************************ */}
+      {/* <ReducerContext/> */}
+      {/* ************************************ */}
     </>
   );
 };
