@@ -3,6 +3,7 @@ import ComA from "./ComA/ComA";
 import ApiContext from "./ApiContext/ApiContext";
 import MyReducer from "./MyReducer/MyReducer";
 import ReducerContext from "./ReducerContext/ReducerContext";
+import MySkeleton from "./MySkeleton/MySkeleton";
 
 export const MyContext = React.createContext();
 
@@ -34,6 +35,7 @@ const S_6 = () => {
       {/* ************************************ */}
       {/* <ReducerContext/> */}
       {/* ************************************ */}
+      <MySkeleton />
     </>
   );
 };
