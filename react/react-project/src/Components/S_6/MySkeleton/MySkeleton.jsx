@@ -15,12 +15,10 @@ const MySkeleton = () => {
     fetchPro();
   }, []);
   return (
-    <div className="col-12">
-      <div className="row justify-content-center gap-10">
+      <div className="row justify-content-center gap-10 w-100">
         {product?.map((item) => {
           return <Product pro={item} key={item.id} />;
         })}
-      </div>
     </div>
   );
 };

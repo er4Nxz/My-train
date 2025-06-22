@@ -14,7 +14,7 @@ const S_6 = () => {
     Context => Api
     Reducer / useReducer
     reducer with object / reducer + context
-    Skeleton
+    Skeleton whith fake delay and real delay
     */
   }
   {
@@ -35,7 +35,7 @@ const S_6 = () => {
       {/* ************************************ */}
       {/* <ReducerContext/> */}
       {/* ************************************ */}
-      <MySkeleton />
+      {/* <MySkeleton /> */}
     </>
   );
 };
