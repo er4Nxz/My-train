@@ -4,6 +4,8 @@ import ApiContext from "./ApiContext/ApiContext";
 import MyReducer from "./MyReducer/MyReducer";
 import ReducerContext from "./ReducerContext/ReducerContext";
 import MySkeleton from "./MySkeleton/MySkeleton";
+import Memo from "./Memo/Memo";
+import MyUseRef from "./MyUseRef/MyUseRef";
 
 export const MyContext = React.createContext();
 
@@ -15,6 +17,7 @@ const S_6 = () => {
     Reducer / useReducer
     reducer with object / reducer + context
     Skeleton whith fake delay and real delay
+    Memo 
     */
   }
   {
@@ -36,6 +39,10 @@ const S_6 = () => {
       {/* <ReducerContext/> */}
       {/* ************************************ */}
       {/* <MySkeleton /> */}
+      {/* ************************************ */}
+      {/* <Memo/> */}
+      {/* ************************************ */}
+      {/* <MyUseRef/> */}
     </>
   );
 };

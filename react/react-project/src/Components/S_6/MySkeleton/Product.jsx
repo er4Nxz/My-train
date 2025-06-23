@@ -10,13 +10,15 @@ const Product = ({ pro }) => {
   const [rate, setRate] = useState(null);
   const [count, setCount] = useState(null);
   useEffect(() => {
-    setTitle(pro.title.substr(0, 10));
-    setPrice(pro.price);
-    setCategory(pro.category);
-    setDescription(pro.description.substr(0, 40));
-    setImage(pro.image);
-    setRate(pro.rating.rate);
-    setCount(pro.rating.count);
+    setTimeout(() => {
+      setTitle(pro.title.substr(0, 10));
+      setPrice(pro.price);
+      setCategory(pro.category);
+      setDescription(pro.description.substr(0, 40));
+      setImage(pro.image);
+      setRate(pro.rating.rate);
+      setCount(pro.rating.count);
+    }, 3000);
   }, []);
   return (
     <div className="col-2 border rounded-2xl mt-2 flex row justify-between gap-2 ">
