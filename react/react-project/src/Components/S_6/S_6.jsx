@@ -18,6 +18,7 @@ const S_6 = () => {
     reducer with object / reducer + context
     Skeleton whith fake delay and real delay
     Memo 
+    useRef
     */
   }
   {
