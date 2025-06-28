@@ -1,6 +1,6 @@
 import Accordion from "react-bootstrap/Accordion";
 
-const Acc = () => {
+const Acc = ({id}) => {
   let data = [
     {
       id: "1",
@@ -32,7 +32,7 @@ const Acc = () => {
       <Accordion defaultActiveKey="1">
         {data?.map((item) => {
           return (
-            <Accordion.Item eventKey={item.id}>
+            <Accordion.Item eventKey={item.id} key={item.id}>
               <Accordion.Header>{item.title}</Accordion.Header>
               <Accordion.Body>{item.description}</Accordion.Body>
             </Accordion.Item>

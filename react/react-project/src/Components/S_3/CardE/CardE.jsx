@@ -1,32 +1,37 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import img_1 from "../img/img1.jpg"
+import img_2 from "../img/img2.jpg"
+import img_3 from "../img/img3.jpg"
+import img_4 from "../img/img4.jpg"
+
 
 const CardE = () => {
     let data = [
     {
       Id: "1",
-      Img: "../img/img1.jpg",
+      Img: img_1,
       Title: "Title 1",
       Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur!",
       BTN: "Read More",
     },
     {
       Id: "2",
-      Img: "../img/img2.jpg",
+      Img: img_2,
       Title: "Title 2",
       Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur!",
       BTN: "Read More",
     },
     {
       Id: "3",
-      Img: "../img/img3.jpg",
+      Img: img_3,
       Title: "Title 3",
       Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur!",
       BTN: "Read More",
     },
     {
       Id: "4",
-      Img: "../img/img4.jpg",
+      Img: img_4,
       Title: "Title 4",
       Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur!",
       BTN: "Read More",

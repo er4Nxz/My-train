@@ -16,7 +16,7 @@ const S_1 = () => {
   css
   */
   }
-  const age = 230;
+  const age = 20;
   const person = [
     { fullName: "erfan ahmdi", age: 18, email: "e@e.com" },
     { fullName: "hassan ahmadi", age: 46, email: "h@h.com" },
@@ -36,7 +36,7 @@ const S_1 = () => {
       <img src={image} alt="" width="200" />
       <hr />
       <h1>
-        {age > 20 ? `ok because age is ${age}` : `not ok because age is ${age}`}
+        {age >= 20 ? `ok because age is ${age}` : `not ok because age is ${age}`}
       </h1>
       <hr />
       {person.map((item, index) => {

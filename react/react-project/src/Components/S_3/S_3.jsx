@@ -20,8 +20,8 @@ const S_3 = () => {
     props
     */
   }
-  const print = (t) => {
-    console.log(t);
+  const print = (e) => {
+    console.log(e);
   };
   const fName = "erfan";
   const lName = "ahmadi";
