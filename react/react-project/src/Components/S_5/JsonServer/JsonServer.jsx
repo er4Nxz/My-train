@@ -57,7 +57,7 @@ const JsonServer = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu bg-blue-300/[0.5] rounded-box z-1 w-52 p-2 shadow-lg"
+                  className="dropdown-content menu bg-blue-300/[0.5] rounded-box z-10 w-52 p-2 shadow-lg"
                 >
                   {item.dropdown?.map((itemDrop) => {
                     return (

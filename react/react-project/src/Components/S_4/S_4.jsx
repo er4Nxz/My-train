@@ -18,13 +18,15 @@ import img_1 from "./Person/opium.jpg";
     */
 const S_4 = () => {
   {
-    /*const firstName = "didi";
-    const lastName = "yosefi";
-    const print = (e) => console.log(e);
-    const person = [
-      { fullName: "ali Ahmadi", age: 15 },
-      { fullName: "erfan Ahmadi", age: 18 },
-    ];*/
+    /*
+    const firstName = "didi";
+  const lastName = "yosefi";
+  const print = (e) => console.log(e);
+  const person = [
+    { fullName: "ali Ahmadi", age: 15 },
+    { fullName: "erfan Ahmadi", age: 18 },
+  ];
+     */
   }
   {
     /*const printValue = (e) => {
@@ -53,8 +55,8 @@ const S_4 = () => {
       <Person>
         <h1 className="text-center text-2xl m-1">Hello-World</h1>
         <img src={img_1} />
-      </Person>
-      {person?.map((item, index) => {
+      </Person> */}
+      {/* {person?.map((item, index) => {
         return <Person person={item} key={index + 1} />;
       })} */}
       {/******************************************************** */}

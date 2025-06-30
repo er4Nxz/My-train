@@ -60,7 +60,7 @@ const ArrayUseState = () => {
             color="white"
             className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/[0.3] hover:rounded-4xl active:bg-white/[0.7]"
             onClick={() => {
-              setIcon(!icon), setType("text");
+              setIcon(false), setType("text");
             }}
           />
         ) : (
@@ -69,7 +69,7 @@ const ArrayUseState = () => {
             color="white"
             className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/[0.3] hover:rounded-4xl active:bg-white/[0.7]"
             onClick={() => {
-              setIcon(!icon), setType("password");
+              setIcon(true), setType("password");
             }}
           />
         )}

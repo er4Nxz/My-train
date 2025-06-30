@@ -8,15 +8,15 @@ const S_5 = () => {
     array in use state and update it 
     USE EFFECT and clean up
     Api 
-    api with json server
+    api with json server / dropdown / github api
     */
   }
   return (
     <>
-      <ArrayUseState />
-      <UseEffect />
-      <Api />
-      <JsonServer />
+      {/* <ArrayUseState /> */}
+      {/* <UseEffect /> */}
+      {/* <Api /> */}
+      {/* <JsonServer /> */}
     </>
   );
 };
