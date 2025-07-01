@@ -21,10 +21,10 @@ const S_6 = () => {
     useRef
     */
   }
-  {/*const fullName = "erfan ahmadi"
-  const age = 25
-  const email = "e@gmail.com"
-  const partner = "sadaf"*/}
+  // const fullName = "erfan ahmadi"
+  // const age = 25
+  // const email = "e@gmail.com"
+  // const partner = "sadaf"
   return (
     <>
       {/* <MyContext.Provider value={{ fullName, age, email, partner }}>

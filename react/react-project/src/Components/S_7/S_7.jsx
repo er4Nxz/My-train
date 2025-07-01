@@ -13,7 +13,7 @@ const S_7 = () => {
     <>
       {/* <MockApi /> */}
       {/*********************************/}
-      {/* <ReactRouterDom /> */}
+      <ReactRouterDom />
       
     </>
   );

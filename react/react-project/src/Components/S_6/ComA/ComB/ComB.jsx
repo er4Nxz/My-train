@@ -3,11 +3,13 @@ import { MyContext } from "../../S_6";
 
 
 const ComB = () => {
-    const {email,partner} = useContext(MyContext)
+    const info = useContext(MyContext)
+    console.log(info);
+    
     return ( 
         <>
-        <h1>ComB-{email}</h1>
-        <h1>ComB-{partner}</h1>
+        <h1>ComB-{info.email}</h1>
+        <h1>ComB-{info.partner}</h1>
         </>
      );
 }

@@ -13,7 +13,9 @@ const ApiContext = () => {
       const response = await axios("https://fakestoreapi.com/products");
       setProducts(response.data);
       setLoading(false);
+      setError("")
     } catch (error) {
+      setProducts(null)
       setError(error.message);
       setLoading(true);
     }
