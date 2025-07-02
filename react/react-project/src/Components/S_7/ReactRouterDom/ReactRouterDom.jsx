@@ -4,6 +4,7 @@ import Products from "./pages/Products/Products";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Header from "./pages/Header/Header";
+import Product from "./pages/Products/Product";
 const ReactRouterDom = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const ReactRouterDom = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Products" element={<Products />} />
+          <Route path="/Products/:id" element={<Product />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
