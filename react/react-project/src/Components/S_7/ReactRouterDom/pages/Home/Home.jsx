@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="col-4 mx-auto bg-dark p-4 mt-2">
       <h1 className="text-white capitalize">Home</h1>
@@ -18,6 +21,8 @@ const Home = () => {
       <a href="#" className="btn btn-primary">
         Read More
       </a>
+      <button className="btn btn-success mx-2" onClick={()=>navigate("/About")}>About</button>
+      <button className="btn btn-success" onClick={()=>navigate("/Products")}>Product</button>
     </div>
   );
 };

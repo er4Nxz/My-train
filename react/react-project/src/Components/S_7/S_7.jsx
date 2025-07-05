@@ -9,6 +9,8 @@ const S_7 = () => {
         Navlink / className conditional rendering / base name
         parametr component / useParams 
         useLocation / class => URLSearchParams / get key / split / join / double paramter
+        Component Navigate / useNavigate 
+        تمیز نوشتن روت ها داخل یه کامپوننت دیگر
      */
   }
   return (
@@ -16,7 +18,6 @@ const S_7 = () => {
       {/* <MockApi /> */}
       {/*********************************/}
       <ReactRouterDom />
-      
     </>
   );
 };
