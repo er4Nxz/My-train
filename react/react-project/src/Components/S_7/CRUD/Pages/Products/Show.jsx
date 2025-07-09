@@ -8,7 +8,7 @@ const Show = () => {
   const [product, setProducts] = useState(null);
   const fetchProduct = async () => {
     try {
-      const res = await axios(`https://fakestoreapi.com/products/${id}`);
+      const res = await axios(`https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`);
       setProducts(res.data);
     } catch (error) {
       console.log(error.message);
@@ -28,7 +28,7 @@ const Show = () => {
       <Card.Body>
         <Card.Title>{product && product.title}</Card.Title>
         <Card.Title>{product && product.price}$</Card.Title>
-        <Card.Text>{product && product.description.substr(0, 100)}</Card.Text> 
+        <Card.Text>{product && product.discription}</Card.Text> 
         <Button variant="primary">Go somewhere</Button>
         <button
           className="btn btn-ghost bg-black text-white m-2 absolute top-2 left-2"
