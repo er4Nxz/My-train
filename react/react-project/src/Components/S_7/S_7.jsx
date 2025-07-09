@@ -1,3 +1,4 @@
+import CRUD from "./CRUD/CRUD";
 import MockApi from "./MockApi/MockApi";
 import ReactRouterDom from "./ReactRouterDom/ReactRouterDom";
 
@@ -11,13 +12,16 @@ const S_7 = () => {
         useLocation / class => URLSearchParams / get key / split / join / double paramter
         Component Navigate / useNavigate 
         تمیز نوشتن روت ها داخل یه کامپوننت دیگر
+        make crud in website
      */
   }
   return (
     <>
       {/* <MockApi /> */}
       {/*********************************/}
-      <ReactRouterDom />
+      {/* <ReactRouterDom /> */}
+      {/*********************************/}
+      <CRUD/>
     </>
   );
 };
