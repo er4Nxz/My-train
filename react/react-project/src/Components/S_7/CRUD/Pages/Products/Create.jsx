@@ -1,12 +1,30 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
-  const submitForm = (e) => {};
+  const navigate = useNavigate()
+  const submitForm = (e) => {
+    e.preventDefault();
+    fetch("https://685c4d07769de2bf085c58e4.mockapi.io/Product", {
+      method: "POST",
+      body: JSON.stringify({
+        title: title,
+        discription: discription,
+        price: price,
+        image: image,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
+    navigate("/Products")
+  };
+
   return (
     <>
       <form
