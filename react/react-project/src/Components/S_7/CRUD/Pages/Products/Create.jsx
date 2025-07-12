@@ -1,13 +1,13 @@
-import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Create = () => {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
     fetch("https://685c4d07769de2bf085c58e4.mockapi.io/Product", {
@@ -22,7 +22,12 @@ const Create = () => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    navigate("/Products")
+    navigate("/Products");
+    Swal.fire({
+      title: "Good job!",
+      text: "You create a new product",
+      icon: "success",
+    });
   };
 
   return (

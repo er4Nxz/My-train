@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useNavigate, useParams } from "react-router-dom";
+import Delete from "./Delete";
 const Show = () => {
   const { id } = useParams();
   const [product, setProducts] = useState(null);
@@ -36,6 +37,7 @@ const Show = () => {
         >
           Back
         </button>
+        <Delete id={id} />
       </Card.Body>
     </Card>
   );

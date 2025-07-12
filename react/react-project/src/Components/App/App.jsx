@@ -4,6 +4,7 @@ import S_4 from "../S_4/S_4";
 import S_5 from "../S_5/S-5";
 import S_6 from "../S_6/S_6";
 import S_7 from "../S_7/S_7";
+import S_8 from "../S_8/S_8";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/* <S_4/> */}
       {/* <S_5/> */}
       {/* <S_6/> */}
-      <S_7/>
+      {/* <S_7/> */}
+      <S_8/>
     </div>
   );
 };
