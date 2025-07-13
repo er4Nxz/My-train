@@ -14,6 +14,7 @@ const S_7 = () => {
         تمیز نوشتن روت ها داخل یه کامپوننت دیگر
         make crud in website / set api one by one / sending parametr with id in api 
         create product in website / preventDefault / onSubmit / create api (json placeholder) / delete api 
+        validtion in create page
      */
   }
   return (
