@@ -11,6 +11,7 @@ const Create = () => {
   const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
+    
     const createProduct = async () => {
       try {
         let res = await axios.post(

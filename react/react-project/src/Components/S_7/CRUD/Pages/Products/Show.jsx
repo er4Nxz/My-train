@@ -2,14 +2,16 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Delete from "./Delete";
 const Show = () => {
   const { id } = useParams();
   const [product, setProducts] = useState(null);
   const fetchProduct = async () => {
     try {
-      const res = await axios(`https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`);
+      const res = await axios(
+        `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`
+      );
       setProducts(res.data);
     } catch (error) {
       console.log(error.message);
@@ -29,14 +31,20 @@ const Show = () => {
       <Card.Body>
         <Card.Title>{product && product.title}</Card.Title>
         <Card.Title>{product && product.price}$</Card.Title>
-        <Card.Text>{product && product.discription}</Card.Text> 
+        <Card.Text>{product && product.discription}</Card.Text>
         <Button variant="primary">Go somewhere</Button>
-        <button
+        <Link
           className="btn btn-ghost bg-black text-white m-2 absolute top-2 left-2"
-          onClick={() => navigate("/Products")}
+          to={"/Products"}
         >
           Back
-        </button>
+        </Link>
+        <Link
+          className="btn btn-info text-white m-2 absolute left-0"
+          to={`/Products/Edit/${id}`}
+        >
+          Edit
+        </Link>
         <Delete id={id} />
       </Card.Body>
     </Card>

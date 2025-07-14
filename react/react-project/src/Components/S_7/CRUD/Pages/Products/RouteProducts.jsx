@@ -3,6 +3,7 @@ import Index from ".";
 import Show from "./Show";
 import Create from "./Create"
 import Delete from "./Delete";
+import Edit from "./Edit";
 const RouteProducts = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const RouteProducts = () => {
         <Route path="/:id" element={<Show/>}/>
         <Route path="/Create" element={<Create/>}/>
         <Route path="/Delete" element={<Delete/>}/>
+        <Route path="/Edit/:id" element={<Edit/>}/>
       </Routes>
     </>
   );
