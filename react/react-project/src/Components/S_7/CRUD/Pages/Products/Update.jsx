@@ -1,37 +1,40 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const Create = () => {
+const Update = ({ data }) => {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
+  useEffect(() => {
+    setTitle(data.title);
+    setPrice(data.price);
+    setDiscription(data.discription);
+    setImage(data.image);
+  }, []);
   const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
-    const createProduct = async () => {
+    const updateProduct = async () => {
       try {
-        let res = await axios.post(
-          "https://685c4d07769de2bf085c58e4.mockapi.io/Product",
+        let res = await axios.put(
+          `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${data.id}`,
           { title, image, discription, price }
         );
-        if (res.status === 201) {
-          navigate("/Products");
-          Swal.fire({
-            title: "Good job!",
-            text: "You create a new product",
-            icon: "success",
-          });
-        }
+        navigate("/Products");
+        Swal.fire({
+          title: "Good job!",
+          text: "You create a new product",
+          icon: "success",
+        });
       } catch (error) {
         console.log(error);
       }
     };
-    createProduct();
+    updateProduct();
   };
-
   return (
     <>
       <form
@@ -51,6 +54,7 @@ const Create = () => {
             className="form-control"
             placeholder="write title ... "
             id="Title"
+            value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           {title.length === 0 ? (
@@ -73,6 +77,7 @@ const Create = () => {
             placeholder="write description ... "
             onChange={(e) => setDiscription(e.target.value)}
             id="Description"
+            value={discription}
           />
           {discription.length === 0 ? (
             <span className="text-red-500">discription is required</span>
@@ -91,6 +96,7 @@ const Create = () => {
             type="text"
             className="form-control"
             placeholder="write price ... "
+            value={price}
             onChange={(e) => setPrice(e.target.value)}
             id="Price"
           />
@@ -111,6 +117,7 @@ const Create = () => {
             placeholder="import image ... "
             onChange={(e) => setImage(e.target.value)}
             id="Image"
+            value={image}
           />
           {image.length === 0 ? (
             <span className="text-red-500">image is required</span>
@@ -137,4 +144,4 @@ const Create = () => {
   );
 };
 
-export default Create;
+export default Update;

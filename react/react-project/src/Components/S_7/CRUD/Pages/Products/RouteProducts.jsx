@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Index from ".";
+import Index from "./Index";
 import Show from "./Show";
 import Create from "./Create"
 import Delete from "./Delete";

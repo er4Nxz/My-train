@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Item from "./Item";
 
 const Index = () => {
   const [product, setProduct] = useState(null);
@@ -27,25 +28,7 @@ const Index = () => {
       </Link>
       <div className="flex flex-wrap flex-row gap-2 justify-center items-center">
         {product?.map((item) => {
-          return (
-            <div
-              className="border rounded-2xl p-2 m-2 w-[300px] h-[420px] flex flex-col justify-between"
-              key={item.id}
-            >
-              <h5>
-                <Link to={`/Products/${item.id}`} style={{ color: "red" }}>
-                  {item.title}
-                </Link>
-              </h5>
-              <h5>{item.price}$</h5>
-              <p className="text-[14px]">{item.discription}</p>
-              <img
-                src={item.image}
-                loading="lazy"
-                className="w-30 h-40 object-contain block mx-auto hover:scale-120 transition duration-300"
-              />
-            </div>
-          );
+          return <Item item={item} key={item.id} />;
         })}
       </div>
     </>

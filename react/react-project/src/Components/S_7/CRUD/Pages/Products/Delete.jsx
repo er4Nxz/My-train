@@ -1,8 +1,10 @@
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Delete = ({ id }) => {
   const navigate = useNavigate();
+  let res = axios.get("https://685c4d07769de2bf085c58e4.mockapi.io/Product")
   const deleteProduct = () => {
     Swal.fire({
       title: "Are you sure?",
@@ -19,9 +21,9 @@ const Delete = ({ id }) => {
           text: "Your file has been deleted.",
           icon: "success",
         });
-        fetch(`https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`, {
-          method: "DELETE",
-        });
+        axios.delete(
+          `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`
+        );
         navigate("/Products");
       } else {
         Swal.fire({
