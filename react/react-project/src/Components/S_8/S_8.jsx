@@ -1,7 +1,7 @@
 const S_8 = () => {
   {
     /*
-        vite
+        REDUX
      */
   }
   return <></>;
