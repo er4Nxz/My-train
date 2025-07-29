@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+package-lock.json
+package.json
+vite.config.js
+eslint.config.js
+data
 
 # Editor directories and files
 .vscode/*

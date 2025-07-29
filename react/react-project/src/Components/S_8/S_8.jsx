@@ -2,7 +2,8 @@ import ReduxTutorial from "./ReduxTutorial/ReduxTutorial";
 const S_8 = () => {
   {
     /*
-        REDUX
+        REDUX 
+        Root Reducer
      */
   }
   return (
