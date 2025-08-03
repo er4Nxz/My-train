@@ -1,30 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setError,
-  setLoading,
-  setProducts,
-} from "../Redux/Products/ProductsAction";
-import axios from "axios";
 import { useEffect } from "react";
 import Item from "./Item";
+import { fetchProducts } from "../Redux/Products/ProductsAction";
 
 const Products = () => {
   const { error, loading, products } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-  const fetchProducts = async () => {
-    try {
-      let response = await axios.get(
-        "https://685c4d07769de2bf085c58e4.mockapi.io/Product"
-      );
-      dispatch(setProducts(response.data));
-      dispatch(setLoading(false));
-    } catch (error) {
-      dispatch(setError(error.message));
-      dispatch(setLoading(false));
-    }
-  };
   useEffect(() => {
-    fetchProducts();
+    dispatch(fetchProducts());
   }, []);
   return (
     <>
