@@ -5,7 +5,10 @@ import { img_1 } from "./Products";
 const Product = () => {
   const params = useLocation().search;
   const url = new URLSearchParams(params).get("seo").split("-").join(" ");
-  const description = new URLSearchParams(params).get("description").split("-").join(" ")
+  const description = new URLSearchParams(params)
+    .get("description")
+    .split("-")
+    .join(" ");
   return (
     <Card style={{ width: "500px", margin: "20px auto" }}>
       <Card.Img

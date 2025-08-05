@@ -2,7 +2,8 @@ import { useState } from "react";
 import Form from "./Form/Form";
 import Person from "./Person/Person";
 import img_1 from "./Person/opium.jpg";
-/*   
+{
+  /*   
         varProps ( || or , in parametr function component)
         props(function)event
         components pair
@@ -12,10 +13,11 @@ import img_1 from "./Person/opium.jpg";
         USE STATE
         attr disabled for input
         css condtional
-        call back function
+        call back function in onChange
         for loop 
         object in useState
     */
+}
 const S_4 = () => {
   {
     /*
