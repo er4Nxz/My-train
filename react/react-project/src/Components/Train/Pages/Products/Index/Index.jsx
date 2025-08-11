@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "../../../Redux/Products/ProductsSlice";
+import { fetchProducts } from "../../../Redux/ProductsSlice";
 import Item from "./Item";
 const Index = () => {
   const { products, loading, error } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-  console.log(products);
-
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);

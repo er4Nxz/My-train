@@ -1,26 +1,27 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchProducts = createAsyncThunk("/product/fetch", async () => {
-  const response = await axios.get(
+export const fetchProducts = createAsyncThunk("/fetch/products", async () => {
+  let response = await axios.get(
     "https://685c4d07769de2bf085c58e4.mockapi.io/Product"
   );
   return response.data;
 });
+
 export const fetchProductsID = createAsyncThunk(
-  "/productID/fetch",
+  "/fetch/productsID/",
   async (id) => {
-    const response = await axios.get(
+    let response = await axios.get(
       `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${id}`
     );
     return response.data;
   }
 );
+
 const ProductsSlice = createSlice({
-  name: "products",
+  name: "Products",
   initialState: {
     products: [],
-    product: null,
     loading: true,
     error: "",
   },
@@ -32,21 +33,23 @@ const ProductsSlice = createSlice({
       })
       .addCase(fetchProducts.pending, (state) => {
         state.loading = true;
+        state.error = "server is error 404";
       })
       .addCase(fetchProducts.rejected, (state) => {
         state.loading = true;
-        state.error = "server is error";
+        state.error = "server is error 404";
       })
       .addCase(fetchProductsID.fulfilled, (state, action) => {
-        state.product = action.payload;
+        state.products = action.payload;
         state.loading = false;
       })
       .addCase(fetchProductsID.pending, (state) => {
         state.loading = true;
+        state.error = "server is error 404";
       })
       .addCase(fetchProductsID.rejected, (state) => {
         state.loading = true;
-        state.error = "server is error";
+        state.error = "server is error 404";
       });
   },
 });

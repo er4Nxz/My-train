@@ -1,8 +1,7 @@
 import { Link, useParams } from "react-router-dom";
-import { fetchProductsID } from "../../../Redux/Products/ProductsSlice";
+import { fetchProductsID } from "../../../Redux/ProductsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import Edit from "../Edit/Edit";
 const Show = () => {
   const { id } = useParams();
   const dispatch = useDispatch();

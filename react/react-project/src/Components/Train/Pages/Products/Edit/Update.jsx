@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Update = ({ product }) => {
+const Update = ({ products }) => {
   const navigate = useNavigate();
 
   const [title, setTitle] = useState("");
@@ -15,7 +15,7 @@ const Update = ({ product }) => {
     const editProducts = async () => {
       try {
         const response = await axios.put(
-          `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${product.id}`,
+          `https://685c4d07769de2bf085c58e4.mockapi.io/Product/${products.id}`,
           { title, description, price, image }
         );
         navigate("/Products");
@@ -27,10 +27,10 @@ const Update = ({ product }) => {
   };
 
   useEffect(() => {
-    setTitle(product.title);
-    setDescrption(product.description);
-    setPrice(product.price);
-    setImage(product.image);
+    setTitle(products.title);
+    setDescrption(products.description);
+    setPrice(products.price);
+    setImage(products.image);
   }, []);
 
   return (
