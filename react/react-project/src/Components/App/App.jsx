@@ -1,4 +1,6 @@
+import HigherOrderComponent from "../S_10/HigherOrderComponent/HigherOrderComponent";
 import S_1 from "../S_1/S_1";
+import S_10 from "../S_10/S_10";
 import S_3 from "../S_3/S_3";
 import S_4 from "../S_4/S_4";
 import S_5 from "../S_5/S-5";
@@ -19,7 +21,8 @@ const App = () => {
       {/* <S_7/> */}
       {/* <S_8/> */}
       {/* <S_9 /> */}
-      <Train />
+      <S_10 />
+      {/* <Train /> */}
       {/* <Train2 /> */}
     </div>
   );

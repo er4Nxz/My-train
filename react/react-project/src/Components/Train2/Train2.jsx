@@ -1,6 +1,6 @@
 import { Provider } from "react-redux";
-import store from "./Redux/store";
-import Products from "./Products";
+import store from "./redux/store";
+import Products from "./Products/Products";
 const Train2 = () => {
   return (
     <>
