@@ -1,12 +1,11 @@
 const withAuth = (Component) => {
-  return function ({ isLogin, ...props }) {
-    return isLogin ? (
-      <Component {...props} isLogin={isLogin} />
-    ) : (
-      <h1 className="text-center text-danger">
-        Please authenticate before logging in !!!
-      </h1>
-    );
+  return function withAuthComponent({ isLogin, ...props }) {
+    if (isLogin) {
+      return <Component {...props} isLogin={isLogin} />;
+    } else {
+      return <h1 className="text-danger">please log in</h1>;
+    }
   };
 };
+
 export default withAuth;

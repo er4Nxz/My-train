@@ -1,20 +1,20 @@
 import { useState } from "react";
 import withAuth from "./hoc/withAuth";
-import Home from "./home/Home";
+import Home from "./Home/Home";
 import useFetch from "../CustomHooks/hooks/useFetch";
 import withLoading from "./hoc/withLoading";
 
 const HigherOrderComponent = () => {
-  const MainComponent = withAuth(withLoading(Home));
-
   const [isLogin, setIsLogin] = useState(false);
 
-  const [product, loading, error] = useFetch(
+  const [data, loading, error] = useFetch(
     "https://685c4d07769de2bf085c58e4.mockapi.io/Product"
   );
+
+  const MainComponent = withAuth(withLoading(Home));
   return (
     <>
-      <div className="w-[100%] bg-black p-4">
+      <div className="w-[100%] p-3 bg-black">
         <button
           className="btn btn-info"
           onClick={() => {
@@ -26,8 +26,8 @@ const HigherOrderComponent = () => {
       </div>
       <MainComponent
         isLogin={isLogin}
-        product={product}
         loading={loading}
+        data={data}
         error={error}
       />
     </>
