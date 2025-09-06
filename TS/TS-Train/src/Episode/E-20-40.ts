@@ -21,3 +21,11 @@
 //   return num1 + num2;
 // }
 // console.log(add(...number));
+
+// // type casting in dom
+// const App = document.querySelector("#app"); // ERROR
+// const App = document.querySelector("#app") as HTMLDivElement; // way 1
+// const App = document.querySelector("#app")!; // way 2
+// console.log(App?.innerHTML); // way3
+// console.log(App.innerHTML);
+1
