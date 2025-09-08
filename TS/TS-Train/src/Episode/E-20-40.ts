@@ -28,4 +28,17 @@
 // const App = document.querySelector("#app")!; // way 2
 // console.log(App?.innerHTML); // way3
 // console.log(App.innerHTML);
-1
+
+// // union type make type
+// type Role = "admin" | "user" | "teacher";
+// const user: {
+//   id: number;
+//   name: string;
+//   role: Role;
+// } = {
+//   id: 1,
+//   name: "erfan",
+//   role: "admin",
+// };
+// console.log(user);
+
