@@ -117,3 +117,53 @@
 // console.log(newPerson.getLessons);
 // newPerson.setLessons = "TS"
 // console.log(newPerson.getLessons);
+
+// // static access level
+// class Person {
+//   static count = 0;
+//   constructor(
+//     public name: string,
+//     private email: string,
+//     readonly age: number,
+//     private lessons: string[]
+//   ) {
+//     this.name = name;
+//     this.email = email;
+//     this.age = age;
+//     this.lessons = lessons;
+//     Person.count++;
+//   }
+// }
+// const newPerson = new Person("erfan", "e@e.com", 18, ["math", "english"]);
+// console.log(Person.count);
+
+// // overwrite _ abstract
+// abstract class Person {
+//   constructor(public name: string, public email: string, public age: number) {
+//     this.name = name;
+//     this.email = email;
+//     this.age = age;
+//   }
+//   abstract info(): void;
+// }
+
+// class Student extends Person {
+//   constructor(
+//     name: string,
+//     email: string,
+//     age: number,
+//     public lessons: string[]
+//   ) {
+//     super(name, email, age);
+//     this.lessons = lessons;
+//   }
+//   info(): void {
+//     console.log(
+//       `name => ${this.name} email => ${this.email} age => ${
+//         this.age
+//       } lessons => ${this.lessons.map((item) => item)}`
+//     );
+//   }
+// }
+// const erfanStudent = new Student("erfan", "e@e.com", 18, ["math", "english"]);
+// erfanStudent.info();
