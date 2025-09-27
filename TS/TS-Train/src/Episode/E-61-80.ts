@@ -99,3 +99,60 @@
 //       break;
 //   }
 // };
+
+// // function overloading
+// type Param = string | number;
+// function sum(param1: number, param2: number): number;
+// function sum(param1: string, param2: string): string;
+
+// function sum(param1: Param, param2: Param) {
+//   if (typeof param1 === "number" && typeof param2 === "number") {
+//     return param1 + param2;
+//   }
+//   if (typeof param1 === "string" && typeof param2 === "string") {
+//     return param1 + param2;
+//   }
+// }
+// const two = sum("12", "12");
+// console.log(two.length);
+
+// // index type
+// interface Error {
+//   TypeError: string;
+//   [prop: string]: string;
+// }
+
+// const LoginFormError:Error = {
+//     TypeError:"login form error",
+//     name:"اسم شما قبلا استفاده شده لطفا از اسم دیگری استفاده کنید",
+//     password:"پسوورد شما با پسوورد قبلی که انتخاب کردید مطابقت ندارد"
+// }
+// const rigesterError :Error ={
+//     TypeError:"rigester Error",
+//     userName : "شما نام کاربری دیگری انتخاب کردید مطابقت ندارد"
+// }
+
+// // namespace
+// namespace User{
+//     export let name = "erfan"
+// }
+// namespace teaccher {
+//     export let name = "asadi"
+// }
+// console.log(User.name);
+// console.log(teaccher.name);
+
+// // "generic type" Instead of function overloading
+// function print<Type>(param:Type):Type{
+//     return param
+// }
+// console.log(print("erfan"));
+// // *2
+// function print<T, U>(param1: T, param2: U): T & U {
+//   return { ...param1, ...param2 };
+// }
+// let erfan = print({name:"erfan"},{age:18})
+// console.log(erfan.age);
+// console.log(erfan.name);
+
+
