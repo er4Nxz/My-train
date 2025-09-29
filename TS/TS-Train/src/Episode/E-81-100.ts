@@ -33,4 +33,24 @@
 // }
 // type Type2 = Pick<Type1,"age" | "username">
 // const var1:Type2 = {username:"erfan",age:23}
-// // 
+
+// // Decorator
+// function Logger(param: number) {
+//   return (constructor: Function) => {
+//     console.log(constructor);
+//     constructor.prototype.id = param;
+//   };
+// }
+// @Logger(2)
+// class User {
+//   constructor(public firstName: string, public age: number) {
+//     this.age = age;
+//     this.firstName = firstName;
+//   }
+//   show() {
+//     console.log(`name => ${this.firstName} & age => ${this.age}`);
+//   }
+// }
+// const erfan = new User("erfan", 18);
+// erfan.show();
+// console.log(erfan.id);
