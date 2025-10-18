@@ -167,3 +167,66 @@
 // }
 // const erfanStudent = new Student("erfan", "e@e.com", 18, ["math", "english"]);
 // erfanStudent.info();
+
+// // interface - optional property
+// interface User {
+//   name: string;
+//   email: string;
+//   age: number;
+//   login?: () => Boolean;
+// }
+// const erfan: User = {
+//   name: "erfan",
+//   email: "e@e.com",
+//   age: 18
+// };
+// const isRegestery = (User: User) => {
+//   if (User.name === "erfan") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(isRegestery(erfan));
+
+// // type vs interface
+// interface User {
+//   name: string;
+//   email: string;
+//   age: number;
+//   login?: () => Boolean;
+// }
+// interface User{
+//     city:string
+// }
+
+// // interface extend
+// interface User {
+//   name: string;
+//   email: string;
+//   age: number;
+// }
+// interface Student extends User {
+//   lesson: string[];
+// }
+// let aliStudent:Student = {
+//     name:"ali",
+//     email:"a@a.com",
+//     age:18,
+//     lesson:["math","english"]
+// }
+// console.log(aliStudent);
+
+// // implements
+// interface interUser {
+//   name: string;
+//   email: string;
+// }
+
+// class User implements interUser {
+//   constructor(public name: string, public email: string) {
+//     (this.name = name), (this.email = email);
+//   }
+// }
+// let erfanUser = new User("erfan", "e@e.com");
+// console.log(erfanUser);
