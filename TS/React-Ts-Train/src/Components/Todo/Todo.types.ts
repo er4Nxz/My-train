@@ -4,5 +4,5 @@ export type TodoType = {
   id: number;
   title: string;
   isDone: boolean;
-  color:string
+  color?:string
 };
