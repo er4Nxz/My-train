@@ -12,14 +12,16 @@
     "moduleDetection": "force",
     "noEmit": true,
     "noEmitOnError": true,
-
+    "allowJs":true,
+    "checkJs":true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "experimentalDecorators":true
   },
-  "include": ["src"]
+  "include": ["src"],
 }
