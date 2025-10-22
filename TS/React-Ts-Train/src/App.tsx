@@ -8,6 +8,7 @@ import UseContextt from "./Components/Hooks/UseContextt/UseContextt";
 import Auth from "./Components/Auth/Auth";
 import PropLimit from "./Components/PropLimit/PropLimit";
 import TemplateLiteral from "./Components/TemplateLiteral/TemplateLiteral";
+import TodoPlus from "./Components/TodoPlus/TodoPlus";
 const App: React.FC = () => {
   return (
     <>
@@ -19,7 +20,8 @@ const App: React.FC = () => {
       {/* <UseContextt /> */}
       {/* <Auth /> */}
       {/* <PropLimit /> */}
-      <TemplateLiteral />
+      {/* <TemplateLiteral /> */}
+      <TodoPlus />
     </>
   );
 };
