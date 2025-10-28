@@ -6,9 +6,9 @@
 // }
 // console.log(test);
 
-// //type casting
-// let test: unknown = 12;
-// let test2 =  test as string
+//type casting
+let test: unknown = 12;
+let test2 =  test as string
 
 // // const assertion
 // const number = [1,2,3] as const
