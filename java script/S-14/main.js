@@ -52,26 +52,26 @@ btn.addEventListener("click", darkmode);
 // en.forEach((item)=>item.forEach((item2)=>console.log(item2)))
 
 
-let div = document.querySelector("#aval");
-div.addEventListener("click", () => {
-  // //content editable
-  // div.contentEditable = true;
-  // //getComputStyle
-  // console.log(getComputedStyle(div).color);
-  // console.log(getComputedStyle(div).backgroundColor);
-  // //setComputStyle
-  // div.style.backgroundColor = "red"
-  // //setAttribute
-  // div.setAttribute("data-id", "salma");
-  // console.log(div.dataset);
-  // //isConnected / append
-  let text = "salam"
-  let h1 = document.createElement("h1")
-  h1.insertAdjacentText("beforeend", text);
-  div.append(h1)
-  if (h1.isConnected === true) {
-    console.log("ok");
-  } else {
-    console.log("not ok");
-  }
-});
+// let div = document.querySelector("#aval"); 
+// div.addEventListener("click", () => {
+//   //content editable
+//   div.contentEditable = true;
+//   //getComputedStyle
+//   console.log(getComputedStyle(div).color);
+//   console.log(getComputedStyle(div).backgroundColor);
+//   //setComputStyle
+//   div.style.backgroundColor = "red"
+//   //setAttribute
+//   div.setAttribute("data-id", "salma");
+//   console.log(div.dataset);
+//   //isConnected / append
+//   let text = "salam"
+//   let h1 = document.createElement("h1")
+//   h1.insertAdjacentText("beforeend", text);
+//   div.append(h1)
+//   if (h1.isConnected === true) {
+//     console.log("ok");
+//   } else {
+//     console.log("not ok");
+//   }
+// });
