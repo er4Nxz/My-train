@@ -27,7 +27,7 @@ const ProductSlice = createSlice({
       .addCase(fetchProducts.rejected, (state, action) => {
         state.error = "Server is Error";
         state.loading = true;
-      });
+      })
   },
 });
 

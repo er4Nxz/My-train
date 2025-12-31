@@ -2,11 +2,11 @@ import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import "./JsonServer.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const JsonServer = () => {
   const [menu, setMenu] = useState(null);
