@@ -23,6 +23,12 @@ const S1 = () => {
   // navlink - use client - usePathname
 
   // use Router
+
+  // template
+  
+  // useSearchParam
+
+  // cath all segment
   return (
     <>
       <h1>Dynamic Route</h1>
