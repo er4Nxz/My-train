@@ -9,11 +9,15 @@ const Header = () => {
       title: "S2",
       link: "/S2",
     },
+    {
+      title: "S3",
+      link: "/S3",
+    },
   ];
   return (
     <>
-      <div className="w-full p-4 flex flex-row gap-10 justify-center">
-        <ul>
+      <div className="w-full p-4 ">
+        <ul className="flex flex-row gap-10 justify-center">
           {Navs?.map((item, index) => {
             return <NavLinks key={index} item={item} />;
           })}

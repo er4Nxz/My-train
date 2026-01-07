@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-        <BootstrapImp/>
+        <BootstrapImp />
       </body>
     </html>
   );
