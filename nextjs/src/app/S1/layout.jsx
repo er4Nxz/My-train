@@ -1,4 +1,4 @@
-import BackButton from "@/Components/Button/BackButton";
+import BackButton from "@/Components/S1/Button/BackButton";
 
 const S1Layout = ({ children }) => {
   return (

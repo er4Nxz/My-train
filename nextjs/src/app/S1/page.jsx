@@ -1,4 +1,4 @@
-import SearchParamButton from "@/Components/Button/SearchParamButton";
+import SearchParamButton from "@/Components/S1/Button/SearchParamButton";
 import Link from "next/link";
 import Posts from "./_Posts/page";
 
