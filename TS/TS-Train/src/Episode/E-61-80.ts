@@ -178,6 +178,3 @@
 // newList.addItem("erfan");
 // newList.getter("ali")
 // newList.showItems();
-
-
-// // 

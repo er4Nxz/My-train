@@ -16,11 +16,11 @@
 // console.log(number);
 
 // Example
-// let number = [10, 20] as const;
+// let numb = [10, 20] as const;
 // function add(num1: number, num2: number): number {
 //   return num1 + num2;
 // }
-// console.log(add(...number));
+// console.log(add(...numb));
 
 // // type casting in dom
 // const App = document.querySelector("#app"); // ERROR
@@ -84,4 +84,3 @@
 //   }
 // };
 // logger("Teacher");
-
