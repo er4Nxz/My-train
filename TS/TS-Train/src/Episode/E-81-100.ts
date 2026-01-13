@@ -1,12 +1,12 @@
 // // utility Type
 // // Required
 // type Type1 = {
-//     username:string
-//     age?:number
-// }
-// const var1:Type1 = {username:"erfan"}
-// type Type2 = Required<Type1>
-// const var2:Type2 = {username:"erfan",age:18}
+//   username: string;
+//   age?: number;
+// };
+// const var1: Type1 = { username: "erfan" };
+// type Type2 = Required<Type1>;
+// const var2: Type2 = { username: "erfan", age: 18 };
 
 // // Read only
 //  type Type1 = {
