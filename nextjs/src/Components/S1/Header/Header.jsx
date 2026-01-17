@@ -13,6 +13,10 @@ const Header = () => {
       title: "S3",
       link: "/S3",
     },
+    {
+      title: "S4",
+      link: "/S4",
+    },
   ];
   return (
     <>
