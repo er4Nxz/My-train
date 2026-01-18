@@ -8,6 +8,9 @@ const S4 = async () => {
           <li>
             <Link href={"S4/fetch-server-component"}>fetchServerComponent</Link>
           </li>
+          <li>
+            <Link href={"S4/daynamic-prefetching"}>DaynamicPrefetching</Link>
+          </li>
         </ul>
       </div>
     </>
