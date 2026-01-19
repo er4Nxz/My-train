@@ -11,6 +11,9 @@ const S4 = async () => {
           <li>
             <Link href={"S4/daynamic-prefetching"}>DaynamicPrefetching</Link>
           </li>
+          <li>
+            <Link href={"S4/server-action"}>Server Action</Link>
+          </li>
         </ul>
       </div>
     </>
