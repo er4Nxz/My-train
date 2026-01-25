@@ -1,5 +1,6 @@
 "use client";
 const error = ({ error, reset }) => {
+  console.log(error);
   
   return (
     <div>

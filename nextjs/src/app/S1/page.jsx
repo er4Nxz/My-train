@@ -14,6 +14,7 @@ const S1 = () => {
   for (let i = 0; i <= 100; i++) {
     id.push(i);
   }
+  
 
   // Meta data
 

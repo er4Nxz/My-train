@@ -24,6 +24,7 @@ const getPosts = async () => {
 };
 const fetchServerComponent = async () => {
   const posts = await getPosts();
+  
   return (
     <>
       <div className="w-1/2 rounded-2xl p-4 bg-blue-300 mx-auto">
