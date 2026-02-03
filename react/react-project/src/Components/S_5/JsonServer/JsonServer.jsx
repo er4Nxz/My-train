@@ -24,7 +24,6 @@ const JsonServer = () => {
       let url = await axios("https://er4nxz.github.io/data/db.json");
       setSwiper(url.data.swiper);
       console.log(url);
-      
     } catch (error) {
       console.log(error);
     }
