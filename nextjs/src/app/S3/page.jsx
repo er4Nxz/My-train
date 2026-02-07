@@ -4,18 +4,18 @@ import Image from "next/image";
 import Script from "next/script";
 import image from "../../../public/images/ATCSimulator.image2.jpg";
 // google font
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["400", "700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   style: ["normal"],
+//   weight: ["400", "700"],
+// });
 
-// custom font
-const customFont = localFont({
-  src: "../../../public/font/2Mitra_1MRTBold.woff2",
-  weight: "100",
-  style: "italic",
-});
+// // custom font
+// const customFont = localFont({
+//   src: "../../../public/font/2Mitra_1MRTBold.woff2",
+//   weight: "100",
+//   style: "italic",
+// });
 
 // import Script
 
@@ -23,8 +23,8 @@ const customFont = localFont({
 const S3 = () => {
   return (
     <>
-      <h1 className={montserrat.className}>erfan ahmadi</h1>
-      <h1 className={customFont.className}>erfan ahmadi</h1>
+      {/* <h1 className={montserrat.className}>erfan ahmadi</h1>
+      <h1 className={customFont.className}>erfan ahmadi</h1> */}
       <Script
         strategy="afterInteractive"
         src="../../../../../CA/finisher-header.es5.min.js"
