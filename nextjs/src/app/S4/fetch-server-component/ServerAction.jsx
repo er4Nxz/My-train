@@ -1,24 +1,16 @@
-import { revalidatePath } from "next/cache";
+"use client";
+
+import addPost from "./addPost";
 import SubmitBtn from "./SubmitBtn";
+import { useActionState } from "react";
 
 const ServerAction = () => {
-  const addPost = async (formData) => {
-    "use server";
-    const title = formData.get("title");
-    await fetch("http://localhost:3001/posts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ title }),
-    }).then(() => {
-      revalidatePath("/S4/fetch-server-component");
-    });
-  };
+  const [state, formHandle] = useActionState(addPost, {});
+  
 
   return (
     <>
-      <form action={addPost} className="bg-amber-200 p-4 flex flex-col">
+      <form action={formHandle} className="bg-amber-200 p-4 flex flex-col">
         <div>
           <label htmlFor="title">title:</label>
           <input
@@ -27,6 +19,7 @@ const ServerAction = () => {
             id="title"
             className="bg-white border rounded-2xl mx-2"
           />
+          <p className="text-red-500">{state?.error}</p>
         </div>
         <SubmitBtn />
       </form>
