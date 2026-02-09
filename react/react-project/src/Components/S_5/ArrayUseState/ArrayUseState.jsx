@@ -32,7 +32,7 @@ const ArrayUseState = () => {
         <input
           type="text"
           id="fullName"
-          className="bg-blue-300 rounded-lg m-1 p-[2px] text-white"
+          className="bg-blue-300 rounded-lg m-1 p-0.5 text-white"
           onChange={addToName}
           value={name}
         />
@@ -58,7 +58,7 @@ const ArrayUseState = () => {
           <FaEyeSlash
             fontSize={20}
             color="white"
-            className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/[0.3] hover:rounded-4xl active:bg-white/[0.7]"
+            className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/30 hover:rounded-4xl active:bg-white/70"
             onClick={() => {
               setIcon(false), setType("text");
             }}
@@ -67,7 +67,7 @@ const ArrayUseState = () => {
           <FaEye
             fontSize={20}
             color="white"
-            className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/[0.3] hover:rounded-4xl active:bg-white/[0.7]"
+            className="cursor-pointer  p-1 w-[30px] transition-all ease-linear h-[30px] hover:bg-white/30 hover:rounded-4xl active:bg-white/70"
             onClick={() => {
               setIcon(true), setType("password");
             }}

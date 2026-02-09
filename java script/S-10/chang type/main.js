@@ -106,7 +106,7 @@
 //   //and
 //   {
 //     let result = x !== 10 && y == 20 && x == y;
-//     //           true *     true    *  tru
+//     //           true *     true    *  true
 //     //           1     *    1     *    1 = 1 =>true
 //     console.log(result);
 //   }

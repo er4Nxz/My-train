@@ -155,4 +155,30 @@
 // console.log(erfan.age);
 // console.log(erfan.name);
 
+<<<<<<< HEAD
 
+=======
+// // generic type in class
+// class list<T> {
+//   public items: T[] = [];
+//   addItem(item: T) {
+//     this.items.push(item);
+//   }
+//   popItem(): T | undefined {
+//     return this.items.pop();
+//   }
+//   showItems(): void {
+//     console.log(this.items);
+//   }
+//   getter(param: T) {
+//     this.items.find((item) => {
+//       item === param ? console.log(true) : console.log(false);
+//     });
+//   }
+// }
+// let newList = new list();
+// newList.addItem(12);
+// newList.addItem("erfan");
+// newList.getter("ali")
+// newList.showItems();
+>>>>>>> 596e1c2e64c6fab50df280b7d7be8169b0a2ec05

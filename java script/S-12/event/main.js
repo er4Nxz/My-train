@@ -40,19 +40,19 @@
 //   f.classList.remove("t");
 // });
 
-//menu
+// //menu
 // let parentSubMenu = document.querySelector(".parentSubMenu");
 // let subMenu = document.querySelector("#subMenu");
-// مدلم خودم
+// // مدلم خودم
 // parentSubMenu.addEventListener("mouseenter",function(){
 //     subMenu.classList.add("subMenu")
-//     subMenu.parentElement.parentElement.parentElement.parentElement.classList.add("back")
+//     document.body.classList.add("back")
 // })
 // parentSubMenu.addEventListener("mouseleave",function(){
 //     subMenu.classList.remove("subMenu")
-//     subMenu.parentElement.parentElement.parentElement.parentElement.classList.remove("back")
+//     document.body.classList.remove("back")
 // })
-// مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
+// // مدل ارمین پور ک گفته نود نیم بچشو گیر بیار اگر داشت بهش همچین کلاسی رو بده
 // parentSubMenu.addEventListener("mouseenter", function (e) {
 //   [...e.target.children].forEach((elem) => {
 //     if (elem.nodeName.toLowerCase() === "div") {
@@ -86,31 +86,33 @@
 // data("erfan"," ahmadi"," 18")
 
 //mouse move
-let move = document.querySelector("#c");
-move.addEventListener("mousemove", function (e) {
-  // حرکت کردن عنصر
-  e.target.parentElement.style.left = `${e.offsetX}px`;
-  e.target.parentElement.style.top = `${e.offsetY}px`;
-  //   عوض شدن رنگ صفحه
-  e.target.parentElement.parentElement.style.background = `rgb(${
-    e.offsetX / 2 + 50
-  },${e.offsetY / 2 + 50},${e.offsetX / 5 + e.offsetX})`;
-});
+// let move = document.querySelector("#c");
+// move.addEventListener("mousemove", function (e) {
+//   // حرکت کردن عنصر
+//   e.target.parentElement.style.left = `${e.offsetX}px`;
+//   e.target.parentElement.style.top = `${e.offsetY}px`;
+//   //   عوض شدن رنگ صفحه
+//   e.target.parentElement.parentElement.style.background = `rgb(${
+//     e.offsetX / 2 + 50
+//   },${e.offsetY / 2 + 50},${e.offsetX / 5 + e.offsetX})`;
+// });
 
 // keyup / keydown / keypress
 // let key = document.querySelector("#key");
 // let text = document.querySelector("#text");
 // key.addEventListener("keydown", function (e) {
-//     console.log(e.target.value);
-// })
-// key.addEventListener("keyup",function(e){
-//     text.innerText = e.target.value
-//     if(e.key === "t"){
-//         text.style.color = "red"
-//     }else if(e.key === "T"){
-//         text.style.color = "blue"
-//     }
-// })
+//   console.log(e.target.value);
+// });
+// key.addEventListener("keyup", function (e) {
+//   text.innerText = e.target.value;
+//   if (e.key === "t") {
+//     text.style.color = "red";
+//   } else if (e.key === "T") {
+//     text.style.color = "blue";
+//   } else if (key.value === "") {
+//     text.style.color = "black";
+//   }
+// });
 
 // createlement /
 // let mainDiv = document.querySelector("#mainDiv")
@@ -125,7 +127,7 @@ move.addEventListener("mousemove", function (e) {
 // buy.id = "buy"
 // buy.textContent = "Buy"
 // mainDiv.append(buy)
-// insert element
+// // insert element
 // let prog = document.createElement("p")
 // prog.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, non!"
 // prog.className = "prog"
@@ -167,16 +169,10 @@ move.addEventListener("mousemove", function (e) {
 // let parent = document.querySelector(".parent");
 // let closeParent = document.querySelector(".closeParent");
 // show.addEventListener("click", function () {
-//   {
-//     parent.classList.add("block");
-//     parent.classList.remove("none");
-//   }
-//   {
-//     closeParent.addEventListener("click", function () {
-//       this.parentElement.classList.add("none");
-//       this.parentElement.classList.remove("block");
-//     });
-//   }
+//   parent.classList.remove("none");
+//   closeParent.addEventListener("click", function () {
+//     this.parentElement.classList.add("none");
+//   });
 // });
 
 // call back syncronize
@@ -185,52 +181,52 @@ move.addEventListener("mousemove", function (e) {
 //   { brand: "dell", price: 3500 },
 //   { brand: "mac", price: 4000 },
 // ];
-// function create() {
-//   setTimeout((CB) => {
+// function create(CB) {
+//   setTimeout(() => {
 //     laptop.push({
 //       brand: "lenovo",
 //       price: 2500,
 //     });
 //     // یعنی اینکه میاد اون ورودی رو که ما داخل فانکشن گزاشتیم بصورت یک فانکشن میاد داخل فانکشن اصلی اجرا میکنه
-//     CB()
+//     CB();
 //   }, 1000);
 // }
 // function show() {
-//   console.log(laptop[0]);
+//   console.log(laptop[3]);
+// }
+// create(show);
+
+// //  promise (ecma)
+// let laptop = [
+//   { brand: "msi", price: 3000 },
+//   { brand: "dell", price: 3500 },
+//   { brand: "mac", price: 4000 },
+// ];
+// function create(callback) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       laptop.push({
+//         brand: "lenovo",
+//         price: 2500,
+//       });
+//       let flag = true;
+//       if (flag) {
+//         resolve(callback());
+//       } else {
+//         reject("من نمیتونم مشخصات شمارو اضافه کنم");
+//       }
+//     }, 1000);
+//   });
+// }
+// function show() {
+//   return laptop;
 // }
 // create(show)
-
-// promise (ecma)
-let laptop = [
-  { brand: "msi", price: 3000 },
-  { brand: "dell", price: 3500 },
-  { brand: "mac", price: 4000 },
-];
-function create(callback) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      laptop.push({
-        brand: "lenovo",
-        price: 2500,
-      });
-      let flag = true;
-      if (flag) {
-        resolve(callback());
-      } else {
-        reject("من نمیتونم مشخصات شمارو اضافه کنم");
-      }
-    }, 1000);
-  });
-}
-function show() {
-  return laptop
-}
-create(show)
-  .then((resolve) => {
-    let x = resolve.filter((item)=> item.price >= 3500)
-    console.log(x);
-  })
-.catch((reject) => console.log(reject));
+//   .then((resolve) => {
+//     let x = resolve.filter((item) => item);
+//     console.log(x);
+//   })
+//   .catch((reject) => console.log(reject));
 
 // async awit
 // let laptop = [
@@ -277,27 +273,27 @@ create(show)
 // result();
 
 //example promise
-// function fetchData() {
-//   return new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//           const success = true; // فرض کنیم عملیات همیشه موفق است
-//           if (success) {
-//               resolve(["داده ۱", "داده ۲", "داده ۳"]); // داده‌های شبیه‌سازی شده
-//           } else {
-//               reject("خطا در بارگذاری داده‌ها.");
-//           }
-//       }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
-//   });
-// }
-// // اضافه کردن رویداد کلیک به دکمه
-// document.getElementById("loadDataBtn").addEventListener("click", () => {
-//   const resultDiv = document.getElementById("result");
-//   resultDiv.innerHTML = "در حال بارگذاری..."; // نمایش پیام بارگذاری
-//   fetchData()
-//       .then((data) => {
-//           resultDiv.innerHTML = data; // نمایش داده‌ها
-//       })
-//       .catch((error) => {
-//           resultDiv.innerHTML = error; // نمایش خطا
-//       });
-// });
+function fetchData() {
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          const success = true; // فرض کنیم عملیات همیشه موفق است
+          if (success) {
+              resolve(["داده ۱", "داده ۲", "داده ۳"]); // داده‌های شبیه‌سازی شده
+          } else {
+              reject("خطا در بارگذاری داده‌ها.");
+          }
+      }, 2000); // شبیه‌سازی تأخیر ۲ ثانیه‌ای
+  });
+}
+// اضافه کردن رویداد کلیک به دکمه
+document.getElementById("loadDataBtn").addEventListener("click", () => {
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "در حال بارگذاری..."; // نمایش پیام بارگذاری
+  fetchData()
+      .then((data) => {
+          resultDiv.innerHTML = data; // نمایش داده‌ها
+      })
+      .catch((error) => {
+          resultDiv.innerHTML = error; // نمایش خطا
+      });
+});

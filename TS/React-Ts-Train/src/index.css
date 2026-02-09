@@ -1,3 +1,4 @@
+/* 
 body {
   background-color: #6b22ff;
   font-family: sans-serif;
@@ -5,8 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
+} */
 /* جعبه مرکزی */
 .container {
   display: flex;

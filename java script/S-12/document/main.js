@@ -90,18 +90,18 @@
 // });
 
 // dataset api
-let product = document.querySelector(".product");
-// صدا زدن dataset و محتوای داخل تگ
-console.log(
-  product.dataset.discount,
-  typeof product.dataset.discount,
-  product.textContent
-);
-if ((product.children[0].nodeName = "H1")) {
-  price = +product.children[0].textContent;
-}
-if (product.children[1].classList.contains("discount")) {
-  discount = parseInt(product.dataset.discount);
-  calc = price - (price * discount) / 100;
-  product.children[1].textContent = calc + " %";
-}
+// let product = document.querySelector(".product");
+// // صدا زدن dataset و محتوای داخل تگ
+// console.log(
+//   product.dataset.discount,
+//   typeof product.dataset.discount,
+//   product.textContent
+// );
+// if ((product.children[0].nodeName = "H1")) {
+//   price = +product.children[0].textContent;
+// }
+// if (product.children[1].classList.contains("discount")) {
+//   discount = parseInt(product.dataset.discount);
+//   calc = price - (price * discount) / 100;
+//   product.children[1].textContent = calc + " %";
+// }

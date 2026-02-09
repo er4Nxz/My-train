@@ -144,7 +144,7 @@
 //     this.email = email;
 //     this.age = age;
 //   }
-//   abstract info(): void;
+//    info(): void;
 // }
 
 // class Student extends Person {

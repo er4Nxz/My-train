@@ -10,6 +10,7 @@ import S_8 from "../S_8/S_8";
 import S_9 from "../S_9/S_9";
 import Train from "../Train/Train";
 import Train2 from "../Train2/Train2";
+import React19 from "../React-19/React19";
 const App = () => {
   return (
     <div>
@@ -21,9 +22,10 @@ const App = () => {
       {/* <S_7/> */}
       {/* <S_8/> */}
       {/* <S_9 /> */}
-      <S_10 />
+      {/* <S_10 /> */}
       {/* <Train /> */}
       {/* <Train2 /> */}
+      <React19 />
     </div>
   );
 };

@@ -8,6 +8,10 @@ const UseContextt: FC = (): ReactNode => {
       <ThemesContext>
         <Comp />
       </ThemesContext>
+
+      <ThemesContext>
+        <Comp />
+      </ThemesContext>
     </>
   );
 };

@@ -13,6 +13,7 @@ const UseStatee: React.FC = (): React.ReactNode => {
   ];
   const [user, setUser] = useState<User[]>([]);
   setUser(Users );
+  setUser(Users);
   return (
     <>
       <ul>

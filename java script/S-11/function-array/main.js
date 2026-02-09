@@ -57,9 +57,9 @@
 // }
 // console.log(allData(x,y))
 // if(allData()===null){
-//   console.log("confirm");
+//     console.log("deny");
 // }else{
-//   console.log("deny");
+//     console.log("confirm");
 // }
 
 // function age

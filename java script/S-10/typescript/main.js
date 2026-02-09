@@ -159,7 +159,7 @@
 // console.log(result);
 // FOR
 // for (let i: number = 1; i <= 10; ++i) document.write(`<h1>${i}</h1>`);
-// if in for and add css
+// // if in for and add css
 // let x: number = Number(prompt("ENTER NUMBER"));
 // for (let i: number = 1; i <= x; ++i)
 //   if (i % 3 === 0) document.write(`<div class='even'>${i}</div>`);
